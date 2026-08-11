@@ -1,0 +1,17 @@
+# ---- Python 缓存 ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# ---- 生成物 / 截图 ----
+_gui_test.png
+*.png.bak
+
+# ---- 数据库 (大文件与备份不入库; 正式库有 .bak 备份机制) ----
+数据库正式库/*.db*
+*.db-journal
+
+# ---- 导出产物 ----
+outputs/
+*.xlsx
+*.tsv
