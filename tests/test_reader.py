@@ -5,7 +5,6 @@ from __future__ import annotations
 from pathlib import Path
 
 from core.docx_reader import TEMPLATE_PATH, read_msds
-from core.compare import compare
 
 # 默认模板 = 内化副本 (templates/), 字节级一致, 不依赖外部源路径
 TEMPLATE = TEMPLATE_PATH
@@ -54,15 +53,6 @@ def test_section0_page_fields():
     prod = [f for f in s0.fields if "产品名称" in f.label]
     assert prod and prod[0].editable is True
     assert any("修订" in f.label for f in s0.fields), "页脚应含修订日期字段"
-
-
-def test_section0_not_in_compare():
-    """section 0 不参与自动覆写比对 (其字段权限由手动标注决定)."""
-    from core.compare import compare
-    t = read_msds(TEMPLATE)
-    c = compare(t, t)
-    for d in c.decisions:
-        assert d.section != 0, "section 0 不应出现在覆写比对中"
 
 
 def test_lines_split_into_three_columns():
@@ -272,38 +262,6 @@ def test_s11_has_component_reference():
     assert "二乙二醇单丁醚" in text or any("二乙二醇" in f.value for f in s11.fields)
 
 
-def test_compare_template_with_itself():
-    """模板自比: 值一致字段应为 template (保留)."""
-    t = read_msds(TEMPLATE)
-    c = compare(t, t)
-    assert c.decisions, "比对应产生决策"
-    counts = c.counts()
-    assert counts.get("review", 0) == 0, "自比不应有残留风险"
-    assert counts.get("template", 0) > 0
-
-
-def test_compare_product_overrides():
-    """构造一个模拟产品: 中文名称/供应商被覆盖 → 指向 product."""
-    t = read_msds(TEMPLATE)
-    # 复制一份并改 S1 字段 (通过读取另一份再改不现实, 直接构建轻量 ParseResult)
-    from core.structure import ParseResult, SectionData, FieldData, ComponentData
-    p = ParseResult(file_name="模拟产品.docx")
-    p.sections[1] = SectionData(number=1, title="物料及供应商标识", full_title="1.物料及供应商标识",
-                                fields=[FieldData(label="中文名称", value="新产品A", row=1),
-                                        FieldData(label="供应商名称", value="英德市国彩精细化工有限公司", row=2)])
-    p.sections[3] = SectionData(number=3, title="成分/组成资料", full_title="3. 成分/组成资料",
-                                components=[ComponentData(name="丙烯酸共聚物", cas="商业机密", conc=">40")])
-    c = compare(t, p)
-    # 中文名称: 产品覆盖
-    target = [d for d in c.decisions if d.label == "中文名称"]
-    assert target and target[0].write_source == "product"
-    # 供应商名称: 值一致 → template
-    target2 = [d for d in c.decisions if d.label == "供应商名称"]
-    assert target2 and target2[0].write_source == "template"
-    # 模板有旧值但产品未提供的字段 → review 残留风险
-    assert c.residue_risks, "应有模板残留风险项"
-
-
 def test_real_pu1034_inline_section():
     """真实文件: S3 表内嵌 S4 节标题, 读取器应正确切分."""
     if not PU1034.exists():
@@ -421,77 +379,6 @@ def test_section1_letter_prefix_real_file():
     assert r.has_section(1), f"BL-8085 不应缺失第1节: {sorted(r.sections)}"
     assert not any("缺失第1节" in a.message for a in r.anomalies)
 
-
-def test_overwrite_keeps_format():
-    """覆写单元格文本保留格式 (字号/字体/粗体), 且读取值更新."""
-    from docx import Document
-    from core.overwrite import copy_template, overwrite_doc
-    import tempfile
-    with tempfile.TemporaryDirectory() as td:
-        out = Path(td) / "overwrite.docx"
-        copy_template(out)
-        # 覆写: 普通节 S1 中文名称 (行号2) + 成分节 S3 成分0 (索引0)
-        overwrite_doc(out, {
-            (1, 2, 1): "水性羟基聚酯-丙烯酸分散体 PEA-9999",
-            (3, 0, 1): "123-45-6",
-            (3, 0, 2): "30-40",
-        }, out, component_index=True)
-        # 读取验证
-        r = read_msds(out)
-        assert any(f.value == "水性羟基聚酯-丙烯酸分散体 PEA-9999"
-                   for f in r.section(1).fields if f.label == "中文名称")
-        comps = r.section(3).components
-        assert comps[0].name == "丙烯酸共聚物" and comps[0].cas == "123-45-6" and comps[0].conc == "30-40"
-        # 格式保留
-        d = Document(str(out))
-        cell = d.tables[0].rows[2].cells[1]
-        run = cell.paragraphs[0].runs[0]
-        assert run.font.size is not None, "覆写后 run 应保留字号格式"
-        # 未覆写内容保留
-        assert any(c.name == "去离子水" and c.cas == "7732-18-5" for c in comps)
-
-
-def test_overwrite_component_index_and_header_safe():
-    """成分索引覆写不破坏成分表头; 普通节字段行不被当成分表处理."""
-    from docx import Document
-    from core.overwrite import copy_template, overwrite_doc
-    import tempfile
-    with tempfile.TemporaryDirectory() as td:
-        out = Path(td) / "ow2.docx"
-        copy_template(out)
-        # 同时覆写普通节字段行 + 成分节, 验证 auto 区分
-        overwrite_doc(out, {
-            (1, 3, 1): "涂料（覆写）",          # S1 产品使用建议 (行号3)
-            (3, 1, 2): "> 50",                 # S3 成分1 含量
-        }, out, component_index=True)
-        r = read_msds(out)
-        assert any(f.label == "1.2产品使用建议和使用限制" and "涂料" in f.value
-                   for f in r.section(1).fields)
-        comps = r.section(3).components
-        assert comps[1].name == "去离子水" and comps[1].conc == ">50"
-        # 表头未破坏
-        tb = Document(str(out)).tables[2]
-        assert "化学品名称" in tb.rows[3].cells[0].text
-
-
-def test_add_delete_table_row_inherits_format():
-    """添加/删除表格行: 新行复制模板行格式."""
-    from docx import Document
-    from core.overwrite import _find_table, add_table_row, delete_table_row
-    doc = Document(str(TEMPLATE))
-    tb, sec_row = _find_table(doc, 3)
-    n0 = len(tb.rows)
-    new = add_table_row(tb, index=5, template_row=4)
-    assert len(tb.rows) == n0 + 1
-    assert len(new.cells) == len(tb.rows[4].cells), "新行列数应与模板行一致"
-    # 新行格式 == 模板行格式
-    def fmt_of(row, col):
-        p = row.cells[col].paragraphs[0]
-        r = p.runs[0] if p.runs else None
-        return r.font.size if r else None
-    assert fmt_of(tb.rows[5], 0) == fmt_of(tb.rows[4], 0)
-    delete_table_row(tb, 5)
-    assert len(tb.rows) == n0
 
 
 if __name__ == "__main__":

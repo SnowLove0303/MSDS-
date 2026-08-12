@@ -6,7 +6,7 @@ import re
 import tkinter as tk
 from tkinter import ttk
 
-from core.extract import BigTitleNode, SectionNode, build_hierarchy
+from core.extract import BigTitleNode, SectionNode, build_hierarchy, search_tree
 from core.structure import ParseResult
 
 from .theme import (
@@ -40,11 +40,33 @@ class SectionTree(ttk.Frame):
         self._items: dict[int, str] = {}
 
     def set_result(self, result: ParseResult):
+        """加载完整三级树 (保存原始节点, 供检索过滤后恢复)."""
+        self._result = result
+        self._full_nodes = build_hierarchy(result)
+        self._apply_nodes(self._full_nodes, open_sec=True)
+
+    def filter_by(self, query: str, scope: str = "all"):
+        """按关键词过滤导航树: 命中节/字段保留, 其余隐藏.
+
+        保留三级父子关系 (命中字段连带其节/大标题一起显示).
+        query 为空 → 恢复完整树.
+        """
+        if not self._result:
+            return
+        q = query.strip()
+        if not q:
+            self._apply_nodes(self._full_nodes, open_sec=True)
+            return
+        nodes = search_tree(self._full_nodes, q, scope)
+        self._apply_nodes(nodes, open_sec=True)
+
+    def _apply_nodes(self, nodes, open_sec: bool = True):
+        """用给定节点重建导航树 (节号映射随之更新)."""
         self.tree.delete(*self.tree.get_children())
         self._items.clear()
-        # 三级父子级导航树: 节 → 大标题/小标题 → 字段 (对应 GUI 表格三列)
-        for sn in build_hierarchy(result):
-            iid = self.tree.insert("", "end", text=f"{sn.number}. {sn.title}", open=False)
+        for sn in nodes:
+            iid = self.tree.insert("", "end", text=f"{sn.number}. {sn.title}",
+                                   open=open_sec)
             self._items[sn.number] = iid
             self._build_subtree(iid, sn)
 
@@ -432,7 +454,7 @@ class SectionView(ttk.Frame):
     # ---------- 值编辑 (数据库模式) ----------
 
     def _edit_value(self, key: tuple[int, str, int], current: str):
-        """双击值单元格 → 回调上层 (由 DbView 弹编辑框并写库)."""
+        """双击值单元格 → 回调上层 (由上层弹编辑框处理)."""
         if self._on_value_edit:
             self._on_value_edit(key, current)
 

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""主窗口: 导入 → 读取 → 显示 → 覆写指向 四段式流程."""
+"""主窗口: 导入 → 读取 → 显示 → 检索 结构浏览."""
 from __future__ import annotations
 
 import json
@@ -8,26 +8,22 @@ from datetime import datetime
 from pathlib import Path
 from tkinter import filedialog, messagebox, ttk
 
-from core.compare import compare
 from core.docx_reader import TEMPLATE_PATH, read_msds
+from core.extract import search_tree
 from core.structure import ParseResult
 
-from .compare_view import CompareView
-from .db_view import DbView  # 原总库视图保留 (不删, 供回退)
-from .screened_view import DEFAULT_DB as _DEFAULT_SCREENED_DB
-from .screened_view import ScreenedView
 from .section_tree import SectionTree, SectionView
 from .theme import COLOR_ACCENT, COLOR_BG, COLOR_BORDER, COLOR_PANEL, COLOR_TEXT
 
 
 # 版本指纹: 每次大版本变更时递增, 显示在窗口标题与工具栏徽章, 便于确认运行的是最新版
-_APP_VERSION = "v3.3"
+_APP_VERSION = "v4.0"
 
 
 class MainWindow(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title(f"MSDS 结构读取 · 导入 - 读取 - 显示 - 覆写指向 / MSDS 总库 [{_APP_VERSION}]")
+        self.title(f"MSDS 结构读取 · 导入 - 读取 - 显示 - 检索 [{_APP_VERSION}]")
         self.geometry("1380x860")
         self.configure(bg=COLOR_BG)
         self.minsize(1100, 700)
@@ -46,11 +42,6 @@ class MainWindow(tk.Tk):
 
         # 启动时自动加载标准模板
         self._load_template()
-        # 启动时自动打开正式筛选库 (若存在)
-        if _DEFAULT_SCREENED_DB.exists():
-            self.screened.open_db(str(_DEFAULT_SCREENED_DB))
-            # 打开库后默认切到「正式筛选库」Tab (三表父子级目录)
-            self.notebook.select(2)
 
     # ---------- UI 构建 ----------
 
@@ -67,13 +58,27 @@ class MainWindow(tk.Tk):
 
         btn("📥 导入模板", self._pick_template)
         btn("📄 导入产品 MSDS", self._pick_product)
-        btn("🔄 覆写指向分析", self._run_compare)
         tk.Button(bar, text="📤 导出 JSON", command=self._export_json,
                   bg="#E8EAED", fg=COLOR_TEXT, relief="flat", padx=14, pady=4,
                   font=("Microsoft YaHei", 10)).pack(side="left", padx=(0, 8))
         tk.Button(bar, text="↩️ 恢复默认模板", command=self._restore_default_template,
                   bg="#E8EAED", fg=COLOR_TEXT, relief="flat", padx=14, pady=4,
                   font=("Microsoft YaHei", 10)).pack(side="left", padx=(0, 8))
+
+        # 检索框: 输入关键词 → 过滤左侧目录树 (命中节/字段高亮), 右侧表格跟随
+        tk.Label(bar, text="🔍 检索:", bg=COLOR_PANEL, fg=COLOR_TEXT,
+                 font=("Microsoft YaHei", 10)).pack(side="left", padx=(14, 2))
+        self.search_var = tk.StringVar()
+        self.search_entry = tk.Entry(bar, textvariable=self.search_var,
+                                     font=("Microsoft YaHei", 10), width=24)
+        self.search_entry.pack(side="left", padx=(0, 4))
+        self.search_entry.bind("<Return>", lambda _e: self._apply_search())
+        tk.Button(bar, text="检索", command=self._apply_search,
+                  bg="#4285F4", fg="white", relief="flat", padx=10, pady=4,
+                  font=("Microsoft YaHei", 10), cursor="hand2").pack(side="left", padx=(0, 4))
+        tk.Button(bar, text="✕", command=self._clear_search,
+                  bg="#E8EAED", fg=COLOR_TEXT, relief="flat", padx=8, pady=4,
+                  font=("Microsoft YaHei", 10), cursor="hand2").pack(side="left")
 
         self.tpl_var = tk.StringVar(value="模板: 未加载")
         tk.Label(bar, textvariable=self.tpl_var, bg=COLOR_PANEL, fg=COLOR_TEXT,
@@ -90,28 +95,17 @@ class MainWindow(tk.Tk):
         body = tk.Frame(self, bg=COLOR_BG)
         body.pack(fill="both", expand=True)
 
-        # 左侧导航
+        # 左侧导航 (目录)
         self.nav = SectionTree(body, on_select=self._show_section)
         self.nav.pack(side="left", fill="y", padx=(6, 3), pady=6)
 
-        # 右侧 Notebook: 结构显示 / 覆写指向
-        self.notebook = ttk.Notebook(body)
-        self.notebook.pack(side="left", fill="both", expand=True, padx=(3, 6), pady=6)
+        # 右侧容器 (与目录平行, 表格视图占满右侧)
+        right = tk.Frame(body, bg=COLOR_BG)
+        right.pack(side="left", fill="both", expand=True, padx=(3, 6), pady=6)
 
-        # Tab1: 16节结构化显示
-        self.section_view = SectionView(self.notebook)
-        self.notebook.add(self.section_view, text="16 节结构")
-
-        # Tab2: 覆写指向
-        self.compare_view = CompareView(self.notebook)
-        self.notebook.add(self.compare_view, text="覆写指向分析")
-
-        # Tab3: 正式筛选库 (中文/英文/宽表 三表父子级目录)
-        self.screened = ScreenedView(self.notebook, on_status=self._db_status)
-        self.notebook.add(self.screened, text="正式筛选库")
-
-        # 切到总库 Tab 时隐藏主窗口左侧 16 节导航树 (双目录原则: 总库内 左=型号 右=节)
-        self.notebook.bind("<<NotebookTabChanged>>", self._on_main_tab_changed)
+        # 16节结构化显示 (表格视图, 占据右侧全部空间)
+        self.section_view = SectionView(right)
+        self.section_view.pack(fill="both", expand=True)
 
     def _build_statusbar(self):
         self.status_var = tk.StringVar(value="就绪")
@@ -119,22 +113,6 @@ class MainWindow(tk.Tk):
         bar.pack(fill="x", side="bottom")
         tk.Label(bar, textvariable=self.status_var, bg=COLOR_PANEL, fg="#5F6368",
                  font=("Microsoft YaHei", 9), anchor="w", padx=10, pady=3).pack(fill="x")
-
-    def _db_status(self, msg: str):
-        """总库 Tab 状态 → 主窗口状态栏."""
-        self.status_var.set(msg)
-
-    def _on_main_tab_changed(self, _ev):
-        """双目录: 切到「正式筛选库」Tab 时隐藏主窗口左侧 16 节导航树,
-        避免 导航树|型号|字段 三目录重叠; 其他 Tab 恢复显示."""
-        try:
-            idx = self.notebook.index(self.notebook.select())
-        except (tk.TclError, ValueError):
-            return
-        if idx == 2:   # 正式筛选库 (三表父子级目录自带左树)
-            self.nav.pack_forget()
-        else:
-            self.nav.pack(side="left", fill="y", padx=(6, 3), pady=6)
 
     # ---------- 动作 ----------
 
@@ -179,7 +157,7 @@ class MainWindow(tk.Tk):
             s = self.product.summary()
             self.status_var.set(
                 f"✅ 产品已读取: {s['sections']}节 / {s['fields']}字段 / {s['components']}成分 "
-                f"/ {s['anomalies']}异常  (点击『覆写指向分析』标注可覆写字段)"
+                f"/ {s['anomalies']}异常  (工具栏检索框可按关键词过滤目录)"
             )
             if s["anomalies"]:
                 self._show_anomalies(self.product)
@@ -199,9 +177,9 @@ class MainWindow(tk.Tk):
         return self.template
 
     def _restore_default_template(self):
-        """恢复显示默认模板 (内化副本 MSDS_CN 国彩 模板.docx), 并重置比对基准.
+        """恢复显示默认模板 (内化副本 MSDS_CN 国彩 模板.docx), 重置显示源与字段权限标注.
 
-        真实功能: 重新读取内化模板文件覆盖 self.template, 显示源切回模板,
+        重新读取内化模板文件覆盖 self.template, 显示源切回模板,
         字段权限标注复位为模板默认. 已导入的产品保留 (比对仍可用), 但界面
         回到 16 节结构页显示模板内容.
         """
@@ -216,7 +194,6 @@ class MainWindow(tk.Tk):
             self.nav.set_result(self.template)
             self.nav.select(1)
             self._show_section(1)
-            self.notebook.select(0)   # 切回 16 节结构页
             s = self.template.summary()
             self.status_var.set(
                 f"✅ 已恢复显示默认模板: {s['sections']}节 / {s['tables']}表 / "
@@ -233,36 +210,31 @@ class MainWindow(tk.Tk):
             f"已标注字段权限: 第{sec}节 [{kind}#{idx}] → {'可编辑' if new_state else '不可编辑'}"
         )
 
-    def _run_compare(self):
-        if not self.template:
-            messagebox.showwarning("缺少模板", "请先导入模板")
-            return
-        if not self.product:
-            messagebox.showwarning("缺少产品", "请先导入产品 MSDS")
-            return
-        cr = compare(self.template, self.product)
-        # 覆写建议: 模板残留风险(review)字段默认锁为不可编辑, 防误覆盖; 用户可手动改
-        self._apply_review_locks(cr)
-        self.compare_view.show_compare(cr)
-        self._show_section(self._current_section)
-        self.notebook.select(1)   # 切到比对页展示自动建议
-        self.status_var.set(
-            f"✅ 覆写指向分析完成: 共 {len(cr.decisions)} 字段, {len(cr.residue_risks)} 处残留风险 — "
-            f"比对建议见本页, 字段权限请到『16 节结构』页点击徽章手动标注"
-        )
+    # ---------- 检索 ----------
 
-    def _apply_review_locks(self, cr):
-        """把 review (模板有旧值但产品未提供) 的字段默认设为不可编辑."""
-        for d in cr.residue_risks:
-            sec = self.template.sections.get(d.section)
-            if not sec:
-                continue
-            for i, f in enumerate(sec.fields):
-                if f.label == d.label:
-                    key = (d.section, "field", i)
-                    if key not in self._editable_overrides:
-                        self._editable_overrides[key] = False
-                    break
+    def _apply_search(self):
+        """按关键词检索当前显示源, 过滤左侧目录树 (命中节/字段保留)."""
+        src = self._display_source_of()
+        if not src:
+            self.status_var.set("⚠️ 请先导入模板或产品 MSDS 再检索")
+            return
+        q = self.search_var.get()
+        if not q.strip():
+            self._clear_search()
+            return
+        self.nav.filter_by(q)
+        # 选中并定位到首个命中节
+        if self._current_section in self.nav._items:
+            self.nav.select(self._current_section)
+            self._show_section(self._current_section)
+        self.status_var.set(f"🔍 检索「{q}」: 目录已过滤为命中项 — 点左侧节查看内容")
+
+    def _clear_search(self):
+        """清空检索, 恢复完整目录树."""
+        self.search_var.set("")
+        self.nav.filter_by("")
+        self._show_section(self._current_section)
+        self.status_var.set("检索已清除, 目录恢复完整")
 
     def _show_anomalies(self, result: ParseResult):
         msg = "\n".join(f"[{'⚠️' if a.level=='warn' else '❌'}] S{a.section}: {a.message}"
@@ -314,18 +286,6 @@ class MainWindow(tk.Tk):
                      "editable": self._editable_overrides.get(
                          (num, "component", i), c.editable)}
                     for i, c in enumerate(sec.components)
-                ],
-            }
-        if self.template and self.product:
-            cr = compare(self.template, self.product)
-            data["overwrite_analysis"] = {
-                "template": self.template.file_name,
-                "product": self.product.file_name,
-                "decisions": [
-                    {"section": d.section, "label": d.label,
-                     "template_value": d.template_value, "product_value": d.product_value,
-                     "write_source": d.write_source, "reason": d.reason}
-                    for d in cr.decisions
                 ],
             }
         Path(path).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
