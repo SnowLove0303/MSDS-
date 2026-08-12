@@ -73,8 +73,8 @@ def _norm_label(num: int, kind: str, label: str) -> str:
     return label
 
 
-def _collect_columns(results, max_comp: int) -> list[tuple[int, list[tuple[str, str]]]]:
-    """收集每节列组 (保持首见顺序): (节号, [(kind, label), ...]).
+def _collect_columns(results, max_comp: int) -> list[tuple[int, list[tuple[str, str, str]]]]:
+    """收集每节列组 (保持首见顺序): (节号, [(kind, label, seq), ...]).
 
     kind: field / note / comp  (sub 分组标签不单独成列, 直接展示其子字段)
     规则:
@@ -82,19 +82,22 @@ def _collect_columns(results, max_comp: int) -> list[tuple[int, list[tuple[str, 
       - 值全空的 field 列剔除 (父级分组标签如 供应商信息/物质或混合物分类,
         装饰性标签如 物料安全数据表 长标题) — 其子字段信息不丢失
       - S9 field 标签归一化合并同义列 (闪点（℃）与闪点 归并为 闪点)
+      - seq: 该列多数型号使用的序号 (同义列跨型号序号不一致时取众数, 供表头显示)
     """
-    # 候选列: key=(num, kind, norm_label) → {labels:原标签集, any_value:是否任一型号有值}
+    # 候选列: key=(num, kind, norm_label) → {labels, any_value, seqs:序号计数器}
     cand: dict[tuple[int, str, str], dict] = {}
     order: list[tuple[int, str, str]] = []
 
-    def add(num: int, kind: str, label: str, has_value: bool):
+    def add(num: int, kind: str, label: str, has_value: bool, seq: str = ""):
         nlabel = _norm_label(num, kind, label)
         key = (num, kind, nlabel)
         if key not in cand:
-            cand[key] = {"labels": set(), "any_value": False}
+            cand[key] = {"labels": set(), "any_value": False, "seqs": {}}
             order.append(key)
         cand[key]["labels"].add(label)
         cand[key]["any_value"] |= has_value
+        if seq:
+            cand[key]["seqs"][seq] = cand[key]["seqs"].get(seq, 0) + 1
 
     for r in results:
         for num in sorted(r.sections):
@@ -109,7 +112,7 @@ def _collect_columns(results, max_comp: int) -> list[tuple[int, list[tuple[str, 
                     if row.span and not row.label.strip():
                         add(num, "note", "(总结句)", has_value)
                     else:
-                        add(num, "field", row.label, has_value)
+                        add(num, "field", row.label, has_value, row.seq)
                 elif row.kind == "note":
                     add(num, "note", "(总结句)", has_value)
             # 成分表 → 展开为每成分三列 (多成分: 全部展开, 空型号留空)
@@ -119,13 +122,21 @@ def _collect_columns(results, max_comp: int) -> list[tuple[int, list[tuple[str, 
                     add(num, "comp", f"成分{i+1}CAS", True)
                     add(num, "comp", f"成分{i+1}含量", True)
 
+    def _major_seq(seqs: dict[str, int]) -> str:
+        """出现频率最高的序号 (众数), 无序号返回空."""
+        if not seqs:
+            return ""
+        return max(seqs, key=lambda s: (seqs[s], -len(s))) if seqs else ""
+
     # 过滤: 剔除值全空的 field / note 列 (无任何型号有值 → 空列)
-    sec_cols: dict[int, list[tuple[str, str]]] = {}
+    sec_cols: dict[int, list[tuple[str, str, str]]] = {}
     for key in order:
         num, kind, nlabel = key
         if kind != "comp" and not cand[key]["any_value"]:
             continue
-        sec_cols.setdefault(num, []).append((kind, nlabel))
+        # comp 列 (成分) 无序号; field/note 取众数序号
+        seq = _major_seq(cand[key]["seqs"]) if kind != "comp" else ""
+        sec_cols.setdefault(num, []).append((kind, nlabel, seq))
     return [(n, sec_cols[n]) for n in sorted(sec_cols)]
 
 
@@ -200,10 +211,12 @@ def build_pivot_table(in_dir: str | Path, out_path: str | Path) -> dict:
     span_ranges: list[tuple[int, int, str]] = []   # (start_col, end_col, 节标题)
     for num, cols in columns:
         start = col
-        for kind, label in cols:
-            c = ws.cell(2, col, label)
+        for kind, label, seq in cols:
+            # 第二行: 序号 + 标签 (序号取该列多数型号的编号; 无序号只显示标签)
+            head = f"{seq} {label}".strip() if seq else label
+            c = ws.cell(2, col, head)
             c.font = Font(name=FONT, size=9, bold=True)
-            c.fill = SUB_FILL if kind == "sub" else TAG_FILL
+            c.fill = TAG_FILL
             c.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
             c.border = BORDER
             col += 1
@@ -244,7 +257,7 @@ def build_pivot_table(in_dir: str | Path, out_path: str | Path) -> dict:
 
         col = 2
         for num, cols in columns:
-            for kind, label in cols:
+            for kind, label, seq in cols:
                 v = _clean(_value_of(r, num, kind, label))
                 # S9 理化特性: 无对应列数据 → 明确标注 无数据 (方便后续数据库格式规范)
                 if not v and num == 9 and kind == "field":
