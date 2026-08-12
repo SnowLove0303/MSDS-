@@ -891,17 +891,22 @@ def _parse_field_row(cells: list[str], sec: SectionData,
                      bold_cells: dict[int, set[int]] | None = None) -> None:
     first = cells[0]
     bold0 = set((bold_cells or {}).get(0, ()))   # cells[0] 内加粗段索引
-    # 无标题行: 首格空、次列有内容 → 内容按原文表格位置放文本列 (内容列),
-    # 呈现为独立字段 (label 空, 序号/标题列留空, 内容列有值), 如 BL-8085 S5
-    # 特殊危害后的补充说明行 ['', '在着火或爆炸情况下，不要吸进烟尘。'].
-    # 连续空首格行 (PA-4408 S7 跨行续行) 合并为一个块, 避免内容碎片化.
+    # 无标题行: 首格空、次列有内容 (['', '内容']) → 内容在字段列.
+    # 父子级归属判别: 内容在字段列 = 前一个带标签字段的延续内容 (如
+    # S5 '物质或混合物的特殊危害' 后 ['', '在着火或爆炸情况下，不要吸进烟尘。'],
+    # 与原文档一致, 该句与 '燃烧时释放一氧化碳...' 同级同属 5.3),
+    # 因此并入前一个字段的 value (换行分隔), 而非独立成通栏跨列行.
+    # 只有内容出现在首格/单列 (['内容', '']) 才判为独立通栏总结句 (见下).
     if not first.strip():
         content = " / ".join(c.strip() for c in cells[1:] if c.strip()).strip()
         if content:
-            if sec.fields and not sec.fields[-1].label:
-                sec.fields[-1].value += "\n" + content   # 连续无标题行合并
+            if sec.fields:
+                # 属于父子级延续: 并入最近字段 (无论其是否带标签), 保留原换行
+                if sec.fields[-1].value:
+                    sec.fields[-1].value += "\n"
+                sec.fields[-1].value += content
             else:
-                # 无标题行: 首格空、次列有内容 → 独立字段 (label 空, 内容列可编辑覆写)
+                # 兜底: 节首个字段即无标题 → 独立字段 (全库未出现)
                 sec.fields.append(FieldData(label="", value=content))
                 sec.order.append("field")
         return

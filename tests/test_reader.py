@@ -455,7 +455,10 @@ def test_s9_composite_label_not_split():
 # ============================================================
 
 def test_no_title_row_blank_first_cell():
-    """无标题行: 首格空、次列有内容 → 独立字段 (label 空, value 在内容列)."""
+    """无标题行 (['', '内容']): 属于前一个带标签字段的延续内容 → 并入父级字段.
+
+    内容出现在字段列 (第二列) → 父子级归属判别, 与 '燃烧时释放一氧化碳...'
+    同级同属 5.3, 而非独立成跨列通栏行."""
     from core.docx_reader import _parse_field_row
     from core.structure import SectionData
     sec = SectionData(number=5, title="消防措施", full_title="5.消防措施")
@@ -464,13 +467,13 @@ def test_no_title_row_blank_first_cell():
     _parse_field_row(["消防预防措施和保护设备：", "消防人员必须佩戴自供气式呼吸器。"], sec)
     labels = [f.label for f in sec.fields]
     values = [f.value for f in sec.fields]
-    assert labels == ["物质或混合物的特殊危害", "", "消防预防措施和保护设备"], labels
-    assert values[1] == "在着火或爆炸情况下，不要吸进烟尘。", values
-    assert sec.order == ["field", "field", "field"]
+    assert labels == ["物质或混合物的特殊危害", "消防预防措施和保护设备"], labels
+    assert "燃烧时释放一氧化碳、二氧化碳、氮氧化物和少量的氰化氢\n在着火或爆炸情况下，不要吸进烟尘。" in values[0], values
+    assert sec.order == ["field", "field"]
 
 
 def test_no_title_row_continuous_merge():
-    """连续空首格行 (PA-4408 S7 跨行续行) 合并为一个块, 不碎片化."""
+    """连续空首格行 (PA-4408 S7 跨行续行): 全部并入父级字段 (7.1), 不碎片化."""
     from core.docx_reader import _parse_field_row
     from core.structure import SectionData
     sec = SectionData(number=7, title="操作和储存", full_title="7.操作和储存")
@@ -478,13 +481,13 @@ def test_no_title_row_continuous_merge():
     _parse_field_row(["", "避免与皮肤和眼睛接"], sec)
     _parse_field_row(["", "触。"], sec)
     _parse_field_row(["", "远离食物、饮料和烟草。"], sec)
-    assert len(sec.fields) == 2, f"连续空首格应合并进首个无标题行: {[f.label for f in sec.fields]}"
-    assert sec.fields[1].label == ""
-    assert "避免与皮肤和眼睛接\n触。\n远离食物、饮料和烟草。" in sec.fields[1].value, sec.fields[1].value
+    assert len(sec.fields) == 1, f"连续空首格应并入父级 7.1: {[f.label for f in sec.fields]}"
+    assert sec.fields[0].label == "7.1 安全操作防范"
+    assert "操作时遵守化学品的常见预防措施。\n避免与皮肤和眼睛接\n触。\n远离食物、饮料和烟草。" in sec.fields[0].value, sec.fields[0].value
 
 
 def test_no_title_row_real_bl8085():
-    """真实文件: BL-8085 S5 特殊危害后无标题行, 内容按原文位置放文本列."""
+    """真实文件: BL-8085 S5 '在着火或爆炸情况下' 应并入 5.3 特殊危害, 非独立跨列."""
     from core.docx_reader import read_msds
     p = Path(r"F:\正式项目与模块化内容\Word 覆写模块\数据库\MSDS\中文\国彩 guocai\BL-8085 msds_CN 国彩.docx")
     if not p.exists():
@@ -493,9 +496,11 @@ def test_no_title_row_real_bl8085():
     s5 = r.section(5)
     rows = [x for x in s5.iter_rows() if x.kind == "field"]
     nohead = [x for x in rows if not x.label]
-    assert nohead, "BL-8085 S5 应有无标题行"
-    assert nohead[0].value == "在着火或爆炸情况下，不要吸进烟尘。", nohead[0]
-    assert nohead[0].editable is True, "无标题行内容列应默认可编辑 (可覆写)"
+    assert not nohead, "无标题行应并入父级字段, 不再存在 label 空字段"
+    hazard = [x for x in rows if x.label == "物质或混合物的特殊危害"]
+    assert hazard, "S5 应有 5.3 特殊危害字段"
+    assert "在着火或爆炸情况下，不要吸进烟尘。" in hazard[0].value, hazard[0].value
+    assert hazard[0].editable is True, "延续内容并入父级字段, 内容列应默认可编辑 (可覆写)"
 
 
 # ============================================================
