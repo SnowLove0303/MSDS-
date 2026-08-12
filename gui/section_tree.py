@@ -6,7 +6,7 @@ import re
 import tkinter as tk
 from tkinter import ttk
 
-from core.extract import BigTitleNode, SectionNode, build_hierarchy, search_tree
+from core.extract import build_hierarchy, search_tree
 from core.structure import ParseResult
 
 from .theme import (
@@ -61,32 +61,13 @@ class SectionTree(ttk.Frame):
         self._apply_nodes(nodes, open_sec=True)
 
     def _apply_nodes(self, nodes, open_sec: bool = True):
-        """用给定节点重建导航树 (节号映射随之更新)."""
+        """用给定节点重建导航树 (只显示节一级, 节号映射随之更新)."""
         self.tree.delete(*self.tree.get_children())
         self._items.clear()
         for sn in nodes:
             iid = self.tree.insert("", "end", text=f"{sn.number}. {sn.title}",
                                    open=open_sec)
             self._items[sn.number] = iid
-            self._build_subtree(iid, sn)
-
-    def _build_subtree(self, parent: str, sn: SectionNode):
-        """二级(大标题) + 三级(字段) 节点."""
-        for b in sn.big_titles:
-            bt_iid = self.tree.insert(parent, "end", text=f"  {b.full_title()}",
-                                      open=False)
-            for f in b.children:
-                self.tree.insert(bt_iid, "end",
-                                 text=self._leaf_text(f.label, f.value))
-        for f in sn.direct_fields:
-            self.tree.insert(parent, "end", text=self._leaf_text(f.label, f.value))
-
-    @staticmethod
-    def _leaf_text(label: str, value: str) -> str:
-        """三级字段节点文本 (截断到 ~40 字符)."""
-        t = f"{label}: {value}" if label else value
-        t = t.replace("\n", " ")
-        return "    " + (t if len(t) <= 40 else t[:39] + "…")
 
     def select(self, num: int):
         iid = self._items.get(num)
@@ -95,19 +76,16 @@ class SectionTree(ttk.Frame):
             self.tree.see(iid)
 
     def _on_select(self, _event):
+        """目录只放节: 选中任一节点直接映射到所属节号."""
         if self.on_select:
             sel = self.tree.selection()
             if not sel:
                 return
             iid = sel[0]
-            # 子节点 (二级/三级) 选中时向上找所属节
-            while iid and iid not in self._items.values():
-                iid = self.tree.parent(iid)
-            if iid:
-                for n, item in self._items.items():
-                    if item == iid:
-                        self.on_select(n)
-                        break
+            for n, item in self._items.items():
+                if item == iid:
+                    self.on_select(n)
+                    break
 
 
 class SectionView(ttk.Frame):
