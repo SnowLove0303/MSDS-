@@ -31,6 +31,7 @@ from typing import Iterable
 
 from .docx_reader import read_msds
 from .pivot_table import build_pivot_table as export_excel_table
+from .pivot_table import build_single_pivot as export_single_excel
 from .structure import ParseResult, SectionData, SectionRow
 
 

@@ -200,6 +200,36 @@ def build_pivot_table(in_dir: str | Path, out_path: str | Path) -> dict:
     max_comp = max((len(s.components)
                     for r in results for s in r.sections.values()
                     if s.is_component_table), default=0)
+    return _write_pivot(results, ok_files, max_comp, out_path, failed)
+
+
+def build_single_pivot(result, file_name: str, out_path: str | Path) -> dict:
+    """生成单个 ParseResult 的透视总表 (标准格式, 与目录级 build_pivot_table 一致).
+
+    供 GUI「导出当前 MSDS/模板」使用: 把当前显示源 (产品/模板) 的结构
+    按 型号×节/标签 透视导出, 第一行 Section / 第二行 序号+标签 /
+    A 列型号 / A1·A2 留空, 第三行起为该文件的数据行.
+    """
+    results = [result]
+    ok_files = [Path(file_name) if not isinstance(file_name, Path) else file_name]
+    max_comp = max((len(s.components)
+                    for s in result.sections.values()
+                    if s.is_component_table), default=0)
+    return _write_pivot(results, ok_files, max_comp, out_path, failed=[])
+
+
+def _write_pivot(results, ok_files, max_comp: int,
+                 out_path: str | Path, failed: list[str]) -> dict:
+    """核心: 用已读取的 results 生成标准透视总表并保存.
+
+    标准格式:
+      - 第一行: Section 节标题 (合并单元格)
+      - 第二行: 序号 + 标签 (sub 分组不单独成列)
+      - A 列: 型号; A1 / A2 留空
+      - 第三行起: 每型号一行, 按 节→标签 对照填入
+      - S9: 同义标签归一化, 空值标「无数据」
+      - 成分表: 每成分 名称/CAS/含量 三列展开
+    """
     columns = _collect_columns(results, max_comp)
 
     wb = Workbook()

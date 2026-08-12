@@ -9,7 +9,7 @@ from pathlib import Path
 from tkinter import filedialog, messagebox, ttk
 
 from core.docx_reader import TEMPLATE_PATH, read_msds
-from core.extract import export_excel_table, search_tree
+from core.extract import export_excel_table, export_single_excel, search_tree
 from core.structure import ParseResult
 
 from .section_tree import SectionTree, SectionView
@@ -63,6 +63,9 @@ class MainWindow(tk.Tk):
                   font=("Microsoft YaHei", 10)).pack(side="left", padx=(0, 8))
         tk.Button(bar, text="📊 导出 Excel 库表", command=self._export_excel_table,
                   bg="#1F4E79", fg="white", relief="flat", padx=14, pady=4,
+                  font=("Microsoft YaHei", 10)).pack(side="left", padx=(0, 8))
+        tk.Button(bar, text="📄 导出当前MSDS/模板", command=self._export_current_excel,
+                  bg="#0B8043", fg="white", relief="flat", padx=14, pady=4,
                   font=("Microsoft YaHei", 10)).pack(side="left", padx=(0, 8))
         tk.Button(bar, text="↩️ 恢复默认模板", command=self._restore_default_template,
                   bg="#E8EAED", fg=COLOR_TEXT, relief="flat", padx=14, pady=4,
@@ -336,3 +339,35 @@ class MainWindow(tk.Tk):
         self.status_var.set(
             f"✅ 导出 Excel 库表: {info['files']} 文件 / {info['cols']} 列")
         messagebox.showinfo("导出完成", msg)
+
+    def _export_current_excel(self):
+        """导出当前显示的 MSDS/模板 的对应信息 Excel (标准透视格式).
+
+        与「导出 Excel 库表」同一标准格式 (第一行 Section / 第二行 序号+标签 /
+        A列型号 / A1·A2留空), 但只针对当前显示源 (产品或模板), 单文件对照.
+        """
+        src = self._display_source_of()
+        if not src:
+            messagebox.showwarning("无内容", "请先导入模板或产品 MSDS")
+            return
+        default = f"{Path(src.file_name).stem}_信息_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
+        out = filedialog.asksaveasfilename(
+            title="导出当前 MSDS/模板 信息", defaultextension=".xlsx",
+            initialfile=default, filetypes=[("Excel 工作簿", "*.xlsx")])
+        if not out:
+            return
+        try:
+            info = export_single_excel(src, src.file_name, Path(out))
+        except PermissionError:
+            messagebox.showerror(
+                "导出失败", f"目标文件被占用, 请关闭已打开的该 Excel 后重试:\n{out}")
+            return
+        except Exception as exc:
+            messagebox.showerror("导出失败", str(exc))
+            return
+        self.status_var.set(
+            f"✅ 导出当前{self._display_source_of().file_name}: "
+            f"{info['cols']}列 / {info['rows']}行")
+        messagebox.showinfo("导出完成",
+                            f"✅ 已导出当前显示的 MSDS/模板 →\n{out}\n\n"
+                            f"{info['cols']} 列 × {info['rows']} 行, {info['sections']} 节")
