@@ -49,23 +49,52 @@ def _model_of(result, file_name: str) -> str:
     return re.split(r"\s+", Path(file_name).stem)[0]
 
 
+# S9 理化特性 同义标签归一化 (消除不同模板/表述造成的空列分裂):
+#   - 去单位/条件括号: 闪点（℃）→闪点, pH值（5%水溶液）→pH值, 表面张力（10%水溶液）→表面张力
+#   - 同义映射: 水中溶解度→水溶性, 蒸发速度→蒸发速率, 最低初沸点→初沸点
+_S9_PAREN = re.compile(r"[（(][^（）()]*[）)]$")
+
+
+def _norm_s9(label: str) -> str:
+    """S9 字段标签归一化: 去单位括号 + 同义映射 (用于合并列)."""
+    lab = _S9_PAREN.sub("", label or "").strip()
+    return {
+        "PH值": "pH值",
+        "蒸发速度": "蒸发速率",
+        "水中溶解度": "水溶性",
+        "最低初沸点": "初沸点",
+    }.get(lab, lab)
+
+
+def _norm_label(num: int, kind: str, label: str) -> str:
+    """按节归一化字段标签 (仅 S9 field 做同义合并, 其余原样)."""
+    if num == 9 and kind == "field":
+        return _norm_s9(label)
+    return label
+
+
 def _collect_columns(results, max_comp: int) -> list[tuple[int, list[tuple[str, str]]]]:
     """收集每节列组 (保持首见顺序): (节号, [(kind, label), ...]).
 
-    kind: sub / field / note / comp
+    kind: field / note / comp  (sub 分组标签不单独成列, 直接展示其子字段)
+    规则:
+      - sub 不单独成列 (页眉/页脚/成分/控制参数/暴露控制 等父级分组)
+      - 值全空的 field 列剔除 (父级分组标签如 供应商信息/物质或混合物分类,
+        装饰性标签如 物料安全数据表 长标题) — 其子字段信息不丢失
+      - S9 field 标签归一化合并同义列 (闪点（℃）与闪点 归并为 闪点)
     """
-    sec_order: list[int] = []
-    sec_cols: dict[int, list[tuple[str, str]]] = {}
-    seen: set[tuple[int, str, str]] = set()
+    # 候选列: key=(num, kind, norm_label) → {labels:原标签集, any_value:是否任一型号有值}
+    cand: dict[tuple[int, str, str], dict] = {}
+    order: list[tuple[int, str, str]] = []
 
-    def add(num: int, kind: str, label: str):
-        if (num, kind, label) in seen:
-            return
-        seen.add((num, kind, label))
-        if num not in sec_order:
-            sec_order.append(num)
-            sec_cols.setdefault(num, [])
-        sec_cols[num].append((kind, label))
+    def add(num: int, kind: str, label: str, has_value: bool):
+        nlabel = _norm_label(num, kind, label)
+        key = (num, kind, nlabel)
+        if key not in cand:
+            cand[key] = {"labels": set(), "any_value": False}
+            order.append(key)
+        cand[key]["labels"].add(label)
+        cand[key]["any_value"] |= has_value
 
     for r in results:
         for num in sorted(r.sections):
@@ -74,29 +103,36 @@ def _collect_columns(results, max_comp: int) -> list[tuple[int, list[tuple[str, 
                 if row.kind == "section":
                     continue
                 if row.kind == "sub":
-                    add(num, "sub", row.label or row.seq or "(标题)")
-                elif row.kind == "field":
+                    continue                      # sub 分组不单独成列
+                has_value = bool(row.value.strip())
+                if row.kind == "field":
                     if row.span and not row.label.strip():
-                        add(num, "note", "(总结句)")
+                        add(num, "note", "(总结句)", has_value)
                     else:
-                        add(num, "field", row.label)
+                        add(num, "field", row.label, has_value)
                 elif row.kind == "note":
-                    add(num, "note", "(总结句)")
-            # 成分表 → 展开为每成分三列
+                    add(num, "note", "(总结句)", has_value)
+            # 成分表 → 展开为每成分三列 (多成分: 全部展开, 空型号留空)
             if sec.is_component_table:
                 for i in range(max_comp):
-                    add(num, "comp", f"成分{i+1}名称")
-                    add(num, "comp", f"成分{i+1}CAS")
-                    add(num, "comp", f"成分{i+1}含量")
-    return [(n, sec_cols[n]) for n in sorted(sec_order)]
+                    add(num, "comp", f"成分{i+1}名称", True)
+                    add(num, "comp", f"成分{i+1}CAS", True)
+                    add(num, "comp", f"成分{i+1}含量", True)
+
+    # 过滤: 剔除值全空的 field / note 列 (无任何型号有值 → 空列)
+    sec_cols: dict[int, list[tuple[str, str]]] = {}
+    for key in order:
+        num, kind, nlabel = key
+        if kind != "comp" and not cand[key]["any_value"]:
+            continue
+        sec_cols.setdefault(num, []).append((kind, nlabel))
+    return [(n, sec_cols[n]) for n in sorted(sec_cols)]
 
 
 def _value_of(result, num: int, kind: str, label: str) -> str:
     sec = result.sections.get(num)
     if not sec:
         return ""
-    if kind == "sub":
-        return ""                      # 小标题自身无内容
     if kind == "note":
         # 该节全部总结句合并 (保持原顺序, 换行连接)
         vals = [row.value for row in sec.iter_rows()
@@ -111,10 +147,12 @@ def _value_of(result, num: int, kind: str, label: str) -> str:
             return ""
         c = sec.components[idx]
         return {"名称": c.name, "CAS": c.cas, "含量": c.conc}[m.group(2)]
-    # field: 精确标签匹配
+    # field: 归一化匹配 (S9 同义列合并), 取首个非空值
+    target = _norm_label(num, "field", label)
     for row in sec.iter_rows():
-        if row.kind == "field" and row.label == label:
-            return row.value
+        if row.kind == "field" and row.label.strip() and row.value.strip():
+            if _norm_label(num, "field", row.label) == target:
+                return row.value
     return ""
 
 
@@ -208,6 +246,9 @@ def build_pivot_table(in_dir: str | Path, out_path: str | Path) -> dict:
         for num, cols in columns:
             for kind, label in cols:
                 v = _clean(_value_of(r, num, kind, label))
+                # S9 理化特性: 无对应列数据 → 明确标注 无数据 (方便后续数据库格式规范)
+                if not v and num == 9 and kind == "field":
+                    v = "无数据"
                 c = ws.cell(ri, col, v)
                 c.font = Font(name=FONT, size=9)
                 c.alignment = Alignment(vertical="top", wrap_text=True)
