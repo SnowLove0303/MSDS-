@@ -17,7 +17,7 @@ from .theme import COLOR_ACCENT, COLOR_BG, COLOR_BORDER, COLOR_PANEL, COLOR_TEXT
 
 
 # 版本指纹: 每次大版本变更时递增, 显示在窗口标题与工具栏徽章, 便于确认运行的是最新版
-_APP_VERSION = "v4.0"
+_APP_VERSION = "v4.1"
 
 
 class MainWindow(tk.Tk):
