@@ -388,6 +388,9 @@ class SectionRow:
     """统一表格行: 序号 | 标题 | 内容 三列 + 编辑状态 (供 GUI 渲染与标注).
 
     序号/标题列为固定区 (不可覆写), 内容列可编辑状态由徽章控制.
+    span=True 表示该行在 Word 表格中是**跨列/通栏**行 (总结句如
+    '该产品无可用的毒理学研究。' 原文档跨列合并), GUI 渲染时内容跨列显示,
+    而非挤在内容列.
     """
     kind: str          # "section" 节标题 | "field" 字段 | "sub" 子标题 | "note" 通栏说明
     seq: str = ""      # 序号列 (如 "8.1", "9.23"; 空 = 无序号)
@@ -395,6 +398,7 @@ class SectionRow:
     value: str = ""    # 内容列
     editable: bool = True
     index: int = 0     # 行内序号 (稳定标识, 供手动标注持久化)
+    span: bool = False  # 跨列/通栏行 (Word 中跨列合并的总结句/说明)
 
 
 _LINE_SUB_RE = re.compile(r"^\d+\.\d+\s*\S+")
@@ -604,7 +608,7 @@ def split_text_block(ln: str, bold_rows: set[int] | None = None,
                 rows[-1].value = (rows[-1].value + "\n" + t).strip()
             else:
                 rows.append(SectionRow(kind="note", label="", value=t,
-                                       editable=True))
+                                       editable=True, span=True))
             continue
         # 改进 B: 单字冒号残行 ('制：') → 并入前一 field/pending 的 label 尾字,
         # 恢复被跨行断开的完整标签 (RA-15000 '产品使用建议和使用限' + '制：'
@@ -672,7 +676,7 @@ def split_text_block(ln: str, bold_rows: set[int] | None = None,
                 rows[-1].value = (rows[-1].value + "\n" + t).strip()
             else:
                 rows.append(SectionRow(kind="note", label="", value=t,
-                                       editable=True))
+                                       editable=True, span=True))
             continue
         # 无冒号短行 → 标题 or 内容?
         # lookahead 前一行: 若前一行是 行尾冒号标题 ("GHS象形图："), 且当前行
@@ -700,7 +704,7 @@ def split_text_block(ln: str, bold_rows: set[int] | None = None,
                     pending_value.append(t)
                 else:
                     rows.append(SectionRow(kind="note", label="", value=t,
-                                           editable=True))
+                                           editable=True, span=True))
                 continue
             nxt_m = _HEADER_END_RE.match(nxt) if nxt else None
             if (nxt_m and not is_bold
@@ -710,7 +714,7 @@ def split_text_block(ln: str, bold_rows: set[int] | None = None,
                     pending_value.append(t)
                 else:
                     rows.append(SectionRow(kind="note", label="", value=t,
-                                           editable=True))
+                                           editable=True, span=True))
                 continue
             flush()                             # 打断上一 pending, 开启新标题
             pending_label = t
@@ -722,7 +726,8 @@ def split_text_block(ln: str, bold_rows: set[int] | None = None,
             prev = rows[-1]
             prev.value = (prev.value + "\n" + t).strip()
             continue
-        rows.append(SectionRow(kind="note", label="", value=t, editable=True))  # 通栏说明
+        rows.append(SectionRow(kind="note", label="", value=t,
+                               editable=True, span=True))  # 通栏说明 (跨列)
     flush()
     return rows
 
@@ -765,7 +770,7 @@ class SectionData:
         """
         rows: list[SectionRow] = [
             SectionRow(kind="section", label=self.full_title, value="",
-                       editable=False, index=0),
+                       editable=False, index=0, span=True),   # 节标题通栏
         ]
         def _block_bold_rows(gidx_offset: int, items: list[str],
                              line_bold: dict[int, set[int]]) -> set[int]:
@@ -805,7 +810,8 @@ class SectionData:
                     seq, lbl = split_seq(f.label)
                     rows.append(SectionRow(kind="field", seq=seq, label=lbl,
                                            value=f.value, editable=f.editable,
-                                           index=fi - 1))
+                                           index=fi - 1,
+                                           span=not lbl.strip()))  # 无标题行 = 跨列总结句
                 else:  # "line"
                     block_lines.append(self.lines[li])
                     li += 1
@@ -816,7 +822,8 @@ class SectionData:
         for i, f in enumerate(self.fields):
             seq, lbl = split_seq(f.label)
             rows.append(SectionRow(kind="field", seq=seq, label=lbl, value=f.value,
-                                   editable=f.editable, index=i))
+                                   editable=f.editable, index=i,
+                                   span=not lbl.strip()))  # 无标题行 = 跨列总结句
         if self.lines:
             block = "\n".join(self.lines)
             bold_rows = _block_bold_rows(0, self.lines, self.line_bold)

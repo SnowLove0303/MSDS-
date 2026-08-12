@@ -110,6 +110,7 @@ class SectionView(ttk.Frame):
         self._result: ParseResult | None = None
         self._value_labels: list[tk.Label] = []
         self._label_labels: list[tk.Label] = []
+        self._span_labels: list[tk.Label] = []   # 跨列/通栏行内容 Label (自动换行)
         self._photos: list = []          # 象形图 PhotoImage 引用 (防 GC 清空)
         self._img_index = 0              # 该节图片分配游标
         self._ri = 0
@@ -163,6 +164,10 @@ class SectionView(ttk.Frame):
             l.configure(wraplength=wrap_lbl)
         for v in self._value_labels:
             v.configure(wraplength=wrap_val)
+        # 跨列/通栏行: 内容几乎占满整表宽 (徽章 + 内框边距除外)
+        wrap_span = max(160, avail - 40)
+        for v in self._span_labels:
+            v.configure(wraplength=wrap_span)
 
     # ---------- 数据渲染 ----------
 
@@ -183,6 +188,7 @@ class SectionView(ttk.Frame):
         self._ri = 0
         self._value_labels = []
         self._label_labels = []
+        self._span_labels = []
         self._photos = []
         self._img_index = 0
 
@@ -281,7 +287,33 @@ class SectionView(ttk.Frame):
             return
         key = (self._num, row.kind, row.index)
         editable = self._editable_of(key, row.editable)
-        self._three_col_row(key, row.seq, row.label, row.value, editable)
+        if row.span:
+            # 跨列/通栏行 (总结句等): 内容跨 序号|标题|内容 三列显示, 与 Word 一致
+            self._span_row(key, row.value, editable)
+        else:
+            self._three_col_row(key, row.seq, row.label, row.value, editable)
+
+    def _span_row(self, key, value, editable: bool):
+        """跨列/通栏行: 徽章 | 内容(跨 序号+标题+内容 三列).
+
+        识别 Word 中跨列合并的总结句/通栏说明 (如 S11 '该产品无可用的毒理学研究。'),
+        内容不再挤在单独内容列, 而是像原文档一样通栏显示.
+        """
+        bg = COLOR_ROW_ALT if (self._table_ri % 2 == 0) else COLOR_PANEL
+        self._badge_cell(key, editable, bg)
+        # 内容跨 列1~3 (序号|标题|内容), 宽度自适应
+        cell = tk.Frame(self._table, bg=bg)
+        cell.grid(row=self._table_ri, column=1, columnspan=3, sticky="nsew",
+                  padx=(0, 0), pady=(0, 1))
+        cell.grid_rowconfigure(0, weight=1)
+        cell.grid_columnconfigure(0, weight=1)
+        fg = COLOR_TEXT if editable else COLOR_GRAY
+        v = tk.Label(cell, text=value, bg=bg, fg=fg,
+                     font=("Microsoft YaHei", 10), anchor="nw", justify="left",
+                     wraplength=560)
+        v.grid(row=0, column=0, sticky="nsew", padx=10, pady=7)
+        self._span_labels.append(v)
+        self._table_ri += 1
 
     def _three_col_row(self, key, seq, label, value, editable: bool):
         """徽章 | 序号 | 标题(锁定) | 内容 四列表格行 (连续表格内).

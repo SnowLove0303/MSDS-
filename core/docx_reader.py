@@ -229,20 +229,43 @@ def _cell_images(cell, doc) -> list[ImageData]:
 
 def _dedupe_row(row, resolver: _NumberingResolver | None = None
                 ) -> tuple[list[str], dict[int, set[int]]]:
-    """行内单元格去重 (处理横向合并).
+    """行内单元格去重 (识别 Word 表格合并结构: gridSpan 横向跨列 + 同名合并).
+
+    识别 Word 表格结构:
+      - 显式 <w:gridSpan val=N> 跨列单元格 → 只保留一次 (合并 N 个逻辑列)
+      - python-docx 对合并单元格在同一行返回重复 _tc → 按 id(_tc) 去重
+      - 兜底: 相邻文本相同 (早期模板用相同文本伪合并) → 去重
 
     返回 (cells, bold_cells): cells[i] 为合并后文本 (含 \\n 多段),
     bold_cells[i] 为该 cell 内加粗段的索引集合 (供标题列归类).
     """
-    items: list[tuple[str, set[int]]] = []
+    seen_tc: list[int] = []
+    items: list[tuple[str, set[int], int]] = []   # (text, bset, grid_span)
     for c in row.cells:
         lines = _cell_lines(c, resolver)
         text = "\n".join(t for t, _ in lines)
         bset = {i for i, (_, b) in enumerate(lines) if b}
-        items.append((text, bset))
+        # 识别显式横向跨列 gridSpan
+        gspan = 1
+        tcPr = c._tc.find(qn('w:tcPr'))
+        gs = tcPr.find(qn('w:gridSpan')) if tcPr is not None else None
+        if gs is not None:
+            try:
+                gspan = int(gs.get(qn('w:val')) or 1)
+            except (TypeError, ValueError):
+                gspan = 1
+        tc_id = id(c._tc)
+        # 合并单元格 (同 _tc) → 只保留一次; 显式 gridSpan>1 也合并
+        if tc_id in seen_tc:
+            continue
+        seen_tc.append(tc_id)
+        if gspan > 1 and items and items[-1][0] == text:
+            # 跨列单元格文本与前一逻辑列相同 → 属同一合并块的延续, 合并
+            continue
+        items.append((text, bset, gspan))
     cells: list[str] = []
     bold_cells: dict[int, set[int]] = {}
-    for i, (text, bset) in enumerate(items):
+    for i, (text, bset, _g) in enumerate(items):
         text = (text or "").strip()
         if not cells or text != cells[-1]:
             cells.append(text)
