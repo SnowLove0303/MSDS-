@@ -8,6 +8,10 @@
   - 按节 / 大标题 / 小标题 / 字段名 / 内容关键字 检索
   - 批量处理多个 MSDS 文件, 统一提取指定字段
   - 导出为 TSV (表格) 或 JSON, 供下游批量清洗/覆写/入库
+  - 标准 Excel 库表导出 (export_excel_table): 固定产出
+    「第一行 Section / 第二行 序号+标签 / A列型号 / A1·A2留空」透视总表,
+    内置规范: 页眉/页脚等 sub 不单独成列、剔除值全空父级/装饰标签、
+    S9 同义标签归一化 + 空值标「无数据」、成分表多成分展开、序号取多数型号.
 
 分层模型:
     ExtractedField.section    : 节号 0..16 (0=页眉页脚)
@@ -26,6 +30,7 @@ from pathlib import Path
 from typing import Iterable
 
 from .docx_reader import read_msds
+from .pivot_table import build_pivot_table as export_excel_table
 from .structure import ParseResult, SectionData, SectionRow
 
 

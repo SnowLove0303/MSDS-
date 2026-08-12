@@ -9,8 +9,7 @@ from pathlib import Path
 from tkinter import filedialog, messagebox, ttk
 
 from core.docx_reader import TEMPLATE_PATH, read_msds
-from core.extract import search_tree
-from core.pivot_table import build_pivot_table
+from core.extract import export_excel_table, search_tree
 from core.structure import ParseResult
 
 from .section_tree import SectionTree, SectionView
@@ -321,7 +320,7 @@ class MainWindow(tk.Tk):
         if not out:
             return
         try:
-            info = build_pivot_table(Path(in_dir), Path(out))
+            info = export_excel_table(Path(in_dir), Path(out))
         except PermissionError:
             messagebox.showerror(
                 "导出失败", f"目标文件被占用, 请关闭已打开的该 Excel 后重试:\n{out}")
