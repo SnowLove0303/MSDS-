@@ -10,6 +10,7 @@ from tkinter import filedialog, messagebox, ttk
 
 from core.docx_reader import TEMPLATE_PATH, read_msds
 from core.extract import search_tree
+from core.pivot_table import build_pivot_table
 from core.structure import ParseResult
 
 from .section_tree import SectionTree, SectionView
@@ -60,6 +61,9 @@ class MainWindow(tk.Tk):
         btn("📄 导入产品 MSDS", self._pick_product)
         tk.Button(bar, text="📤 导出 JSON", command=self._export_json,
                   bg="#E8EAED", fg=COLOR_TEXT, relief="flat", padx=14, pady=4,
+                  font=("Microsoft YaHei", 10)).pack(side="left", padx=(0, 8))
+        tk.Button(bar, text="📊 导出 Excel 库表", command=self._export_excel_table,
+                  bg="#1F4E79", fg="white", relief="flat", padx=14, pady=4,
                   font=("Microsoft YaHei", 10)).pack(side="left", padx=(0, 8))
         tk.Button(bar, text="↩️ 恢复默认模板", command=self._restore_default_template,
                   bg="#E8EAED", fg=COLOR_TEXT, relief="flat", padx=14, pady=4,
@@ -291,3 +295,45 @@ class MainWindow(tk.Tk):
         Path(path).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
         self.status_var.set(f"✅ 已导出: {path}")
         messagebox.showinfo("导出成功", f"已保存到:\n{path}")
+
+    # ---------- 导出 Excel 库表 (透视总表) ----------
+
+    def _export_excel_table(self):
+        """选择入库目录 → 生成 型号×节/标签 透视总表 xlsx.
+
+        表结构: 第一行 Section / 第二行小标题·标签 / A列型号 / A1·A2留空.
+        围栏: 过滤 Word 临时文件, 单文件读取失败跳过并记录, 目标被占用友好提示.
+        """
+        in_dir = filedialog.askdirectory(
+            title="选择 MSDS 入库目录 (导出其中全部 docx 的对照总表)")
+        if not in_dir:
+            return
+        docs = [p for p in Path(in_dir).glob("*.docx")
+                if not p.name.startswith("~$")]
+        if not docs:
+            messagebox.showwarning(
+                "无文件", f"目录中没有 docx 文件:\n{in_dir}")
+            return
+        default = f"入库总表_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
+        out = filedialog.asksaveasfilename(
+            title="导出 Excel 库表", defaultextension=".xlsx",
+            initialfile=default, filetypes=[("Excel 工作簿", "*.xlsx")])
+        if not out:
+            return
+        try:
+            info = build_pivot_table(Path(in_dir), Path(out))
+        except PermissionError:
+            messagebox.showerror(
+                "导出失败", f"目标文件被占用, 请关闭已打开的该 Excel 后重试:\n{out}")
+            return
+        except Exception as exc:
+            messagebox.showerror("导出失败", str(exc))
+            return
+        msg = (f"✅ 已导出 {info['files']} 个文件 → "
+               f"{info['cols']} 列 × {info['rows']} 行, {info['sections']} 节\n\n{out}")
+        if info["failed"]:
+            msg += (f"\n\n⚠️ {len(info['failed'])} 个读取失败已跳过:\n"
+                    + "\n".join(info["failed"]))
+        self.status_var.set(
+            f"✅ 导出 Excel 库表: {info['files']} 文件 / {info['cols']} 列")
+        messagebox.showinfo("导出完成", msg)
