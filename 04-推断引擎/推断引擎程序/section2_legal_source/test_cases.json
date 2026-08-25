@@ -1,0 +1,50 @@
+{
+  "suite_id": "section2_legal_source_regression",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "id": "FL-CASE-001",
+      "model": "AMP-95",
+      "facts": {"flash_point": {"value": 78, "unit": "℃"}},
+      "expected": {"output_key": "flammable_liquid_category_4", "h_code": "H227", "signal_word": "警告", "pictograms": []},
+      "reason": "类别 4 不配置 GHS02"
+    },
+    {
+      "id": "FL-CASE-002",
+      "model": "CDI-367",
+      "facts": {"flash_point": {"value": 43, "unit": "℃"}},
+      "expected": {"output_key": "flammable_liquid_category_3", "h_code": "H226", "signal_word": "警告", "pictograms": ["GHS02"]}
+    },
+    {
+      "id": "FL-CASE-003",
+      "model": "PA-3110",
+      "facts": {"flash_point": {"value": 95, "unit": "℃"}},
+      "expected": {"output_key": "not_classified_under_endpoint", "h_code": null, "pictograms": []},
+      "reason": "不满足易燃液体分类范围，不代表其他危害自动为无"
+    },
+    {
+      "id": "FL-CASE-004",
+      "model": "BL-8126",
+      "facts": {"flash_point": {"raw": "初沸点下无闪点", "status": "unknown"}},
+      "expected": {"status": "manual_review"}
+    },
+    {
+      "id": "FL-CASE-005",
+      "model": "BOUNDARY-23",
+      "facts": {"flash_point": {"value": 23, "unit": "℃"}},
+      "expected": {"output_key": "flammable_liquid_category_3", "h_code": "H226", "pictograms": ["GHS02"]}
+    },
+    {
+      "id": "FL-CASE-006",
+      "model": "BOUNDARY-60",
+      "facts": {"flash_point": {"value": 60, "unit": "℃"}},
+      "expected": {"output_key": "flammable_liquid_category_3", "h_code": "H226", "pictograms": ["GHS02"]}
+    },
+    {
+      "id": "MIX-CASE-001",
+      "model": "MIXTURE-UNKNOWN-CONCENTRATION",
+      "facts": {"component.cas": "108-01-0", "component.ghs_classification": ["H314"], "component.concentration": {"status": "unknown"}},
+      "expected": {"status": "manual_review", "inherit_component_h_code": false}
+    }
+  ]
+}

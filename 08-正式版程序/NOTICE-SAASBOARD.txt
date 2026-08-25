@@ -1,0 +1,11 @@
+MSDS Web 视觉基线说明
+
+本版本的蓝白科技控制台视觉基线参考：
+TailAdmin/free-react-tailwind-admin-dashboard
+https://github.com/TailAdmin/free-react-tailwind-admin-dashboard
+
+该仓库 README 与 LICENSE.md 标示免费 React/Tailwind 版本采用 MIT License。
+本项目没有直接复制其 React 组件；仅在本地静态 CSS 中借鉴后台控制台的布局、色彩层级、数据卡片和导航状态表达，并结合 MSDS 业务页面重新实现。
+
+上游许可：MIT License
+上游许可证地址：https://github.com/TailAdmin/free-react-tailwind-admin-dashboard/blob/main/LICENSE.md

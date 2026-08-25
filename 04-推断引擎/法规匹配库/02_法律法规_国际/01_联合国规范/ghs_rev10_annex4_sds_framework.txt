@@ -1,0 +1,1397 @@
+ 
+ANNEX 4 
+GUIDANCE ON THE PREPARATION OF 
+SAFETY DATA SHEETS (SDS) 
+A4.1 
+Introduction 
+A4.1.1 
+This annex provides guidance on the preparation of an SDS under the requirements of the Globally 
+Harmonized System of Classification and Labelling of Chemicals (GHS). SDS’s are an important element of hazard 
+communication in the GHS, as explained in chapter 1.5. Use of this guidance document should support compliance with 
+competent authority requirements and should allow the SDS to be prepared in accordance with the GHS. 
+A4.1.2 
+The use of this guidance document is dependent on importing countries requirements for SDS. It is 
+hoped that the application of the GHS worldwide will eventually lead to a fully harmonized situation. 
+A4.1.3 
+Unless otherwise stated, all chapters, sections and tables referred to in this annex can be found in the 
+main text of the GHS. 
+A4.2 
+General guidance for compiling an SDS 
+A4.2.1 
+Scope and application 
+Safety Data Sheets (SDS) should be produced for all substances and mixtures which meet the 
+harmonized criteria for physical, health or environmental hazards under the GHS and for all mixtures which contain 
+ingredients that meet the criteria for carcinogenic, toxic to reproduction or target organ toxicity in concentrations 
+exceeding the cut-off limits for SDS specified by the criteria for mixtures (see table 1.5.1 in chapter 1.5). The competent 
+authority may also require SDS for mixtures not meeting the criteria for classification as hazardous, but which contain 
+hazardous ingredients in certain concentrations (see chapter 3.2). The competent authority may also require SDS for 
+substances or mixtures that meet the criteria for classification as hazardous for non-GHS classes/end-points. An SDS is a 
+well-accepted and effective method for the provision of information and may be used to convey information for substances 
+or mixtures that do not meet or are not included in the GHS classification criteria. 
+A4.2.2 
+General guidance 
+A4.2.2.1 
+The writer of the SDS needs to keep in mind that an SDS must inform its audience of the hazards of a 
+substance or a mixture and provide information on the safe storage, handling and disposal of the substance or a mixture. 
+An SDS contains information on the potential health effects of exposure and how to work safely with the substance or 
+mixture. It also contains hazard information derived from physicochemical properties or environmental effects, on the 
+use, storage, handling and emergency response measures related to that substance or mixture. The purpose of this guidance 
+is to ensure consistency and accuracy in the content of each of the mandatory headings required under GHS, so that the 
+resulting safety data sheets will enable users to take the necessary measures relating to protection of health and safety at 
+the workplace, and the protection of the environment. The information in the SDS shall be written in a clear and concise 
+manner. The SDS shall be prepared by a competent person who shall take into account the specific needs of the user 
+audience, as far as it is known. Persons placing substances and mixtures on the market shall ensure that refresher courses 
+and training on the preparation of SDS be regularly attended by the competent persons. 
+A4.2.2.2 
+When writing the SDS, information should be presented in a consistent and complete form, with the 
+workplace audience firmly in mind. However, it should be considered that all or part of the SDS can be used to inform 
+workers, employers, health and safety professionals, emergency personnel, relevant government agencies, as well as 
+members of the community. 
+A4.2.2.3 
+Language used in the SDS should be simple, clear and precise, avoiding jargon, acronyms and 
+abbreviations. Vague and misleading expressions should not be used. Phrases such as “may be dangerous”, “no health 
+effects”, “safe under most conditions of use”, or “harmless” are also not recommended. It may be that information on 
+certain properties is of no significance or that it is technically impossible to provide; if so, the reasons for this must be 
+clearly stated under each heading. If it is stated that a particular hazard does not exist, the safety data sheet should clearly 
+differentiate between cases where no information is available to the classifier, and cases where negative test results are 
+available. 
+- 410 - 
+A4.2.2.4 
+The date of issue of the SDS should be stated and be very apparent. The date of issue is the date the 
+SDS version was made public. This generally occurs shortly after the SDS authoring and publishing process is completed. 
+Revised SDS’s should clearly state the date of issue as well as a version number, revision number, supersedes date or 
+some other indication of what version is replaced. 
+A4.2.3 
+SDS format 
+A4.2.3.1 
+The information in the SDS should be presented using the following 16 headings in the order given 
+below (see also 1.5.3.2.1): 
+1. 
+Identification; 
+2. 
+Hazard identification; 
+3. 
+Composition/information on ingredients; 
+4. 
+First-aid measures; 
+5. 
+Fire-fighting measures; 
+6. 
+Accidental release measures; 
+7. 
+Handling and storage; 
+8. 
+Exposure controls/personal protection; 
+9. 
+Physical and chemical properties; 
+10. 
+Stability and reactivity; 
+11. 
+Toxicological information; 
+12. 
+Ecological information; 
+13. 
+Disposal considerations; 
+14. 
+Transport information; 
+15. 
+Regulatory information; 
+16. 
+Other information 
+A4.2.3.2 
+An SDS is not a fixed length document. The length of the SDS should be commensurate with the hazard 
+of the material and the information available. 
+A4.2.3.3 
+All pages of an SDS should be numbered and some indication of the end of the SDS should be given 
+(for example: “page 1 of 3”). Alternatively, number each page and indicate whether there is a page following (e.g. 
+“Continued on next page” or “End of SDS”). 
+A4.2.4 
+SDS content 
+A4.2.4.1 
+General information on SDS content can be found in 1.5.3.3. More practical information is given below. 
+A4.2.4.2 
+The minimum information outlined in section A4.3 of this annex should be included on the SDS, where 
+applicable and available1, under the relevant headings. When information is not available or lacking this should be clearly 
+stated. The SDS should not contain any blanks. 
+A4.2.4.3 
+In addition, the SDS should contain a brief summary/conclusion of the data given, making it easy even 
+for non-experts in the field to identify all the hazards for the hazardous substance/mixture. 
+A4.2.4.4 
+Use of abbreviations is not recommended because they may lead to confusion or decreased 
+understanding. 
+A4.2.5 
+Other information requirements 
+A4.2.5.1 
+There are information requirements for the preparation of an SDS. The minimum information 
+requirements are outlined in A4.3. 
+A4.2.5.2 
+In addition to the minimum information requirements (see A4.2.4.2), the SDS may also contain 
+“additional information”. Where a material has additional relevant and available information about its nature and/or use, 
+that information should be included in the SDS (see A4.3.16 for further advice on additional information requirements). 
+ 
+1 Where “applicable” means where the information is applicable to the specific product covered by the SDS. Where 
+“available” means where the information is available to the supplier or other entity that is preparing the SDS. 
+- 411 - 
+A4.2.6 
+Units 
+Numbers and quantities should be expressed in units appropriate to the region into which the product is 
+being supplied. In general, the International System of Units (SI) should be used. 
+A4.3 
+Information requirements for the preparation of the SDS 
+This section describes the GHS information requirements for SDS’s. Additional information may be 
+required by competent authorities. 
+A4.3.1 
+SECTION 1: Identification 
+Identify the substance or mixture and provide the name of the supplier, recommended uses and the 
+contact detail information of the supplier including an emergency contact in this section. 
+A4.3.1.1 
+GHS product identifier 
+The identity of the substance or mixture (GHS product identifier) should be exactly as found on the 
+label. If one generic SDS is used to cover several minor variants of a substance or mixture, all names and variants should 
+be listed on the SDS or the SDS should clearly delineate the range of substances included. 
+A4.3.1.2 
+Other means of identification 
+In addition, or as an alternative, to the GHS product identifier, the substance or mixture may be 
+identified by alternative names, numbers, company product codes, or other unique identifiers. Provide other names or 
+synonyms by which the substance or mixture is labelled or commonly known, if applicable. 
+A4.3.1.3 
+Recommended use of the chemical and restrictions on use 
+Provide the recommended or intended use of the substance or mixture, including a brief description of 
+what it actually does, e.g. flame retardant, anti-oxidant, etc. Restrictions on use should, as far as possible, be stated 
+including non-statutory recommendations by the supplier. 
+A4.3.1.4 
+Supplier’s details 
+The name, full address and phone number(s) of the supplier should be included on the SDS. 
+A4.3.1.5 
+Emergency phone number 
+References to emergency information services should be included in all SDS. If any restrictions apply, 
+such as hours of operation (e.g. Monday - Friday, 8:00 a.m. - 6:00 p.m., or 24 hours) or limits on specific types of 
+information (e.g. medical emergencies, or transportation emergencies), this should be clearly stated. 
+A4.3.2 
+SECTION 2: Hazard identification 
+This section describes the hazards of the substance or mixture and the appropriate warning information 
+(signal word, hazard statement(s) and precautionary statement(s)) associated with those hazards. The section should 
+include a brief summary/conclusion of the data given as described in A4.2.4.3. 
+A4.3.2.1 
+Classification of the substance or mixture 
+A4.3.2.1.1 
+This subsection indicates the hazard classification of the substance or mixture. 
+A4.3.2.1.2 
+If the substance or mixture is classified in accordance with Parts 2, 3 and/or 4 of the GHS, generally the 
+classification is communicated by providing the appropriate hazard class and category/subcategory to indicate the hazard 
+(for example, flammable liquid Category 1 and skin corrosive, Category 1A). However, when classification is 
+differentiated within a hazard class and results in unique hazard statements, then the classification should also reflect that 
+differentiation. For example, the route of exposure differentiates the acute toxicity classification as follows: acute oral 
+toxicity Category 1, acute dermal toxicity Category 1 and acute inhalation toxicity Category 1. If a substance or mixture 
+is classified into more than one category in a hazard class that is differentiated, then all classifications should be 
+communicated. 
+- 412 - 
+A4.3.2.2 
+GHS label elements, including precautionary statements 
+A4.3.2.2.1 
+Based on the classification, provide the appropriate label elements: signal word(s), hazard statement(s) 
+and precautionary statement(s). 
+A4.3.2.2.2 
+Pictograms (or hazard symbols) may be provided as a graphical reproduction of the symbols in black 
+and white or the name of the symbol, e.g. “flame”, “skull and crossbones”. 
+A4.3.2.3 
+Other hazards which do not result in classification 
+Provide information on other hazards which do not result in classification but may contribute to the 
+overall hazards of the material, for example, formation of air contaminants during hardening or processing, dust explosion 
+hazards, suffocation, freezing or environmental effects such as hazards to soil-dwelling organisms. To communicate 
+combustible dust hazards, and thus a potential risk of dust explosions under the approach described in annex 11 in a 
+standardized manner, competent authorities may allow the use of the phrases identified in A11.2.7.3 on labels, SDSs 
+and/or in operating instructions or may leave the choice to the manufacturer or supplier. 
+A4.3.3 
+SECTION 3: Composition/information on ingredients 
+Identify the ingredient(s) of the product in this section. This includes identifying impurities and 
+stabilizing additives which are themselves classified and which contribute to the classification of the substance. This 
+section may also be used to provide information on complex substances. 
+NOTE: 
+For information on ingredients, the competent authority rules for confidential business information take 
+priority over the rules for product identification. When applicable, indicate that confidential information about the 
+composition was omitted. 
+A4.3.3.1 
+Substances 
+A4.3.3.1.1 
+Chemical identity of the substance 
+The identity of a substance is provided by its common chemical name. The chemical name can be 
+identical to the GHS product identifier. 
+NOTE: 
+The “common chemical name” may, for example, be the CAS name or IUPAC name, as applicable. 
+A4.3.3.1.2 
+Common name(s), synonym(s) of the substance 
+Common names and synonyms should be provided where appropriate. 
+A4.3.3.1.3 
+CAS number and other unique identifiers for the substance 
+The Chemical Abstract Service (CAS) registry number provides a unique chemical identification and 
+should be provided when available. Other unique identifiers specific to a country or region, such as the European 
+Community (EC) number could be added. 
+A4.3.3.1.4 
+Impurities and stabilizing additives which are themselves classified and which contribute to the 
+classification of the substance 
+Identify any impurities and/or stabilizing additives, which are themselves classified and which 
+contribute to the classification of the substance. 
+A4.3.3.2 
+Mixtures 
+A4.3.3.2.1 
+For a mixture, provide the chemical identity, identification number (within the meaning of A4.3.3.1.3) 
+and concentration or concentration ranges of all hazardous ingredients, which are hazardous to health or the environment 
+within the meaning of the GHS, and are present above their cut-off levels. Manufacturers or suppliers may choose to list 
+all ingredients, including non-hazardous ingredients. 
+- 413 - 
+A4.3.3.2.2 
+The concentrations of the ingredients of a mixture should be described as: 
+(a) 
+exact percentages in descending order by mass or volume; or 
+(b) 
+ranges of percentages in descending order by mass or volume if such ranges are acceptable to 
+the appropriate competent national authority. 
+A4.3.3.2.3 
+When using a proportion range, the health and environmental hazard effects should describe the effects 
+of the highest concentration of each ingredient, provided that the effects of the mixture as a whole are not available. 
+NOTE: 
+The “proportion range” refers to the concentration or percentage range of the ingredient in the mixture. 
+A4.3.4 
+SECTION 4: First-aid measures 
+This section describes the initial care that can be given by an untrained responder without the use of 
+sophisticated equipment and without a wide selection of medications available. If medical attention is required, the 
+instructions should state this, including its urgency. It may be useful to provide information on the immediate effects, by 
+route of exposure, and indicate the immediate treatment, followed by possible delayed effects with specific medical 
+surveillance required. 
+A4.3.4.1 
+Description of necessary first-aid measures 
+A4.3.4.1.1 
+Provide first-aid instructions by relevant routes of exposure. Use sub-headings to indicate the procedure 
+for each route (e.g. inhalation, skin, eye and ingestion). Describe expected immediate and delayed symptoms. 
+A4.3.4.1.2 
+Provide advice whether: 
+(a) 
+immediate medical attention is required and if delayed effects can be expected after exposure; 
+(b) 
+movement of the exposed individual from the area to fresh air is recommended; 
+(c) 
+removal and handling of clothing and shoes from the individual is recommended; and 
+(d) 
+personal protective equipment (PPE) for first-aid responders is recommended. 
+A4.3.4.2 
+Most important symptoms/effects, acute and delayed 
+Provide information on the most important symptoms/effects, acute and delayed, from exposure. 
+A4.3.4.3 
+Indication of immediate medical attention and special treatment needed, if necessary 
+Where appropriate, provide information on clinical testing and medical monitoring for delayed effects, 
+specific details on antidotes (where they are known) and contraindications. 
+A4.3.5 
+SECTION 5: Fire-fighting measures 
+This section covers the requirements for fighting a fire caused by the substance or mixture or arising in 
+its vicinity. 
+A4.3.5.1 
+Suitable extinguishing media 
+Provide information on the appropriate extinguishing media. In addition, indicate whether any 
+extinguishing media are inappropriate for a particular situation involving the substance or mixture (e.g. avoid high 
+pressure media which could cause the formation of a potentially explosible dust-air mixture). 
+A4.3.5.2 
+Specific hazards arising from the chemical 
+Provide advice on specific hazards that may arise from the chemical, such as hazardous combustion 
+products that form when the substance or mixture burns. For example: 
+(a) 
+“may produce toxic fumes of carbon monoxide if burning”; or 
+- 414 - 
+(b) 
+“produces oxides of sulphur and nitrogen on combustion”. 
+A4.3.5.3 
+Special protective actions for fire-fighters 
+A4.3.5.3.1 
+Provide advice on any protective actions to be taken during fire fighting. For example, “keep containers 
+cool with water spray”. 
+A4.3.6 
+SECTION 6: Accidental release measures 
+This section recommends the appropriate response to spills, leaks, or releases in order to prevent or 
+minimize the adverse effects on persons, property and the environment in this section. Distinguish between responses for 
+large and small spills where the spill volume has a significant impact on the hazard. The procedures for containment and 
+recovery may indicate that different practices are required. 
+A4.3.6.1 
+Personal precautions, protective equipment and emergency procedures 
+A4.3.6.1.1 
+For non-emergency personnel 
+Provide advice related to accidental spills and release of the substance or mixture such as: 
+(a) 
+the wearing of suitable protective equipment (including personal protective equipment, see 
+section 8 of the SDS) to prevent any contamination of skin, eyes and personal clothing; 
+(b) 
+removal of ignition sources and provision of sufficient ventilation; and 
+(c) 
+emergency procedures such as the necessity to evacuate the danger area or to consult an expert. 
+A4.3.6.1.2 
+For emergency responders 
+Provide advice related to suitable fabric for personal protective clothing (e.g.: “appropriate: Butylene; 
+not appropriate: PVC). 
+A4.3.6.2 
+Environmental precautions 
+Provide advice on any environmental precautions related to accidental spills and release of the substance 
+or mixture, such as keeping away from drains, surface and ground water. 
+A4.3.6.3 
+Methods and materials for containment and cleaning up 
+A4.3.6.3.1 
+Provide appropriate advice on how to contain and clean up a spill. Appropriate containment techniques 
+may include: 
+(a) 
+bunding2, covering of drains; and 
+(b) 
+capping procedures3. 
+A4.3.6.3.2 
+Appropriate clean up procedures may include: 
+(a) 
+neutralization techniques; 
+(b) 
+decontamination techniques; 
+(c) 
+adsorbent materials; 
+(d) 
+cleaning techniques; 
+ 
+2 A bund is a provision of liquid collection facilities which, in the event of any leak or spillage from tanks or pipe work, 
+will capture well in excess of the volume of liquids held, e.g. an embankment. Bunded areas should drain to a capture 
+tank which should have facilities for water/oil separation. 
+3 i.e. providing a cover or protection (e.g. to prevent damage or spillage). 
+- 415 - 
+(e) 
+vacuuming techniques; and 
+(f) 
+equipment required for containment/clean up (include the use of non-sparking tools and 
+equipment where applicable). 
+A4.3.6.3.3 
+Provide any other issues relating to spills and releases. For example, including advice on inappropriate 
+containment or clean up techniques. 
+A4.3.7 
+SECTION 7: Handling and storage 
+This section provides guidance on safe handling practices that minimize the potential hazards to people, 
+property and the environment from the substance or mixture. Emphasize precautions that are appropriate to the intended 
+use and to the unique properties of the substance or mixture. 
+A4.3.7.1 
+Precautions for safe handling 
+A4.3.7.1.1 
+Provide advice that: 
+(a) 
+allows safe handling of the substance or mixture; 
+(b) 
+prevents handling of incompatible substances or mixtures; 
+(c) 
+draws attention to operations and conditions which create new risks by altering the properties of 
+the substance or mixture, and to appropriate countermeasures; and 
+(d) 
+minimizes the release of the substance or mixture to the environment. 
+A4.3.7.1.2 
+It is good practice to provide advice on general hygiene. For example: 
+(a) 
+“eating, drinking and smoking in work areas is prohibited”; 
+(b) 
+“wash hands after use”; and 
+(c) 
+“remove contaminated clothing and protective equipment before entering eating areas”. 
+A4.3.7.2 
+Conditions for safe storage, including any incompatibilities 
+Ensure that the advice provided is consistent with the physical and chemical properties in section 9 
+(Physical and chemical properties) of the SDS. If relevant, provide advice on specific storage requirements including: 
+(a) 
+How to avoid: 
+(i) 
+explosive atmospheres; 
+(ii) 
+corrosive conditions; 
+(iii) 
+flammability hazards; 
+(iv) 
+incompatible substances or mixtures; 
+(v) 
+evaporative conditions; and 
+(vi) 
+potential ignition sources (including electrical equipment). 
+(b) 
+How to control the effects of: 
+(i) 
+weather conditions; 
+(ii) 
+ambient pressure; 
+(iii) 
+temperature; 
+- 416 - 
+(iv) 
+sunlight; 
+(v) 
+humidity; and 
+(vi) 
+vibration. 
+(c) 
+How to maintain the integrity of the substance or mixture by the use of: 
+(i) 
+stabilizers; and 
+(ii) 
+anti-oxidants. 
+(d) 
+Other advice including: 
+(i) 
+ventilation requirements; 
+(ii) 
+specific designs for storage rooms/vessels; 
+(iii) 
+quantity limits under storage conditions (if relevant); and 
+(iv) 
+packaging compatibilities. 
+A4.3.8 
+SECTION 8: Exposure controls/personal protection 
+Within this guidance the term “occupational exposure limit(s)” refers to limits in the air of the workplace 
+or biological limit values. In addition, for the purposes of this document “exposure control” means the full range of 
+specific protection and prevention measures to be taken during use in order to minimize worker and environmental 
+exposure. Engineering control measures that are needed to minimize exposure to, and risks associated with the hazards 
+of, the substance or mixture should be included in this section. 
+A4.3.8.1 
+Control parameters 
+A4.3.8.1.1 
+Where available, list the occupational exposure limits (limits in the air of the workplace or biological 
+limit values), including notations, for a substance and for each of the ingredients of a mixture. If air contaminants are 
+formed when using the substance or mixture as intended available occupational exposure limits for these should also be 
+listed. If an occupational exposure limit exists for the country or region in which the SDS is being supplied, this should 
+be listed. The source of the occupational exposure limit should be stated on the SDS. When listing occupational exposure 
+limits, use the chemical identity as specified in section 3 (Composition/Information on ingredients) of the SDS. 
+A4.3.8.1.2 
+Where available, list the biological limit values, including notations, for a substance and for each of the 
+ingredients of a mixture. Where possible, the biological limit value should be relevant to the countries or regions in which 
+the SDS is being supplied. The source of the biological limit value should be stated on the SDS. When listing biological 
+limit values, use the chemical identity as specified in section 3 of the SDS. 
+A4.3.8.1.3 
+Where a control banding approach is recommended for providing protection in relation to specific uses 
+then sufficient detail should be given to enable effective management of the risk. The context and limitations of the 
+specific control banding recommendation should be made clear. 
+A4.3.8.2 
+Appropriate engineering controls 
+The description of appropriate exposure control measures should relate to the intended modes of use of 
+the substance or mixture. Sufficient information should be provided to enable a proper risk assessment to be carried out. 
+Indicate when special engineering controls are necessary and specify which type. Examples include: 
+(a) 
+“maintain air concentrations below occupational exposure standards”, using engineering controls 
+if necessary; 
+(b) 
+“use local exhaust ventilation when…”; 
+(c) 
+“use only in an enclosed system”; 
+(d) 
+“use only in spray paint booth or enclosure”; 
+- 417 - 
+(e) 
+“use mechanical handling to reduce human contact with materials”; or 
+(f) 
+“use explosive dust handling controls”. 
+The information provided here should complement that provided under section 7 (Handling and storage) 
+of the SDS. 
+A4.3.8.3 
+Individual protection measures, such as personal protective equipment (PPE) 
+A4.3.8.3.1 
+Consistent with good occupational hygiene practices, personal protective equipment (PPE) should be 
+used in conjunction with other control measures, including engineering controls, ventilation and isolation. See also section 
+5 (Fire- fighting measures) of the SDS for specific fire/chemical PPE advice. 
+A4.3.8.3.2 
+Identify the PPE needed to minimize the potential for illness or injury due to exposure from the 
+substance or mixture, including: 
+(a) 
+Eye/face protection: specify the type of eye protection and/or face shield required, based on the 
+hazard of the substance or mixture and potential for contact; 
+(b) 
+Skin protection: specify the protective equipment to be worn (e.g. type of gloves, boots, bodysuit) 
+based on the hazards associated with the substance or mixture and the potential for contact; 
+(c) 
+Respiratory protection: specify appropriate types of respiratory protection based on the hazard 
+and potential for exposure, including air-purifying respirators and the proper purifying element 
+(cartridge or canister) or breathing apparatus; and 
+(d) 
+Thermal hazards: when specifying protective equipment to be worn for materials that represent 
+a thermal hazard, special consideration should be given to the construction of the PPE. 
+A4.3.8.3.3 
+Special requirements may exist for gloves or other protective clothing to prevent skin, eye or lung 
+exposure. Where relevant, this type of PPE should be clearly stated. For example, “PVC gloves” or “nitrile rubber gloves”, 
+and thickness and breakthrough time of the glove material. Special requirements may exist for respirators. 
+A4.3.9 
+SECTION 9: Physical and chemical properties 
+A4.3.9.1 
+This section of annex 4 provides guidance for SDS preparers and is provided for information purposes. 
+This guidance does not prescribe how this information should be presented on the SDS. The guidance is divided into three 
+tables as described below. 
+A4.3.9.2 
+Table A4.3.9.1 provides guidance on the physical and chemical properties specified by chapter 1.5, 
+table 1.5.2. The SDS preparer should clearly describe/identify the physical and chemical properties specified in 
+table 1.5.2. In cases where the specific physical and chemical properties required by table 1.5.2 do not apply or are not 
+available under a particular subheading, this should be clearly indicated. 
+A4.3.9.3 
+Table A4.3.9.2 lists properties/safety characteristics and test results that are not required on the SDS but 
+may be useful to communicate when a substance or mixture is classified in the respective physical hazard class. Data 
+which is deemed relevant with regard to a specific physical hazard but not resulting in classification (e.g. negative test 
+results close to the criterion) may also be useful to communicate. 
+A4.3.9.4 
+Table A4.3.9.3 lists further properties/safety characteristics and test results that are not required on the 
+SDS but may be useful to communicate for a substance or mixture. Other physical properties/safety characteristics of the 
+substance or mixture not identified in this table may also be useful to communicate. 
+NOTE: 
+The properties in tables A4.3.9.1, A4.3.9.2 and A4.3.9.3 may be presented with or without any division 
+(that is, as a list). Also the order of the properties may be adjusted if deemed appropriate. 
+A4.3.9.5 
+Generally, the information given in this section of the SDS should relate to standard conditions for 
+temperature and pressure (temperature of 20 °C and absolute pressure of 101.3 kPa). If other conditions apply, these 
+should be indicated together with the respective property. 
+A4.3.9.6 
+Data on the SDS should be provided in appropriate units. Where the data relate to a hazard class, the 
+units of measure should be as specified in the criteria for that hazard class. 
+- 418 - 
+A4.3.9.7 
+If relevant for the interpretation of the information or numeric value given, indicate the determination 
+method (e.g. open-cup/closed-cup for flash point) or state whether the value was calculated. 
+A4.3.9.8 
+In the case of a mixture, where valid data is available for the mixture as a whole, it should be provided. 
+When data for the mixture as a whole cannot be provided, data for the most relevant ingredient(s) may be provided, and 
+this data should clearly indicate to which ingredient(s) the data apply. 
+A4.3.9.9 
+Other appropriate physical or chemical parameters or safety characteristics, in addition to those listed 
+below, may also be included in this section of the SDS. 
+Table A4.3.9.1: Basic physical and chemical properties 
+This table lists basic physical and chemical properties and safety characteristics. Relevant information 
+as required should be indicated for every property listed in this table, such as a short description, value(s), unit, conditions 
+(e.g. temperature, pressure), method, each as appropriate. 
+If specific properties or safety characteristics do not apply (based on the respective information about 
+applicability in the column “Remarks/Guidance”) they should still be listed in the SDS with the statement “not 
+applicable”. 
+If information on specific properties or safety characteristics is not available, they should still be listed 
+in the SDS with the statement “not available”. It is recommended that, where appropriate, a short explanation is included 
+as to why the data is not available, e.g. “melts”, “decomposes”, “dissolves”. 
+Property 
+Remarks/Guidance 
+Physical state 
+− generally at standard conditions 
+− for definitions for gas, liquid and solid see chapter 1.2 
+Colour 
+− indicate the colour of the substance or mixture as supplied 
+− in cases where one SDS is used to cover variants of a mixture which may have different 
+colours the term 'various' can be used to describe the colour (see A4.3.1.1 for an SDS for 
+variants of a mixture) 
+Odour 
+− give a qualitative description of the odour if it is well-known or described in the literature 
+− if available, indicate the odour threshold (qualitatively or quantitatively) 
+Melting point/ 
+freezing point 
+− not applicable to gases 
+− at standard pressure 
+− indicate up to which temperature no melting point was observed in case the melting point is 
+above the measuring range of the method 
+− indicate if decomposition or sublimation occurs prior to or during melting 
+− for waxes and pastes the softening point/range may be indicated instead 
+− for mixtures indicate if it is technically not possible to determine the melting point/freezing 
+point 
+Boiling point or 
+initial boiling point 
+and boiling range 
+− generally at standard pressure (a boiling point at lower pressure might be indicated in case 
+the boiling point is very high or decomposition occurs before boiling) 
+− indicate up to which temperature no boiling point was observed in case the boiling point is 
+above the measuring range of the method 
+− indicate if decomposition occurs prior to or during boiling 
+− for mixtures indicate if it is technically not possible to determine the boiling point or range; 
+in that case indicate also the boiling point of the lowest boiling ingredient 
+Flammability 
+− applicable to gases, liquids and solids 
+− indicate whether the substance or mixture is ignitable (capable of catching on fire or being 
+set on fire, even if not classified for flammability) 
+− if available and appropriate, further information may be indicated in addition, e.g. 
+• whether the effect of ignition is other than a normal combustion (e.g. an explosion) 
+• ignitability under non-standard conditions 
+− more specific information on the flammability may be indicated based on the respective 
+hazard classification in accordance with table A4.3.9.2 
+- 419 - 
+Table A4.3.9.1: Basic physical and chemical properties (cont’d) 
+Property 
+Remarks/Guidance 
+Lower and upper 
+explosion limit/ 
+flammability limit 
+− not applicable to solids 
+− for flammable liquids indicate at least the lower explosion limit: 
+• if the flash point is approximately > -25°C, it might be not possible to determine the 
+upper explosion limit at standard temperature; in that case it is recommended to indicate 
+the upper explosion limit at elevated temperature 
+• if the flash point is > +20 °C the same holds for both the lower and upper explosion limit 
+Note: 
+Depending on the region of the world the term “explosion limit” or “flammability 
+limit” is used but is supposed to mean the same. 
+Flash point 
+− not applicable to gases, aerosols and solids 
+− for information on test methods etc., see chapter 2.6, paragraph 2.6.4.2 
+for mixtures: 
+− indicate a value for the mixture itself if available, otherwise indicate the flash point(s) of 
+those substances with the lowest flash point(s) as these are generally the main contributing 
+ones 
+Auto-ignition 
+temperature 
+− applicable to gases and liquids only 
+for mixtures: 
+− indicate a value for the mixture itself if available, otherwise indicate the auto-ignition 
+temperature(s) of those ingredients with the lowest auto-ignition temperature(s) 
+Decomposition 
+temperature 
+− applicable to self-reactive substance and mixtures and organic peroxides and other substances 
+and mixtures which may decompose 
+− indicate 
+• the SADT (self-accelerating decomposition temperature), together with the 
+volume to which it applies or 
+• the decomposition onset temperature (see also section 20.3.3.3 of the 
+Manual of Tests and Criteria) 
+− indicate whether the temperature given is the SADT or the decomposition onset temperature 
+− if no decomposition was observed, indicate up to which temperature no decomposition was 
+observed, e.g. as “no decomposition observed up to x °C/°F” 
+pH 
+− not applicable to gases 
+− applicable to aqueous liquids and solutions (the pH is linked to aqueous media by definition; 
+measurements carried out in other media do not give the pH) 
+− indicate the concentration of the test substance in water 
+− where the pH is ≤ 2 or ≥ 11.5, see table A4.3.9.3 for information on acid/alkaline reserve 
+Kinematic viscosity 
+− applicable to liquids only 
+− use preferably mm2/s as unit (as the classification criteria for the hazard class aspiration 
+hazard are based on this unit) 
+− the dynamic viscosity may be indicated in addition. The kinematic viscosity is linked to the 
+dynamic viscosity by the density: 
+)
+(g/cm
+Density 
+s)
+(mPa
+ 
+ viscosity
+Dynamic
+)
+s
+/
+(mm
+ 
+ viscosity
+Kinematic
+3
+2
+
+=
+ 
+− for non-Newtonian liquids, indicate thixotropic or rheopexic behaviour 
+Solubility 
+− generally at standard temperature 
+− indicate the solubility in water 
+− the solubility in other (non-polar) solvents may also be included 
+− for mixtures, indicate if it is fully or only partially soluble in or miscible with water or other 
+solvent 
+Partition coefficient 
+n-octanol/water 
+(log value) 
+− not applicable to inorganic and ionic liquids 
+− generally not applicable to mixtures 
+− may be calculated (using QSAR – Quantitative structure-activity relationship) 
+− indicate whether the value is based on testing or on calculation 
+- 420 - 
+Table A4.3.9.1: Basic physical and chemical properties (cont’d) 
+Property 
+Remarks/Guidance 
+Vapour pressure 
+− generally at standard temperature 
+− indicate the vapour pressure at 50°C for volatile fluids in addition (in order to enable 
+distinction between gases and liquids based on the definitions in chapter 1.2) 
+− in cases where one SDS is used to cover variants of a liquid mixture or liquefied gas mixture 
+indicate a range for the vapour pressure 
+− for liquid mixtures or liquefied gas mixtures, indicate a range for the vapour pressure or at 
+least the vapour pressure of the most volatile ingredient(s) where the vapour pressure of the 
+mixture is predominantly determined by this/these ingredient(s) 
+− for liquid mixtures or liquefied gas mixtures, the vapour pressure may be calculated using 
+the activity coefficients of the ingredients 
+− the saturated vapour concentration (SVC) in ml/m3 or in g/m3 (=mg/l) may be indicated in 
+addition. The saturated vapour concentration can be estimated as follows: 
+SVC in ml/m3: SVC = VP ∙ c1 
+SVC in g/m3: SVC = VP ∙ MW ∙ c2 
+where 
+• VP is the vapour pressure in hPa (=mbar) 
+• MW is the molecular weight in g/mol and 
+• c1 and c2 are conversion factors where c1 = 987.2 ml/(m3∙hPa) and 
+c2 = 0.0412 mol/(m3∙hPa) 
+Density and/or 
+relative density 
+− applicable to liquids and solids only 
+− generally at standard conditions 
+− indicate as appropriate 
+• the absolute density and/or 
+• the relative density based on water at 4°C as reference (sometimes also 
+called the specific gravity) 
+− a range may be indicated in cases where variations in density are possible, e.g. due to batch 
+manufacture, or where one SDS is used to cover several variants of a substance or mixture 
+NOTE: For clarity, the SDS should indicate if absolute density (indicate units) and/or relative 
+density (no units) is being reported. 
+Relative vapour 
+density 
+− applicable to gases and liquids only 
+− for gases, indicate the relative density of the gas based on air at 20 °C as reference (=MW/29) 
+− for liquids, indicate the relative vapour density based on air at 20 °C as reference (=MW/29) 
+− for liquids, the relative density (Dm) of the vapour/air-mixture at 20 °C (air = 1) may be 
+indicated in addition. It can be calculated as follows: 
+Dm = 1 + (VP20 ∙ (MW – Mwair) ∙ c3 
+where 
+• VP20 is the vapour pressure at 20 °C in hPa (=mbar) 
+• MW is the molecular weight in g/mol 
+• MWair is the molecular weight of air, MWair = 29 g/mol 
+• c3 is a conversion factor, 𝑐𝑐3 = 34 ∙10−6 
+mol
+g∙hPa 
+Particle 
+characteristics 
+− applicable to solids only 
+− indicate the particle size (median and range) 
+− if available and appropriate, further properties may be indicated in addition, e.g. 
+• size distribution (range) 
+• shape and aspect ratio 
+• specific surface area 
+- 421 - 
+Table A4.3.9.2: Data relevant with regard to physical hazard classes (supplemental) 
+This table lists properties/safety characteristics and test results that are not required on the SDS but may 
+be useful to communicate when a substance or mixture is classified in the respective physical hazard class. Data which is 
+deemed relevant with regard to a specific physical hazard but not resulting in classification (e.g. negative test results close 
+to the criterion) may also be useful to communicate. Include any relevant information, such as a short description, value(s), 
+unit, conditions (e.g. temperature, pressure), method, each as appropriate. 
+The name of the hazard class the data relates to may be indicated together with the data but it is not 
+necessary to do so because the resulting classification is already indicated in section 2 of the SDS. Thus, the data may be 
+listed in the same way as the data according to table A4.3.9.1. 
+Unless otherwise specified, the test methods referred to in this table are described in the Manual of Tests 
+and Criteria. 
+Chapter 
+Hazard class 
+Property/Safety characteristic/Test result and 
+Remarks/Guidance 
+2.1 
+Explosives 
+− indicate the sensitivity to shock, generally determined by the UN gap test: test 1 (a) 
+and/or test 2 (a) (section 11.4 or 12.4 of the Manual of Tests and Criteria) (indicate at 
+least + or −) 
+− indicate the effect of heating under confinement, generally determined by the Koenen 
+test: test 1 (b) and/or test 2 (b) (section 11.5 or 12.5 of the Manual of Tests and 
+Criteria) (indicate preferably the limiting diameter) 
+− indicate the effect of ignition under confinement, generally determined by test 1 (c) 
+and/or test 2 (c) (section 11.6 or 12.6 of the Manual of Tests and Criteria) (indicate at 
+least + or −) 
+− indicate the sensitiveness to impact, generally determined by test 3 (a) (section 13.4 
+of the Manual of Tests and Criteria) (indicate preferably the limiting impact energy) 
+− indicate the sensitiveness to friction, generally determined by test 3 (b) (section 13.5 of 
+the Manual of Tests and Criteria) (indicate preferably the limiting load) 
+− indicate the thermal stability, generally determined by test 3 (c) (section 13.6 of the 
+Manual of Tests and Criteria) (indicate at least + or −) 
+− in addition, this entry is also applicable to substances and mixtures which are 
+exempted based on note 2 in chapter 2.1, section 2.1.3 and to other substances and 
+mixtures which show a positive effect if heated under confinement 
+− indicate the package (type, size, net mass of substance or mixture) based on which the 
+division was assigned or based on which the substance or mixture was exempted 
+2.2 
+Flammable 
+gases 
+for pure flammable gases: 
+− no data on the explosion/flammability limits is needed because these are indicated 
+based on table A4.3.9.1 
+− indicate the TCi (maximum content of flammable gas which, when mixed with 
+nitrogen, is not flammable in air, in %) as per ISO 10156 
+− indicate the fundamental burning velocity if the gas is classified as Category 1B based 
+on fundamental burning velocity, generally determined by ISO 817:2014, Annex C 
+for flammable gas mixtures: 
+− indicate the explosion/flammability limits, if tested, or indicate whether the 
+classification and category assignment is based on the calculation as per ISO 10156 
+− indicate the fundamental burning velocity if the gas mixture is classified as Category 
+1B based on fundamental burning velocity, generally determined by ISO 817:2014, 
+Annex C 
+2.3, 
+section 
+2.3.1 
+Aerosols 
+− indicate the total percentage (by mass) of flammable components unless the Aerosol 
+is classified as Aerosol cat. 1 because it contains more than 1 % flammable 
+components or has a heat of combustion of at least 20 kJ/g and is not submitted to the 
+flammability classification procedures (see note 2 in chapter 2.3, 2.3.1.2.1) 
+2.3, 
+section 
+2.3.2 
+Chemicals under 
+pressure 
+− indicate the total percentage (by mass) of flammable components 
+− indicate the specific heat of combustion (generally in kJ/g) 
+- 422 - 
+Table A4.3.9.2: Data relevant with regard to physical hazard classes (supplemental) (cont’d) 
+Chapter 
+Hazard class 
+Property/Safety characteristic/Test result and 
+Remarks/Guidance 
+2.4 
+Oxidizing gases 
+for pure oxidizing gases: 
+− indicate the Ci (coefficient of oxygen equivalency) as per ISO 10156 
+for oxidizing gas mixtures: 
+− indicate “Oxidizing gas Category 1 (tested as per ISO 10156)” for tested mixtures or 
+indicate the calculated oxidizing power (OP) as per ISO 10156 
+2.5 
+Gases under 
+pressure 
+for pure gases: 
+− indicate the critical temperature 
+for gas mixtures: 
+− indicate the pseudo-critical temperature; it is estimated as the mole weighted average 
+of the critical temperatures of the components as follows: 
+=
+
+n
+1
+i
+i
+Crit
+i T
+x
+ 
+where 
+• xi is molar fraction of component i 
+• TCrit i is the critical temperature of component i 
+2.6 
+Flammable 
+liquids 
+− no additional data is needed because the boiling point and the flash point are 
+indicated based on table A4.3.9.1 
+− indicate information on sustained combustibility if exemption based on Test L.2 
+(section 32.5.2 of the Manual of Tests and Criteria), in accordance with note 2 in 
+chapter 2.6, section 2.6.2, is considered 
+2.7 
+Flammable 
+solids 
+− indicate the burning rate (or burning time for metal powders), generally determined 
+by Test N.1 (section 33.2.1 of the Manual of Tests and Criteria) 
+− indicate whether the wetted zone has been passed or not 
+2.8 
+Self-reactive 
+substances and 
+mixtures 
+− for the SADT (self-accelerating decomposition temperature), see the entry for the 
+decomposition temperature in table A4.3.9.1 
+− indicate the decomposition energy (value and method of determination) 
+− indicate detonation properties (Yes/Partial/No), also in packaging where relevant 
+− indicate deflagration properties (Yes rapidly/Yes slowly/No), also in packaging 
+where relevant 
+− indicate the effect of heating under confinement (Violent/Medium/Low/No), also in 
+packaging where relevant 
+− indicate the explosive power if applicable (Not low/Low/None) 
+2.9 
+Pyrophoric 
+liquids 
+− indicate whether spontaneous ignition or charring of the filter paper occurs, 
+generally determined by Test N.3 (section 33.3.1.5 of the Manual of Tests and 
+Criteria) (indicate e.g. “the liquid ignites spontaneously in air” or “a filter paper 
+with the liquid chars in air”) 
+2.10 
+Pyrophoric 
+solids 
+− indicate whether spontaneous ignition occurs when poured or within five minutes 
+thereafter, generally determined by Test N.2 (section 33.3.1.4 of the Manual of Tests 
+and Criteria) (e.g. “the solid ignites spontaneously in air”) 
+− indicate whether pyrophoric properties could be altered over time, e.g. by formation 
+of a protective surface layer through slow oxidation 
+2.11 
+Self-heating 
+substances and 
+mixtures 
+− indicate whether spontaneous ignition occurs, include possible screening data and/or 
+method used (generally Test N.4, section 33.3.1.6 of the Manual of Tests and 
+Criteria) and note the maximum temperature rise obtained 
+− indicate the results of screening tests according to chapter 2.11, paragraph 2.11.4.2, 
+if relevant and available 
+2.12 
+Substances and 
+mixtures which, 
+in contact with 
+water, emit 
+flammable gases 
+− indicate the identity of the emitted gas, if known 
+− indicate whether the emitted gas ignites spontaneously 
+− indicate the gas evolution rate, generally determined by Test N.5 (section 33.4.1.4 of 
+the Manual of Tests and Criteria), unless the test has not been completed e.g. 
+because the gas ignites spontaneously 
+- 423 - 
+Table A4.3.9.2: Data relevant with regard to physical hazard classes (supplemental) (cont’d) 
+Chapter 
+Hazard class 
+Property/Safety characteristic/Test result and 
+Remarks/Guidance 
+2.13 
+Oxidizing 
+liquids 
+− indicate whether spontaneous ignition occurs when mixed with cellulose, generally 
+determined by Test O.2 (section 34.4.2 of the Manual of Tests and Criteria) (e.g. 
+“the mixture with cellulose (prepared for Test O.2) ignites spontaneously”) 
+2.14 
+Oxidizing solids 
+− indicate whether spontaneous ignition occurs when mixed with cellulose, generally 
+determined by Test O.1 or Test O.3 (sections 34.4.1 or 34.4.3 of the Manual of Tests 
+and Criteria) (e.g. “the mixture with cellulose (prepared for Test O.1 or O.3) ignites 
+spontaneously”) 
+2.15 
+Organic 
+peroxides 
+− for the SADT (self-accelerating decomposition temperature) see the entry for the 
+decomposition energy in table A4.3.9.1 
+− indicate the decomposition energy (value and method of determination), if available 
+− indicate detonation properties (Yes/Partial/No), also in packaging where relevant 
+− indicate deflagration properties (Yes rapidly/Yes slowly/No), also in packaging 
+where relevant 
+− indicate the effect of heating under confinement (Violent/Medium/Low/No), also in 
+packaging where relevant 
+− indicate the explosive power if applicable (Not low/Low/None) 
+2.16 
+Corrosive to 
+metals 
+− indicate which metals are corroded by the substance or mixture (e.g. “corrosive to 
+aluminium” or “corrosive to steel” etc.), if available 
+− indicate the corrosion rate and whether it refers to steel or aluminium, generally 
+determined by Test C.1 (section 37.4 of the Manual of Tests and Criteria), if 
+available 
+− include a reference to other sections of the SDS with regard to compatible or 
+incompatible materials (e.g. to packaging compatibilities in section 7 or to 
+incompatible materials in section 10), as appropriate 
+2.17 
+Desensitized 
+explosives 
+− indicate what desensitizing agent is used 
+− indicate the exothermic decomposition energy 
+− indicate the corrected burning rate Ac 
+- 424 - 
+Table A4.3.9.3: Further safety characteristics (supplemental) 
+This table lists further properties/safety characteristics and test results that are not required on the SDS 
+but may be useful to communicate for a substance or mixture. Other physical properties/safety characteristics of the 
+substance or mixture not identified in this table may also be useful to communicate. Include all relevant information, such 
+as a short description, value(s), unit, conditions (e.g. temperature, pressure), method, each as appropriate. 
+Safety characteristic 
+and/or test result 
+Remarks/Guidance 
+Mechanical sensitivity 
+− applicable to energetic substances and mixtures with an exothermic decomposition 
+energy ≥ 500 J/g in accordance with the Manual of Tests and Criteria, appendix 6, 
+section 3.3 (c) 
+− indicate the sensitiveness to impact, generally determined by test 3 (a) (section 13.4 of 
+the Manual of Tests and Criteria) (indicate preferably the limiting impact energy) 
+− indicate the sensitiveness to friction, generally determined by test 3 (b) (section 13.5 of 
+the Manual of Tests and Criteria) (indicate preferably the limiting load) 
+SAPT (self-accelerating 
+polymerization 
+temperature) 
+− applicable to substances and mixtures which may self-polymerize thereby generating 
+dangerous amounts of heat and gas or vapour 
+− indicate the volume for which the SAPT is given 
+Formation of explosible 
+dust/air mixtures 
+− not applicable to gases and liquids 
+− not applicable to solids containing only substances which are fully oxidized (e.g. 
+silicon dioxide) 
+− in case formation of explosible dust/air mixtures might be possible based on section 2 
+of the SDS, relevant safety characteristics may be indicated in addition, such as 
+• 
+lower explosion limit / minimum explosible concentration 
+• 
+minimum ignition energy 
+• 
+deflagration index (Kst) 
+• 
+maximum explosion pressure 
+− indicate the particle characteristics to which the data apply if different from the particle 
+characteristics as indicated based on table A4.3.9.1 
+NOTE 1: The ability to form explosible dust/air mixtures may be determined e.g. by 
+VDI 2263-1 "Dust Fires and Dust Explosions; Hazards - Assessment - Protective 
+Measures; Test Methods for the Determination of the Safety Characteristics of Dusts" or 
+by ISO/IEC 80079-20-2 "Explosive atmospheres - Part 20-2: Material characteristics - 
+Combustible dusts test methods" (in preparation). 
+NOTE 2: Explosion characteristics are specific for the tested dust. Normally they cannot 
+be transferred to other dusts even if these are comparable. Fine-sized dusts of a particular 
+substance tend to react stronger than coarser dusts. 
+Acid/alkaline reserve 
+− applicable to substances and mixtures which have an extreme pH (pH ≤ 2 or ≥ 11.5) 
+− indicate acid/alkaline reserve when used for evaluating skin and eye hazards 
+- 425 - 
+A4.3.10 
+SECTION 10: Stability and reactivity 
+A4.3.10.1 
+Reactivity 
+A4.3.10.1.1 
+Describe the reactivity hazards of the substance or mixture in this section. Provide specific test data for 
+the substance or mixture as a whole, where available. However, the information may also be based on general data for 
+the class or family of chemical if such data adequately represent the anticipated hazard of the substance or mixture. 
+A4.3.10.1.2 
+If data for mixtures are not available, ingredient data should be provided. In determining 
+incompatibility, consider the substances, containers and contaminants that the substance or mixture might be exposed to 
+during transportation, storage and use. 
+A4.3.10.2 
+Chemical stability 
+Indicate if the substance or mixture is stable or unstable under normal ambient and anticipated storage 
+and handling conditions of temperature and pressure. Describe any stabilizers which are, or may need to be, used to 
+maintain the product. Indicate the safety significance of any change in the physical appearance of the product. 
+A4.3.10.3 
+Possibility of hazardous reactions 
+If relevant, state if the substance or mixture will react or polymerize, releasing excess pressure or heat, 
+or creating other hazardous conditions. Describe under what conditions the hazardous reactions may occur. 
+A4.3.10.4 
+Conditions to avoid 
+List conditions such as heat, pressure, shock, static discharge, vibrations or other physical stresses that 
+might result in a hazardous situation. 
+A4.3.10.5 
+Incompatible materials 
+List classes of chemicals or specific substances with which the substance or mixture could react to 
+produce a hazardous situation (e.g. explosion, release of toxic or flammable materials, liberation of excessive heat). 
+A4.3.10.6 
+Hazardous decomposition products 
+List known and reasonably anticipated hazardous decomposition products produced as a result of use, 
+storage and heating. Hazardous combustion products should be included in section 5 (Fire-fighting measures) of the SDS. 
+A4.3.11 
+SECTION 11: Toxicological information 
+A4.3.11.1 
+This section is used primarily by medical professionals, occupational health and safety professionals 
+and toxicologists. A concise but complete and comprehensible description of the various toxicological (health) effects, 
+and the available data used to identify those effects, should be provided. Under GHS classification, the relevant hazards, 
+for which data should be provided, are: 
+(a) 
+acute toxicity; 
+(b) 
+skin corrosion/irritation; 
+(c) 
+serious eye damage/irritation; 
+(d) 
+respiratory or skin sensitization; 
+(e) 
+germ cell mutagenicity; 
+(f) 
+carcinogenicity; 
+(g) 
+reproductive toxicity; 
+(h) 
+STOT-single exposure; 
+- 426 - 
+(i) 
+STOT-repeated exposure; and 
+(j) 
+aspiration hazard. 
+These hazards should always be listed on the SDS. 
+A4.3.11.2 
+The health effects included in the SDS should be consistent with those described in the studies used for 
+the classification of the substance or mixture. 
+A4.3.11.3 
+Where there is a substantial amount of test data on the substance or mixture, it may be desirable to 
+summarize results e.g. by route of exposure (see A4.3.11.1). 
+A4.3.11.4 
+The data included in this subsection should apply to the substance or mixture as used. The toxicological 
+data should describe the mixture. If that information is not available, the classification under GHS and the toxicological 
+properties of the hazardous ingredients should be provided. 
+A4.3.11.5 
+General statements such as “Toxic” with no supporting data or “Safe if properly used” are not acceptable 
+as they may be misleading and do not provide a description of health effects. Phrases such as “not applicable”, “not 
+relevant”, or leaving blank spaces in the health effects section can lead to confusion and misunderstanding and should not 
+be used. For health effects where information is not available, this should be clearly stated. Health effects should be 
+described accurately and relevant distinctions made. For example, allergic contact dermatitis and irritant contact 
+dermatitis should be distinguished from each other. 
+A4.3.11.6 
+If data for any of these hazards are not available, they should still be listed on the SDS with a statement 
+that data are not available. Also provide information on the relevant negative data (see A4.2.2.3). If data are available 
+showing that the substance or mixture does not meet the criteria for classification, it should be stated on the SDS that the 
+substance or mixture has been evaluated and based on available data, does not meet the classification criteria. 
+Additionally, if a substance or mixture is found to be not classified for other reasons, for example, due to technical 
+impossibility to obtain data, or inconclusive data, this should be clearly stated on the SDS. 
+A4.3.11.7 
+Information on the likely routes of exposure 
+Provide information on the likely routes of exposure and the effects of the substance or mixture via each 
+possible route of exposure, that is, through ingestion (swallowing), inhalation or skin/eye exposure. A statement should 
+be made if health effects are not known. 
+A4.3.11.8 
+Symptoms related to the physical, chemical and toxicological characteristics 
+Describe the potential adverse health effects and symptoms associated with exposure to the substance 
+or mixture and its ingredients or known by-products. Provide information on the symptoms related to the physical, 
+chemical and toxicological characteristics of the substance or mixture following exposure related to the intended uses. 
+Describe the first symptoms at the lowest exposures through to the consequences of severe exposure; for example, 
+“headaches and dizziness may occur, proceeding to fainting or unconsciousness; large doses may result in coma and 
+death”. 
+A4.3.11.9 
+Delayed and immediate effects and also chronic effects from short- and long-term exposure 
+Provide information on whether delayed or immediate effects can be expected after short- or long-term 
+exposure. Also provide information on acute and chronic health effects relating to human exposure to the substance or 
+mixture. Where human data are not available, animal data should be summarised, and the species clearly identified. It 
+should be indicated in the SDS whether toxicological data is based on human or animal data. 
+A4.3.11.10 
+Numerical measures of toxicity (such as acute toxicity estimates) 
+Provide information on the dose, concentration or conditions of exposure that may cause adverse health 
+effects. Where appropriate, doses should be linked to symptoms and effects, including the period of exposure likely to 
+cause harm. 
+A4.3.11.11 
+Interactive effects 
+Information on interactions should be included if relevant and readily available. 
+- 427 - 
+A4.3.11.12 
+Where specific chemical data are not available 
+It may not always be possible to obtain information on the hazards of a substance or mixture. In cases 
+where data on the specific substance or mixture are not available, data on the chemical class, if appropriate, may be used. 
+Where generic data are used or where data are not available, this should be stated clearly in the SDS. 
+A4.3.11.13 
+Mixtures 
+If a mixture has not been tested for its health effects as a whole then information on each ingredient 
+listed under A4.3.3.2.1 should be provided and the mixture should be classified using the processes that are described in 
+the GHS (section 1.3.2.3 and subsequent chapters). 
+A4.3.11.14 
+Mixture versus ingredient information 
+A4.3.11.14.1 
+Ingredients may interact with each other in the body resulting in different rates of absorption, 
+metabolism and excretion. As a result, the toxic actions may be altered, and the overall toxicity of the mixture may be 
+different from its ingredients. 
+A4.3.11.14.2 
+It is necessary to consider whether the concentration of each ingredient is sufficient to contribute to the 
+overall health effects of the mixture. The information on toxic effects should be presented for each ingredient, except: 
+(a) 
+if the information is duplicated, it is not necessary to list this more than once. For example, if 
+two ingredients both cause vomiting and diarrhoea, it is not necessary to list this twice. Overall, 
+the mixture is described as causing vomiting and diarrhoea; 
+(b) 
+if it is unlikely that these effects will occur at the concentrations present. For example, when a 
+mild irritant is diluted in a non-irritating solution, there comes a point where the overall mixture 
+would be unlikely to cause irritation; 
+(c) 
+Predicting the interactions between ingredients is extremely difficult, and where information on 
+interactions is not available, assumptions should not be made and instead the health effects of 
+each ingredient should be listed separately. 
+A4.3.11.15 
+Other information 
+Other relevant information on adverse health effects should be included even when not required by the 
+GHS classification criteria. 
+A4.3.12 
+SECTION 12: Ecological information 
+A4.3.12.1 
+The information that shall be provided in this section is to enable evaluation of the environmental impact 
+of the substance or mixture if it were released to the environment. This information can assist in handling spills, and 
+evaluating waste treatment practices, control of release, accidental release measures, and transport. 
+A4.3.12.2 
+A concise but complete and comprehensible description of the various ecotoxicological (environment) 
+properties, and the available data used to identify those properties, should be provided. The basic properties, for which 
+data should be provided, are: 
+(a) 
+Toxicity; 
+(b) 
+Persistence and degradability; 
+(c) 
+Bioaccumulative potential; 
+(d) 
+Mobility in soil; 
+(e) 
+Other adverse effects. 
+These properties should always be listed on the SDS. Species, media, units, test duration and test 
+conditions should be clearly indicated. (If data for any of these properties are not available, they should still be listed on 
+the SDS with a statement that data are not available). 
+- 428 - 
+A4.3.12.3 
+Some ecotoxicological properties are substance specific, i.e. bioaccumulation, persistence and 
+degradability. The information should therefore be given, where available and appropriate, for each relevant ingredient 
+of the mixture (i.e. those which are required to be listed in section 3 of the SDS). 
+A4.3.12.4 
+Provide also a short summary of the data given under A4.3.12.5 to A4.3.12.9 in relation to the hazard 
+classification criteria. Where data are not available for classification, this should be clearly stated on the SDS for each 
+basic property concerned. Additionally, if data are available showing that the substance or mixture does not meet the 
+criteria for classification, it should be stated on the SDS that the substance or mixture has been evaluated and, based on 
+available data, does not meet the classification criteria. Additionally, if a substance or mixture is found to be not classified 
+for other reasons, for example, due to technical impossibility to obtain the data, or inconclusive data, this should be clearly 
+stated on the SDS. 
+A4.3.12.5 
+Toxicity 
+Information on toxicity can be provided using data from tests performed on aquatic and/or terrestrial 
+organisms. This should include relevant available data on both acute and chronic aquatic toxicity for fish, crustaceans, 
+algae and other aquatic plants. In addition, toxicity data on other organisms (including soil micro-and macro-organisms) 
+such as birds, bees and plants, should be included when available. Where the substance or mixture has inhibitory effects 
+on the activity of micro-organisms, the possible impact on sewage treatment plants should be mentioned. 
+A4.3.12.6 
+Persistence and degradability 
+Persistence and degradability is the potential for the substance or the appropriate constituents of a 
+mixture to degrade in the environment, either through biodegradation or other processes, such as oxidation or hydrolysis. 
+Test results relevant to assess persistence and degradability should be given where available. If degradation half-lives are 
+quoted it must be indicated whether these half-lives refer to mineralization or to primary degradation. The potential of the 
+substance or certain constituents (see also A4.3.12.8) of a mixture to degrade in sewage treatment plants should also be 
+mentioned. 
+A4.3.12.7 
+Bioaccumulative potential 
+Bioaccumulation is the potential for the substance or certain constituents of a mixture to accumulate in 
+biota and, possibly, pass through the food chain. Test results relevant to assess the bioaccumulative potential should be 
+given. This should include reference to the octanol-water partition coefficient (Kow) and bioconcentration factor (BCF), 
+if available. 
+A4.3.12.8 
+Mobility in soil 
+Mobility in soil is the potential of a substance or the constituents of a mixture, if released to the 
+environment, to move under natural forces to the groundwater or to a distance from the site of release. The potential for 
+mobility in soil should be given where available. Information on mobility can be determined from relevant mobility data 
+such as adsorption studies or leaching studies. For example, Koc values can be predicted from octanol/water partition 
+coefficients (Kow). Leaching and mobility can be predicted from models. 
+NOTE: 
+Where real data on the substance or mixture is available this data will take precedence over models 
+and predictions. 
+A4.3.12.9 
+Other adverse effects 
+Information on any other adverse effects to the environment should be included where available, such 
+as environmental fate (exposure), ozone depletion potential, photochemical ozone creation potential, endocrine disrupting 
+potential and/or global warming potential. 
+A4.3.13 
+SECTION 13: Disposal considerations 
+A4.3.13.1 
+Disposal methods 
+A4.3.13.1.1 
+Provide information for proper disposal, recycling or reclamation of the substance or mixture and/or its 
+container to assist in the determination of safe and environmentally preferred waste management options, consistent with 
+the requirements of the national competent authority. For the safety of persons conducting disposal, recycling or 
+reclamation activities, please refer to the information in section 8 (exposure controls and personal protection) of the SDS. 
+- 429 - 
+A4.3.13.1.2 
+Specify disposal containers and methods. 
+A4.3.13.1.3 
+Discuss physical/chemical properties that may affect disposal options. 
+A4.3.13.1.4 
+Discourage sewage disposal. 
+A4.3.13.1.5 
+Where appropriate, identify any special precautions for incineration or landfill. 
+A4.3.14 
+SECTION 14: Transport information 
+This section provides basic classification information for the transporting/shipment of a hazardous 
+substance or mixture by road, rail, sea or air. Where information is not available or relevant this should be stated. 
+A4.3.14.1 
+UN Number 
+Provide the UN Number (i.e. four-figure identification number of the substance or article) from the UN 
+Model Regulations 4. 
+A4.3.14.2 
+UN Proper Shipping Name 
+Provide the UN proper shipping name from the UN Model Regulations. For substances or mixtures the 
+UN proper shipping name should be provided in this subsection if it has not appeared as the GHS product identifier or 
+national or regional identifiers. 
+A4.3.14.3 
+Transport hazard class(es) 
+Provide the transport class (and subsidiary risks) assigned to the substances or mixtures according to 
+the most predominant hazard that they present in accordance with the UN Model Regulations. 
+A4.3.14.4 
+Packing group, if applicable 
+Provide the packing group number from the UN Model Regulations, if applicable. The packing group 
+number is assigned to certain substances in accordance with their degree of hazard. 
+A4.3.14.5 
+Environmental hazards 
+Indicate whether the substance or mixture is a known marine pollutant according to the IMDG Code, 
+and if so, whether it is a “marine pollutant” or a “severe marine pollutant”. Also indicate whether the substance or mixture 
+is environmentally hazardous according to the UN Model Regulations, ADR, RID and ADN. 
+A4.3.14.6 
+Special precautions for user 
+Provide information on any special precautions, which a user needs to be aware of, or needs to comply 
+with in connection with transport. 
+A4.3.14.7 
+Transport in bulk according to IMO instruments 
+This subsection only applies when cargoes are intended to be carried in bulk according to IMO 
+instruments: e.g. chapter VI or VII of SOLAS Annex II or Annex V of MARPOL, the IBC Code, the IMSBC Code and 
+the IGC Code (or earlier versions, i.e.: EGC Code or GC Code). 
+For liquid bulk cargoes, provide the product name (if name is different to that given in A4.3.1.1) as 
+required by the shipment document and in accordance with the name used in the lists of product names given in chapters 
+17 or 18 of the IBC Code or the latest edition of the IMO’s MEPC.2/Circular. Indicate ship type required and pollution 
+category. 
+For solid bulk cargoes, provide the bulk cargo shipping name, whether or not the cargo is considered 
+harmful to the marine environment (HME) according to MARPOL Annex V, whether it is a material hazardous only in 
+bulk (MHB) according to the IMSBC Code, and which group it should be shipped according to the IMSBC. 
+For liquefied gas cargoes in bulk provide the product name and ship type according to the IGC Code 
+(or earlier versions, i.e.: EGC Code or GC Code). 
+- 430 - 
+A4.3.15 
+SECTION 15: Regulatory information 
+Describe any other regulatory information on the substance or mixture that is not provided elsewhere 
+in the SDS (e.g. whether the substance or mixture is subject to the Montreal Protocol, the Stockholm Convention or the 
+Rotterdam Convention). 
+A4.3.15.1 
+Safety, health and environmental regulations specific for the product in question 
+Provide relevant national and/or regional information on the regulatory status of the substance or 
+mixture (including its ingredients) under relevant safety, health and environmental regulations. This should include 
+whether the substance is subject to any prohibitions or restrictions in the country or region into which it is being supplied. 
+A4.3.16 
+SECTION 16: Other information 
+Provide information relevant to the preparation of the SDS in this section. This should incorporate other 
+information that does not belong in sections 1 to 15 of the SDS, including information on preparation and revision of the 
+SDS such as: 
+(a) 
+the date of preparation of the latest revision of the SDS. When revisions are made to an SDS, 
+unless it has been indicated elsewhere, clearly indicate where the changes have been made to the 
+previous version of the SDS. Suppliers should maintain an explanation of the changes and be 
+willing to provide it upon request; 
+(b) 
+a key/legend to abbreviations and acronyms used in the SDS; and 
+(c) 
+key literature references and sources for data used to compile the SDS. 
+NOTE: 
+While references are not necessary in SDS’s, references may be included in this section if desired. 
+- 431 - 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ANNEX 5 
+ 
+CONSUMER PRODUCT LABELLING 
+BASED ON THE LIKELIHOOD OF 
+INJURY 
+- 433 - 
+ANNEX 5 
+CONSUMER PRODUCT LABELLING BASED 
+ON THE LIKELIHOOD OF INJURY 
+A5.1 
+Introduction 
+A5.1.1 
+The Globally Harmonized System of Classification and Labelling of Chemicals is based on an 
+assessment of the intrinsic hazardous properties of the chemicals involved. However, it has been recognized that some 
+systems provide information about chronic health hazards in consumer products only after considering additional data 
+regarding potential exposures to consumers under normal conditions of use or foreseeable misuse. These systems thus 
+provide information based on an assessment of risk, or the likelihood of injury occurring from exposure to these products. 
+Where this exposure assessment and determination of likelihood of injury reveal that the potential for harm to occur as a 
+result of the expected exposures is insignificant, chronic health hazards may not be included on the product label for 
+consumer use. This type of system was recognized in a paper clarifying the scope of the GHS work in 19981: 
+“The application of the components of the system may vary by type of product or stage of the life cycle. Once a chemical 
+is classified, the likelihood of adverse effects may be considered in deciding what informational or other steps should be 
+taken for a given product or use setting”. 
+A5.1.2 
+The work on the GHS has not addressed harmonization of this type of approach. Therefore, specific 
+procedures to apply this approach would have to be developed and applied by the competent authority. However, in 
+recognition that it is an approach that has been used, and will continue to be used in the future, this annex is being provided 
+to give additional guidance on how such an approach may work in practice. 
+A5.1.3 
+Exposure assessments for some consumer products are used to determine what information is included 
+on a label in this type of approach. Regulators and manufacturers obtain exposure data or generate hypothetical exposure 
+data based on customary use or foreseeable misuse. These assumptions are then used to determine whether a chronic 
+health hazard is included on a consumer product label, and what precautions are to be followed, under a risk-based 
+approach. These decisions are thus made on the basis of considerations regarding the likelihood of harm occurring in the 
+consumer exposure situations that have been identified. 
+A5.1.4 
+Consumer product labels in some systems are based on a combination of hazard and risk. However, 
+acute and physical hazards may be indicated on the label, while chronic health effects labelling based on risk is not 
+indicated. This may be due in part to the expectation that exposures to some consumer products are of short duration, and 
+thus may not be sufficient to lead to the development of chronic health effects as a result of those exposures. These 
+expectations may not be accurate where consumer products are used in a workplace, e.g. paints or adhesives used by 
+construction workers on a regular basis 
+A5.1.5 
+While intrinsic hazards of a chemical can be determined for all sectors, information about exposure, and 
+thus risk, varies significantly among the sectors covered by the GHS. The vehicle by which this information is then 
+transmitted to the user also varies. In some cases, particularly in the consumer setting, the label is the sole source of 
+information, while in others, especially the workplace, it is one piece of a comprehensive system, supplemented by SDS’s 
+and worker training. In transport, a label transmits the primary information, but additional information is provided by the 
+transport documentation. 
+A5.2 
+General principles 
+A5.2.1 
+While the specific risk assessment approach has not been addressed or harmonized in the GHS, certain 
+general principles are as follows: 
+(a) 
+All chemicals should be classified based on GHS classification criteria 
+The first step in the process of classifying hazards and communicating information should always 
+be classification of intrinsic hazards based on the GHS criteria for substances and mixtures; 
+ 
+1 
+IOMC Description and Further Clarification of the Anticipated Application of the Globally Harmonized System 
+(GHS), IFCS/ISG3/98.32B. 

@@ -1,0 +1,91 @@
+# MSDS system repository scope
+#
+# This repository stores source code, runtime configuration, approved templates,
+# active databases, structured evidence and documentation. Generated product
+# documents and local recovery material stay on the working disk.
+
+# Local Git metadata: the existing 02 retrieval repository remains independent.
+**/.git/
+
+# Python, Node and test runtime data
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.pytest_codex_tmp/
+**/.pytest_tmp_codex/
+**/.pytest_tmp_codex_db/
+**/node_modules/
+**/.cas_cache/
+**/dist/
+**/build/
+**/*.log
+**/Thumbs.db
+**/~$*
+
+# Local backups, scratch work and generated audit/runtime folders
+**/_codex_backup/
+**/_codex_backups/
+**/_codex_work/
+**/_codex_runtime/
+**/_scratch/
+**/_archive/
+**/outputs/
+**/验证输出/
+**/pytest_tmp/
+**/audit_output/
+
+# Product MSDS and verification deliverables are not source assets.
+03-数据库/MSDS/
+03-数据库/测试库/
+03-数据库/正式库/入库word  第一批/
+03-数据库/正式库/标准字段数据库Excel/导出表/
+07-多格式输出/覆写测试/
+07-多格式输出/检索输出/
+
+# Repeated template snapshots and temporary source exports.
+**/备份/
+**/备份_*/
+**/模板草稿/
+**/*备份*
+**/*.bak*
+**/*.inspect.ndjson
+03-数据库/正式库/DB/_archive/
+
+# Historical database snapshots; active databases are kept explicitly below.
+03-数据库/正式库/Data Base/msds_standard_before_*.db
+03-数据库/正式库/Data Base/msds_standard_pre_*.db
+03-数据库/正式库/Data Base/msds_standard_after_*.db
+04-推断引擎/正式法律法规库/物质限制清单/*.before-*.db
+
+# Raw legal-library PDFs/DOC/DOCX are kept locally for retrieval but are not
+# pushed in the system source repository. Structured legal databases, JSON
+# manifests and retrieval code remain tracked.
+04-推断引擎/法规匹配库/**/*.pdf
+04-推断引擎/法规匹配库/**/*.doc
+04-推断引擎/法规匹配库/**/*.docx
+04-推断引擎/正式法律法规库/**/*.pdf
+04-推断引擎/正式法律法规库/**/*.doc
+04-推断引擎/正式法律法规库/**/*.docx
+04-推断引擎/正式法律法规库/**/*.zip
+04-推断引擎/正式法律法规库/**/*.rar
+
+# Full product-document corpora are local source material, not system assets.
+# Keep the small deterministic reader fixture under 02-检索系统/tests/fixtures.
+03-数据库/数据清理模块/标准模板/产品详情/**
+03-数据库/数据清理模块/标准模板/TDS MSDS 主文件/**
+
+# Local source exports that duplicate the active SQLite databases.
+03-数据库/正式库/中文总型号数据库_*.xlsx
+03-数据库/正式库/*.inspect.ndjson
+03-数据库/正式库Data Basecas_library.db
+
+# Broken historical upload probe; not a runtime or deployment entry point.
+_scripts/_test_upload.py
+
+# Product-specific demonstrations and generated write-outs in the formal area.
+03-数据库/正式库/推导方案/EC-1801*.docx
+03-数据库/正式库/推导方案/OS-1330*.docx
+03-数据库/正式库/推导方案/EP-1704*.doc
+03-数据库/正式库/推导方案/content*.json
+03-数据库/正式库/推导方案/facts*.json
+03-数据库/正式库/推导方案/_dump_plan.txt

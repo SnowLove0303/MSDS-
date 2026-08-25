@@ -1,0 +1,22 @@
+# Keep Office files and SQLite databases opaque to text diff/merge.
+*.db binary
+*.doc binary
+*.docx binary
+*.pdf binary
+*.xls binary
+*.xlsx binary
+*.png binary
+*.jpg binary
+
+# Normalize source text files across Windows and Linux checkouts.
+*.py text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.ps1 text eol=lf
+*.sh text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.txt text eol=lf

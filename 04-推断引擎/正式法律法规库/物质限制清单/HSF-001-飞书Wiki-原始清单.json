@@ -1,0 +1,1225 @@
+{
+  "source": {
+    "title": "HSF 001",
+    "wiki_url": "https://xcnch7esppuf.feishu.cn/wiki/KZJnw8imvi0p7IkrnZtcYtvonec",
+    "sheet_id": "vEzU2C",
+    "revision": 3,
+    "range": "A1:C173",
+    "columns": [
+      "HSF 001限制项目",
+      "具体相关物质",
+      "CAS号"
+    ],
+    "row_count": 172,
+    "project_count": 30,
+    "source_note": "由飞书机器人只读读取 HSF 001 Wiki 内嵌 Sheet；保留源表行号和源表CAS文本。",
+    "normalization_note": "源表中 7789/9/5、7775/11/3、7789/6/2 按 CAS 格式规范化为 7789-09-5、7775-11-3、7789-06-2；多个CAS或无法确认的源表值不参与直接CAS命中。",
+    "limits_note": "该 Sheet 仅提供限制项目、具体相关物质和CAS号，没有提供限值、单位、适用范围、豁免或检测方法。"
+  },
+  "rows": [
+    {
+      "source_row": 2,
+      "limit_project": "镉及镉化合物",
+      "substance": "镉",
+      "cas_raw": "7440-43-9",
+      "cas": "7440-43-9"
+    },
+    {
+      "source_row": 3,
+      "limit_project": "镉及镉化合物",
+      "substance": "氧化镉",
+      "cas_raw": "1306-19-0",
+      "cas": "1306-19-0"
+    },
+    {
+      "source_row": 4,
+      "limit_project": "镉及镉化合物",
+      "substance": "硫化镉",
+      "cas_raw": "1306-23-6",
+      "cas": "1306-23-6"
+    },
+    {
+      "source_row": 5,
+      "limit_project": "镉及镉化合物",
+      "substance": "氯化镉",
+      "cas_raw": "10108-64-2",
+      "cas": "10108-64-2"
+    },
+    {
+      "source_row": 6,
+      "limit_project": "镉及镉化合物",
+      "substance": "硫酸镉",
+      "cas_raw": "10124-36-4",
+      "cas": "10124-36-4"
+    },
+    {
+      "source_row": 7,
+      "limit_project": "镉及镉化合物",
+      "substance": "硝酸镉",
+      "cas_raw": "10325-94-7",
+      "cas": "10325-94-7"
+    },
+    {
+      "source_row": 8,
+      "limit_project": "镉及镉化合物",
+      "substance": "碳酸镉",
+      "cas_raw": "513-78-0",
+      "cas": "513-78-0"
+    },
+    {
+      "source_row": 9,
+      "limit_project": "镉及镉化合物",
+      "substance": "氢氧化镉",
+      "cas_raw": "21041-95-2",
+      "cas": "21041-95-2"
+    },
+    {
+      "source_row": 10,
+      "limit_project": "铅及铅化合物",
+      "substance": "铅",
+      "cas_raw": "7439-92-1",
+      "cas": "7439-92-1"
+    },
+    {
+      "source_row": 11,
+      "limit_project": "铅及铅化合物",
+      "substance": "一氧化铅",
+      "cas_raw": "1317-36-8",
+      "cas": "1317-36-8"
+    },
+    {
+      "source_row": 12,
+      "limit_project": "铅及铅化合物",
+      "substance": "四氧化三铅",
+      "cas_raw": "1314-41-6",
+      "cas": "1314-41-6"
+    },
+    {
+      "source_row": 13,
+      "limit_project": "铅及铅化合物",
+      "substance": "二氧化铅",
+      "cas_raw": "1309-60-0",
+      "cas": "1309-60-0"
+    },
+    {
+      "source_row": 14,
+      "limit_project": "铅及铅化合物",
+      "substance": "硫酸铅",
+      "cas_raw": "7446-14-2",
+      "cas": "7446-14-2"
+    },
+    {
+      "source_row": 15,
+      "limit_project": "铅及铅化合物",
+      "substance": "碳酸铅",
+      "cas_raw": "598-63-0",
+      "cas": "598-63-0"
+    },
+    {
+      "source_row": 16,
+      "limit_project": "铅及铅化合物",
+      "substance": "碱式碳酸铅",
+      "cas_raw": "1319-46-6",
+      "cas": "1319-46-6"
+    },
+    {
+      "source_row": 17,
+      "limit_project": "铅及铅化合物",
+      "substance": "铬酸铅",
+      "cas_raw": "7758-97-6",
+      "cas": "7758-97-6"
+    },
+    {
+      "source_row": 18,
+      "limit_project": "铅及铅化合物",
+      "substance": "硝酸铅",
+      "cas_raw": "10099-74-8",
+      "cas": "10099-74-8"
+    },
+    {
+      "source_row": 19,
+      "limit_project": "铅及铅化合物",
+      "substance": "乙酸铅",
+      "cas_raw": "301-04-2",
+      "cas": "301-04-2"
+    },
+    {
+      "source_row": 20,
+      "limit_project": "汞及汞化合物",
+      "substance": "汞",
+      "cas_raw": "7439-97-6",
+      "cas": "7439-97-6"
+    },
+    {
+      "source_row": 21,
+      "limit_project": "汞及汞化合物",
+      "substance": "氯化汞",
+      "cas_raw": "7487-94-7",
+      "cas": "7487-94-7"
+    },
+    {
+      "source_row": 22,
+      "limit_project": "汞及汞化合物",
+      "substance": "氯化亚汞",
+      "cas_raw": "10112-91-1",
+      "cas": "10112-91-1"
+    },
+    {
+      "source_row": 23,
+      "limit_project": "汞及汞化合物",
+      "substance": "氧化汞",
+      "cas_raw": "21908-53-2",
+      "cas": "21908-53-2"
+    },
+    {
+      "source_row": 24,
+      "limit_project": "汞及汞化合物",
+      "substance": "硫化汞",
+      "cas_raw": "1344-48-5",
+      "cas": "1344-48-5"
+    },
+    {
+      "source_row": 25,
+      "limit_project": "汞及汞化合物",
+      "substance": "硝酸汞",
+      "cas_raw": "10045-94-0",
+      "cas": "10045-94-0"
+    },
+    {
+      "source_row": 26,
+      "limit_project": "汞及汞化合物",
+      "substance": "乙酸汞",
+      "cas_raw": "1600-27-7",
+      "cas": "1600-27-7"
+    },
+    {
+      "source_row": 27,
+      "limit_project": "六价铬化合物",
+      "substance": "三氧化铬",
+      "cas_raw": "1333-82-0",
+      "cas": "1333-82-0"
+    },
+    {
+      "source_row": 28,
+      "limit_project": "六价铬化合物",
+      "substance": "重铬酸钾",
+      "cas_raw": "7778-50-9",
+      "cas": "7778-50-9"
+    },
+    {
+      "source_row": 29,
+      "limit_project": "六价铬化合物",
+      "substance": "重铬酸钠",
+      "cas_raw": "10588-01-9",
+      "cas": "10588-01-9"
+    },
+    {
+      "source_row": 30,
+      "limit_project": "六价铬化合物",
+      "substance": "重铬酸铵",
+      "cas_raw": "7789/9/5",
+      "cas": "7789-09-5"
+    },
+    {
+      "source_row": 31,
+      "limit_project": "六价铬化合物",
+      "substance": "铬酸钾",
+      "cas_raw": "7789-00-6",
+      "cas": "7789-00-6"
+    },
+    {
+      "source_row": 32,
+      "limit_project": "六价铬化合物",
+      "substance": "铬酸钠",
+      "cas_raw": "7775/11/3",
+      "cas": "7775-11-3"
+    },
+    {
+      "source_row": 33,
+      "limit_project": "六价铬化合物",
+      "substance": "铬酸铅",
+      "cas_raw": "7758-97-6",
+      "cas": "7758-97-6"
+    },
+    {
+      "source_row": 34,
+      "limit_project": "六价铬化合物",
+      "substance": "铬酸锶",
+      "cas_raw": "7789/6/2",
+      "cas": "7789-06-2"
+    },
+    {
+      "source_row": 35,
+      "limit_project": "六价铬化合物",
+      "substance": "铬酸锌",
+      "cas_raw": "13530-65-9",
+      "cas": "13530-65-9"
+    },
+    {
+      "source_row": 36,
+      "limit_project": "六价铬化合物",
+      "substance": "铬酸钙",
+      "cas_raw": "13765-19-0",
+      "cas": "13765-19-0"
+    },
+    {
+      "source_row": 37,
+      "limit_project": "镍及镍化合物",
+      "substance": "镍",
+      "cas_raw": "7440-02-0",
+      "cas": "7440-02-0"
+    },
+    {
+      "source_row": 38,
+      "limit_project": "镍及镍化合物",
+      "substance": "氧化镍",
+      "cas_raw": "1313-99-1",
+      "cas": "1313-99-1"
+    },
+    {
+      "source_row": 39,
+      "limit_project": "镍及镍化合物",
+      "substance": "氢氧化镍",
+      "cas_raw": "12054-48-7",
+      "cas": "12054-48-7"
+    },
+    {
+      "source_row": 40,
+      "limit_project": "镍及镍化合物",
+      "substance": "硫酸镍",
+      "cas_raw": "7786-81-4",
+      "cas": "7786-81-4"
+    },
+    {
+      "source_row": 41,
+      "limit_project": "镍及镍化合物",
+      "substance": "氯化镍",
+      "cas_raw": "7718-54-9",
+      "cas": "7718-54-9"
+    },
+    {
+      "source_row": 42,
+      "limit_project": "镍及镍化合物",
+      "substance": "硝酸镍",
+      "cas_raw": "13138-45-9",
+      "cas": "13138-45-9"
+    },
+    {
+      "source_row": 43,
+      "limit_project": "镍及镍化合物",
+      "substance": "碳酸镍",
+      "cas_raw": "3333-67-3",
+      "cas": "3333-67-3"
+    },
+    {
+      "source_row": 44,
+      "limit_project": "镍及镍化合物",
+      "substance": "硫化镍",
+      "cas_raw": "16812-54-7",
+      "cas": "16812-54-7"
+    },
+    {
+      "source_row": 45,
+      "limit_project": "砷及砷化合物",
+      "substance": "砷",
+      "cas_raw": "7440-38-2",
+      "cas": "7440-38-2"
+    },
+    {
+      "source_row": 46,
+      "limit_project": "砷及砷化合物",
+      "substance": "三氧化二砷",
+      "cas_raw": "1327-53-3",
+      "cas": "1327-53-3"
+    },
+    {
+      "source_row": 47,
+      "limit_project": "砷及砷化合物",
+      "substance": "五氧化二砷",
+      "cas_raw": "1303-28-2",
+      "cas": "1303-28-2"
+    },
+    {
+      "source_row": 48,
+      "limit_project": "砷及砷化合物",
+      "substance": "砷酸",
+      "cas_raw": "7778-39-4",
+      "cas": "7778-39-4"
+    },
+    {
+      "source_row": 49,
+      "limit_project": "砷及砷化合物",
+      "substance": "亚砷酸钠",
+      "cas_raw": "7784-46-5",
+      "cas": "7784-46-5"
+    },
+    {
+      "source_row": 50,
+      "limit_project": "砷及砷化合物",
+      "substance": "砷酸钠",
+      "cas_raw": "13464-38-5",
+      "cas": "13464-38-5"
+    },
+    {
+      "source_row": 51,
+      "limit_project": "砷及砷化合物",
+      "substance": "砷化镓",
+      "cas_raw": "1303-00-0",
+      "cas": "1303-00-0"
+    },
+    {
+      "source_row": 52,
+      "limit_project": "铍及铍化合物",
+      "substance": "铍",
+      "cas_raw": "7440-41-7",
+      "cas": "7440-41-7"
+    },
+    {
+      "source_row": 53,
+      "limit_project": "铍及铍化合物",
+      "substance": "氧化铍",
+      "cas_raw": "1304-56-9",
+      "cas": "1304-56-9"
+    },
+    {
+      "source_row": 54,
+      "limit_project": "铍及铍化合物",
+      "substance": "氢氧化铍",
+      "cas_raw": "13327-32-7",
+      "cas": "13327-32-7"
+    },
+    {
+      "source_row": 55,
+      "limit_project": "铍及铍化合物",
+      "substance": "氯化铍",
+      "cas_raw": "7787-47-5",
+      "cas": "7787-47-5"
+    },
+    {
+      "source_row": 56,
+      "limit_project": "铍及铍化合物",
+      "substance": "硫酸铍",
+      "cas_raw": "13510-49-1",
+      "cas": "13510-49-1"
+    },
+    {
+      "source_row": 57,
+      "limit_project": "铍及铍化合物",
+      "substance": "氟化铍",
+      "cas_raw": "7787-49-7",
+      "cas": "7787-49-7"
+    },
+    {
+      "source_row": 58,
+      "limit_project": "锑及锑化合物",
+      "substance": "锑",
+      "cas_raw": "7440-36-0",
+      "cas": "7440-36-0"
+    },
+    {
+      "source_row": 59,
+      "limit_project": "锑及锑化合物",
+      "substance": "三氧化二锑",
+      "cas_raw": "1309-64-4",
+      "cas": "1309-64-4"
+    },
+    {
+      "source_row": 60,
+      "limit_project": "锑及锑化合物",
+      "substance": "五氧化二锑",
+      "cas_raw": "1314-60-9",
+      "cas": "1314-60-9"
+    },
+    {
+      "source_row": 61,
+      "limit_project": "锑及锑化合物",
+      "substance": "三氯化锑",
+      "cas_raw": "10025-91-9",
+      "cas": "10025-91-9"
+    },
+    {
+      "source_row": 62,
+      "limit_project": "锑及锑化合物",
+      "substance": "五氯化锑",
+      "cas_raw": "7647-18-9",
+      "cas": "7647-18-9"
+    },
+    {
+      "source_row": 63,
+      "limit_project": "锑及锑化合物",
+      "substance": "三硫化二锑",
+      "cas_raw": "1345-04-6",
+      "cas": "1345-04-6"
+    },
+    {
+      "source_row": 64,
+      "limit_project": "多溴联苯 PBB",
+      "substance": "联苯的多溴化物组",
+      "cas_raw": "多个CAS",
+      "cas": ""
+    },
+    {
+      "source_row": 65,
+      "limit_project": "多溴联苯 PBB",
+      "substance": "四溴联苯",
+      "cas_raw": "40088-45-7",
+      "cas": "40088-45-7"
+    },
+    {
+      "source_row": 66,
+      "limit_project": "多溴联苯 PBB",
+      "substance": "五溴联苯",
+      "cas_raw": "56307-79-0",
+      "cas": "56307-79-0"
+    },
+    {
+      "source_row": 67,
+      "limit_project": "多溴联苯 PBB",
+      "substance": "六溴联苯",
+      "cas_raw": "36355-01-8",
+      "cas": "36355-01-8"
+    },
+    {
+      "source_row": 68,
+      "limit_project": "多溴联苯 PBB",
+      "substance": "八溴联苯",
+      "cas_raw": "27858-07-7",
+      "cas": "27858-07-7"
+    },
+    {
+      "source_row": 69,
+      "limit_project": "多溴联苯 PBB",
+      "substance": "十溴联苯",
+      "cas_raw": "13654-09-6",
+      "cas": "13654-09-6"
+    },
+    {
+      "source_row": 70,
+      "limit_project": "多溴联苯醚 PBDE",
+      "substance": "四溴二苯醚",
+      "cas_raw": "40088-47-9",
+      "cas": "40088-47-9"
+    },
+    {
+      "source_row": 71,
+      "limit_project": "多溴联苯醚 PBDE",
+      "substance": "五溴二苯醚",
+      "cas_raw": "32534-81-9",
+      "cas": "32534-81-9"
+    },
+    {
+      "source_row": 72,
+      "limit_project": "多溴联苯醚 PBDE",
+      "substance": "六溴二苯醚",
+      "cas_raw": "36483-60-0",
+      "cas": "36483-60-0"
+    },
+    {
+      "source_row": 73,
+      "limit_project": "多溴联苯醚 PBDE",
+      "substance": "七溴二苯醚",
+      "cas_raw": "68928-80-3",
+      "cas": "68928-80-3"
+    },
+    {
+      "source_row": 74,
+      "limit_project": "多溴联苯醚 PBDE",
+      "substance": "八溴二苯醚",
+      "cas_raw": "32536-52-0",
+      "cas": "32536-52-0"
+    },
+    {
+      "source_row": 75,
+      "limit_project": "多溴联苯醚 PBDE",
+      "substance": "九溴二苯醚",
+      "cas_raw": "63936-56-1",
+      "cas": "63936-56-1"
+    },
+    {
+      "source_row": 76,
+      "limit_project": "多溴联苯醚 PBDE",
+      "substance": "十溴二苯醚 BDE-209",
+      "cas_raw": "1163-19-5",
+      "cas": "1163-19-5"
+    },
+    {
+      "source_row": 77,
+      "limit_project": "四溴双酚A TBBPA",
+      "substance": "四溴双酚A",
+      "cas_raw": "79-94-7",
+      "cas": "79-94-7"
+    },
+    {
+      "source_row": 78,
+      "limit_project": "六溴环十二烷 HBCDD",
+      "substance": "HBCDD技术混合物",
+      "cas_raw": "25637-99-4",
+      "cas": "25637-99-4"
+    },
+    {
+      "source_row": 79,
+      "limit_project": "六溴环十二烷 HBCDD",
+      "substance": "1,2,5,6,9,10-六溴环十二烷",
+      "cas_raw": "3194-55-6",
+      "cas": "3194-55-6"
+    },
+    {
+      "source_row": 80,
+      "limit_project": "六溴环十二烷 HBCDD",
+      "substance": "α-HBCDD",
+      "cas_raw": "134237-50-6",
+      "cas": "134237-50-6"
+    },
+    {
+      "source_row": 81,
+      "limit_project": "六溴环十二烷 HBCDD",
+      "substance": "β-HBCDD",
+      "cas_raw": "134237-51-7",
+      "cas": "134237-51-7"
+    },
+    {
+      "source_row": 82,
+      "limit_project": "六溴环十二烷 HBCDD",
+      "substance": "γ-HBCDD",
+      "cas_raw": "134237-52-8",
+      "cas": "134237-52-8"
+    },
+    {
+      "source_row": 83,
+      "limit_project": "其他有机溴化合物",
+      "substance": "三(2,3-二溴丙基)磷酸酯",
+      "cas_raw": "126-72-7",
+      "cas": "126-72-7"
+    },
+    {
+      "source_row": 84,
+      "limit_project": "其他有机溴化合物",
+      "substance": "双(2,3-二溴丙基)磷酸酯",
+      "cas_raw": "5412-25-9",
+      "cas": "5412-25-9"
+    },
+    {
+      "source_row": 85,
+      "limit_project": "其他有机溴化合物",
+      "substance": "2,2-双(溴甲基)-1,3-丙二醇",
+      "cas_raw": "3296-90-0",
+      "cas": "3296-90-0"
+    },
+    {
+      "source_row": 86,
+      "limit_project": "其他有机溴化合物",
+      "substance": "六溴苯",
+      "cas_raw": "87-82-1",
+      "cas": "87-82-1"
+    },
+    {
+      "source_row": 87,
+      "limit_project": "其他有机溴化合物",
+      "substance": "五溴甲苯",
+      "cas_raw": "87-83-2",
+      "cas": "87-83-2"
+    },
+    {
+      "source_row": 88,
+      "limit_project": "多氯联苯 PCB",
+      "substance": "PCB混合物",
+      "cas_raw": "1336-36-3",
+      "cas": "1336-36-3"
+    },
+    {
+      "source_row": 89,
+      "limit_project": "多氯联苯 PCB",
+      "substance": "Aroclor 1242",
+      "cas_raw": "53469-21-9",
+      "cas": "53469-21-9"
+    },
+    {
+      "source_row": 90,
+      "limit_project": "多氯联苯 PCB",
+      "substance": "Aroclor 1254",
+      "cas_raw": "11097-69-1",
+      "cas": "11097-69-1"
+    },
+    {
+      "source_row": 91,
+      "limit_project": "多氯联苯 PCB",
+      "substance": "Aroclor 1260",
+      "cas_raw": "11096-82-5",
+      "cas": "11096-82-5"
+    },
+    {
+      "source_row": 92,
+      "limit_project": "多氯联苯 PCB",
+      "substance": "4,4'-二氯联苯",
+      "cas_raw": "2050-68-2",
+      "cas": "2050-68-2"
+    },
+    {
+      "source_row": 93,
+      "limit_project": "多氯联苯 PCB",
+      "substance": "2,2',4,4',5,5'-六氯联苯 PCB-153",
+      "cas_raw": "35065-27-1",
+      "cas": "35065-27-1"
+    },
+    {
+      "source_row": 94,
+      "limit_project": "多氯化萘 PCN",
+      "substance": "多氯萘",
+      "cas_raw": "多个CAS",
+      "cas": ""
+    },
+    {
+      "source_row": 95,
+      "limit_project": "多氯化萘 PCN",
+      "substance": "一氯萘",
+      "cas_raw": "90-13-1",
+      "cas": "90-13-1"
+    },
+    {
+      "source_row": 96,
+      "limit_project": "多氯化萘 PCN",
+      "substance": "二氯萘",
+      "cas_raw": "28699-88-9",
+      "cas": "28699-88-9"
+    },
+    {
+      "source_row": 97,
+      "limit_project": "多氯化萘 PCN",
+      "substance": "三氯萘",
+      "cas_raw": "1321-65-9",
+      "cas": "1321-65-9"
+    },
+    {
+      "source_row": 98,
+      "limit_project": "多氯化萘 PCN",
+      "substance": "四氯萘",
+      "cas_raw": "1335-88-2",
+      "cas": "1335-88-2"
+    },
+    {
+      "source_row": 99,
+      "limit_project": "多氯化萘 PCN",
+      "substance": "五氯萘",
+      "cas_raw": "1321-64-8",
+      "cas": "1321-64-8"
+    },
+    {
+      "source_row": 100,
+      "limit_project": "多氯化萘 PCN",
+      "substance": "六氯萘",
+      "cas_raw": "1335-87-1",
+      "cas": "1335-87-1"
+    },
+    {
+      "source_row": 101,
+      "limit_project": "多氯化萘 PCN",
+      "substance": "七氯萘",
+      "cas_raw": "32241-08-0",
+      "cas": "32241-08-0"
+    },
+    {
+      "source_row": 102,
+      "limit_project": "多氯化萘 PCN",
+      "substance": "八氯萘",
+      "cas_raw": "2234-13-1",
+      "cas": "2234-13-1"
+    },
+    {
+      "source_row": 103,
+      "limit_project": "多氯三联苯 PCT",
+      "substance": "氯化三联苯",
+      "cas_raw": "61788-33-8",
+      "cas": "61788-33-8"
+    },
+    {
+      "source_row": 104,
+      "limit_project": "氯化石蜡 CP",
+      "substance": "短链氯化石蜡 SCCP，C10–13",
+      "cas_raw": "85535-84-8",
+      "cas": "85535-84-8"
+    },
+    {
+      "source_row": 105,
+      "limit_project": "氯化石蜡 CP",
+      "substance": "中链氯化石蜡 MCCP，C14–17",
+      "cas_raw": "85535-85-9",
+      "cas": "85535-85-9"
+    },
+    {
+      "source_row": 106,
+      "limit_project": "氯化石蜡 CP",
+      "substance": "长链氯化石蜡 LCCP，C18–28",
+      "cas_raw": "85535-86-0",
+      "cas": "85535-86-0"
+    },
+    {
+      "source_row": 107,
+      "limit_project": "氯化石蜡 CP",
+      "substance": "氯化石蜡通用商品混合物",
+      "cas_raw": "63449-39-8",
+      "cas": "63449-39-8"
+    },
+    {
+      "source_row": 108,
+      "limit_project": "PVC及PVC混合物",
+      "substance": "聚氯乙烯 PVC",
+      "cas_raw": "9002-86-2",
+      "cas": "9002-86-2"
+    },
+    {
+      "source_row": 109,
+      "limit_project": "双(氯甲基)醚",
+      "substance": "双(氯甲基)醚 BCME",
+      "cas_raw": "542-88-1",
+      "cas": "542-88-1"
+    },
+    {
+      "source_row": 110,
+      "limit_project": "氯丹类",
+      "substance": "氯丹",
+      "cas_raw": "57-74-9",
+      "cas": "57-74-9"
+    },
+    {
+      "source_row": 111,
+      "limit_project": "氯丹类",
+      "substance": "顺式氯丹",
+      "cas_raw": "5103-71-9",
+      "cas": "5103-71-9"
+    },
+    {
+      "source_row": 112,
+      "limit_project": "氯丹类",
+      "substance": "反式氯丹",
+      "cas_raw": "5103-74-2",
+      "cas": "5103-74-2"
+    },
+    {
+      "source_row": 113,
+      "limit_project": "氯丹类",
+      "substance": "氧氯丹",
+      "cas_raw": "26880-48-8",
+      "cas": "26880-48-8"
+    },
+    {
+      "source_row": 114,
+      "limit_project": "氯丹类",
+      "substance": "七氯",
+      "cas_raw": "76-44-8",
+      "cas": "76-44-8"
+    },
+    {
+      "source_row": 115,
+      "limit_project": "氯化烃",
+      "substance": "四氯化碳",
+      "cas_raw": "56-23-5",
+      "cas": "56-23-5"
+    },
+    {
+      "source_row": 116,
+      "limit_project": "氯化烃",
+      "substance": "1,1,1-三氯乙烷",
+      "cas_raw": "71-55-6",
+      "cas": "71-55-6"
+    },
+    {
+      "source_row": 117,
+      "limit_project": "氯化烃",
+      "substance": "三氯乙烯",
+      "cas_raw": "28861",
+      "cas": ""
+    },
+    {
+      "source_row": 118,
+      "limit_project": "氯化烃",
+      "substance": "四氯乙烯",
+      "cas_raw": "127-18-4",
+      "cas": "127-18-4"
+    },
+    {
+      "source_row": 119,
+      "limit_project": "氯化烃",
+      "substance": "二氯甲烷",
+      "cas_raw": "27639",
+      "cas": ""
+    },
+    {
+      "source_row": 120,
+      "limit_project": "氯化烃",
+      "substance": "1,2-二氯乙烷",
+      "cas_raw": "107-06-2",
+      "cas": "107-06-2"
+    },
+    {
+      "source_row": 121,
+      "limit_project": "六氯环己烷 HCH",
+      "substance": "HCH技术混合物",
+      "cas_raw": "608-73-1",
+      "cas": "608-73-1"
+    },
+    {
+      "source_row": 122,
+      "limit_project": "六氯环己烷 HCH",
+      "substance": "α-HCH",
+      "cas_raw": "319-84-6",
+      "cas": "319-84-6"
+    },
+    {
+      "source_row": 123,
+      "limit_project": "六氯环己烷 HCH",
+      "substance": "β-HCH",
+      "cas_raw": "319-85-7",
+      "cas": "319-85-7"
+    },
+    {
+      "source_row": 124,
+      "limit_project": "六氯环己烷 HCH",
+      "substance": "γ-HCH / 林丹",
+      "cas_raw": "58-89-9",
+      "cas": "58-89-9"
+    },
+    {
+      "source_row": 125,
+      "limit_project": "六氯环己烷 HCH",
+      "substance": "δ-HCH",
+      "cas_raw": "319-86-8",
+      "cas": "319-86-8"
+    },
+    {
+      "source_row": 126,
+      "limit_project": "其他有机氯化合物",
+      "substance": "五氯苯",
+      "cas_raw": "608-93-5",
+      "cas": "608-93-5"
+    },
+    {
+      "source_row": 127,
+      "limit_project": "其他有机氯化合物",
+      "substance": "六氯苯",
+      "cas_raw": "118-74-1",
+      "cas": "118-74-1"
+    },
+    {
+      "source_row": 128,
+      "limit_project": "其他有机氯化合物",
+      "substance": "五氯苯酚",
+      "cas_raw": "87-86-5",
+      "cas": "87-86-5"
+    },
+    {
+      "source_row": 129,
+      "limit_project": "其他有机氯化合物",
+      "substance": "六氯丁二烯",
+      "cas_raw": "87-68-3",
+      "cas": "87-68-3"
+    },
+    {
+      "source_row": 130,
+      "limit_project": "其他有机氯化合物",
+      "substance": "艾氏剂",
+      "cas_raw": "309-00-2",
+      "cas": "309-00-2"
+    },
+    {
+      "source_row": 131,
+      "limit_project": "其他有机氯化合物",
+      "substance": "狄氏剂",
+      "cas_raw": "60-57-1",
+      "cas": "60-57-1"
+    },
+    {
+      "source_row": 132,
+      "limit_project": "其他有机氯化合物",
+      "substance": "异狄氏剂",
+      "cas_raw": "72-20-8",
+      "cas": "72-20-8"
+    },
+    {
+      "source_row": 133,
+      "limit_project": "其他有机氯化合物",
+      "substance": "DDT",
+      "cas_raw": "50-29-3",
+      "cas": "50-29-3"
+    },
+    {
+      "source_row": 134,
+      "limit_project": "有机锡化合物：TBT",
+      "substance": "双(三丁基锡)氧化物 TBTO",
+      "cas_raw": "56-35-9",
+      "cas": "56-35-9"
+    },
+    {
+      "source_row": 135,
+      "limit_project": "有机锡化合物：TBT",
+      "substance": "三丁基氯化锡",
+      "cas_raw": "1461-22-9",
+      "cas": "1461-22-9"
+    },
+    {
+      "source_row": 136,
+      "limit_project": "有机锡化合物：TBT",
+      "substance": "三丁基氟化锡",
+      "cas_raw": "30593",
+      "cas": ""
+    },
+    {
+      "source_row": 137,
+      "limit_project": "有机锡化合物：TBT",
+      "substance": "三丁基锡甲基丙烯酸酯",
+      "cas_raw": "2155-70-6",
+      "cas": "2155-70-6"
+    },
+    {
+      "source_row": 138,
+      "limit_project": "有机锡化合物：TBT",
+      "substance": "三丁基锡苯甲酸酯",
+      "cas_raw": "4342-36-3",
+      "cas": "4342-36-3"
+    },
+    {
+      "source_row": 139,
+      "limit_project": "有机锡化合物：TBT",
+      "substance": "三丁基锡乙酸酯",
+      "cas_raw": "56-36-0",
+      "cas": "56-36-0"
+    },
+    {
+      "source_row": 140,
+      "limit_project": "有机锡化合物：TBT",
+      "substance": "三丁基溴化锡",
+      "cas_raw": "1461-23-0",
+      "cas": "1461-23-0"
+    },
+    {
+      "source_row": 141,
+      "limit_project": "有机锡化合物：TBT",
+      "substance": "三丁基锡亚油酸酯",
+      "cas_raw": "24124-25-2",
+      "cas": "24124-25-2"
+    },
+    {
+      "source_row": 142,
+      "limit_project": "有机锡化合物：TBT",
+      "substance": "三丁基锡环烷酸盐",
+      "cas_raw": "85409-17-2",
+      "cas": "85409-17-2"
+    },
+    {
+      "source_row": 143,
+      "limit_project": "有机锡化合物：TPT",
+      "substance": "三苯基氯化锡",
+      "cas_raw": "639-58-7",
+      "cas": "639-58-7"
+    },
+    {
+      "source_row": 144,
+      "limit_project": "有机锡化合物：TPT",
+      "substance": "三苯基氟化锡",
+      "cas_raw": "379-52-2",
+      "cas": "379-52-2"
+    },
+    {
+      "source_row": 145,
+      "limit_project": "有机锡化合物：TPT",
+      "substance": "三苯基氢氧化锡",
+      "cas_raw": "76-87-9",
+      "cas": "76-87-9"
+    },
+    {
+      "source_row": 146,
+      "limit_project": "有机锡化合物：TPT",
+      "substance": "三苯基乙酸锡",
+      "cas_raw": "900-95-8",
+      "cas": "900-95-8"
+    },
+    {
+      "source_row": 147,
+      "limit_project": "氧化三丁基锡 TBTO",
+      "substance": "双(三丁基锡)氧化物",
+      "cas_raw": "56-35-9",
+      "cas": "56-35-9"
+    },
+    {
+      "source_row": 148,
+      "limit_project": "2-(2H-苯并三唑-2-基)-4,6-二叔丁基苯酚",
+      "substance": "UV-320",
+      "cas_raw": "3846-71-7",
+      "cas": "3846-71-7"
+    },
+    {
+      "source_row": 149,
+      "limit_project": "石棉",
+      "substance": "温石棉 Chrysotile",
+      "cas_raw": "12001-29-5",
+      "cas": "12001-29-5"
+    },
+    {
+      "source_row": 150,
+      "limit_project": "石棉",
+      "substance": "青石棉 Crocidolite",
+      "cas_raw": "12001-28-4",
+      "cas": "12001-28-4"
+    },
+    {
+      "source_row": 151,
+      "limit_project": "石棉",
+      "substance": "铁石棉 Amosite",
+      "cas_raw": "12172-73-5",
+      "cas": "12172-73-5"
+    },
+    {
+      "source_row": 152,
+      "limit_project": "石棉",
+      "substance": "透闪石石棉 Tremolite asbestos",
+      "cas_raw": "77536-68-6",
+      "cas": "77536-68-6"
+    },
+    {
+      "source_row": 153,
+      "limit_project": "石棉",
+      "substance": "阳起石石棉 Actinolite asbestos",
+      "cas_raw": "77536-66-4",
+      "cas": "77536-66-4"
+    },
+    {
+      "source_row": 154,
+      "limit_project": "石棉",
+      "substance": "直闪石石棉 Anthophyllite asbestos",
+      "cas_raw": "77536-67-5",
+      "cas": "77536-67-5"
+    },
+    {
+      "source_row": 155,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "联苯胺",
+      "cas_raw": "92-87-5",
+      "cas": "92-87-5"
+    },
+    {
+      "source_row": 156,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "4-氨基联苯",
+      "cas_raw": "92-67-1",
+      "cas": "92-67-1"
+    },
+    {
+      "source_row": 157,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "4-氯邻甲苯胺",
+      "cas_raw": "95-69-2",
+      "cas": "95-69-2"
+    },
+    {
+      "source_row": 158,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "2-萘胺",
+      "cas_raw": "91-59-8",
+      "cas": "91-59-8"
+    },
+    {
+      "source_row": 159,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "邻氨基偶氮甲苯",
+      "cas_raw": "97-56-3",
+      "cas": "97-56-3"
+    },
+    {
+      "source_row": 160,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "5-硝基邻甲苯胺",
+      "cas_raw": "99-55-8",
+      "cas": "99-55-8"
+    },
+    {
+      "source_row": 161,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "4,4'-亚甲基双(2-氯苯胺)",
+      "cas_raw": "101-14-4",
+      "cas": "101-14-4"
+    },
+    {
+      "source_row": 162,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "4,4'-二氨基二苯甲烷",
+      "cas_raw": "101-77-9",
+      "cas": "101-77-9"
+    },
+    {
+      "source_row": 163,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "3,3'-二氯联苯胺",
+      "cas_raw": "91-94-1",
+      "cas": "91-94-1"
+    },
+    {
+      "source_row": 164,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "3,3'-二甲氧基联苯胺",
+      "cas_raw": "119-90-4",
+      "cas": "119-90-4"
+    },
+    {
+      "source_row": 165,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "3,3'-二甲基联苯胺",
+      "cas_raw": "119-93-7",
+      "cas": "119-93-7"
+    },
+    {
+      "source_row": 166,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "3,3'-二甲基-4,4'-二氨基二苯甲烷",
+      "cas_raw": "838-88-0",
+      "cas": "838-88-0"
+    },
+    {
+      "source_row": 167,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "对甲酚定",
+      "cas_raw": "120-71-8",
+      "cas": "120-71-8"
+    },
+    {
+      "source_row": 168,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "4,4'-亚甲基双(2-甲基苯胺)",
+      "cas_raw": "838-88-0",
+      "cas": "838-88-0"
+    },
+    {
+      "source_row": 169,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "邻甲苯胺",
+      "cas_raw": "95-53-4",
+      "cas": "95-53-4"
+    },
+    {
+      "source_row": 170,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "4-甲氧基间苯二胺",
+      "cas_raw": "615-05-4",
+      "cas": "615-05-4"
+    },
+    {
+      "source_row": 171,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "4,4'-硫代二苯胺",
+      "cas_raw": "139-65-1",
+      "cas": "139-65-1"
+    },
+    {
+      "source_row": 172,
+      "limit_project": "偶氮化合物及特定偶氮化合物",
+      "substance": "邻氨基苯甲醚",
+      "cas_raw": "90-04-0",
+      "cas": "90-04-0"
+    },
+    {
+      "source_row": 173,
+      "limit_project": "甲醛",
+      "substance": "甲醛",
+      "cas_raw": "50-00-0",
+      "cas": "50-00-0"
+    }
+  ]
+}

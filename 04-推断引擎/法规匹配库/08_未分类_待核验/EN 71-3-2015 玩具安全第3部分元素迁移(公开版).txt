@@ -1,0 +1,500 @@
+Skip Links
+⇒ PREAMBLE—NOT PART OF THE SPECIFICATION ⇐
+In order to promote public education and public safety, equal justice for all, a better informed citizenry, the rule of law, world trade and world peace, this legal document is hereby made available on a noncommercial basis, as it is the right of all humans to know and speak the laws that govern them.
+The reader is advised:
+Additional information and related documents may be found at the page devoted to EU-Mandated Harmonised Standards on the Safety of Toys.
+EN 71-3:2013+A1
+EUROPEAN STANDARD
+NORME EUROPÉENNE
+EUROPÄISCHE NORM
+October 2014
+ICS 97.200.50
+Supersedes EN 71-3:2013
+English Version
+Safety of toys - Part 3: Migration of certain elements
+Sécurité des jouets - Partie 3: Migration de certains éléments
+Sicherheit von Spielzeug - Teil 3: Migration bestimmter Elemente
+This European Standard was approved by CEN on 29 May 2013 and includes Amendment 1 approved by CEN on 18 August 2014.
+CEN members are bound to comply with the CEN/CENELEC Internal Regulations which stipulate the conditions for giving this European Standard the status of a national standard without any alteration. Up-to-date lists and bibliographical references concerning such national standards may be obtained on application to the CEN-CENELEC Management Centre or to any CEN member.
+This European Standard exists in three official versions (English, French, German). A version in any other language made by translation under the responsibility of a CEN member into its own language and notified to the CEN-CENELEC Management Centre has the same status as the official versions.
+CEN members are the national standards bodies of Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, Former Yugoslav Republic of Macedonia, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey and United Kingdom.
+EUROPEAN COMMITTEE FOR STANDARDIZATION
+COMITÉ EUROPÉEN DE NORMALISATION
+EUROPÄISCHES KOMITEE FÜR NORMUNG
+CEN-CENELEC Management Centre: Avenue Marnix 17, B-1000 Brussels
+© 2014 CEN
+All rights of exploitation in any form and by any means reserved worldwide for CEN national Members.
+Ref. No. EN 71-3:2013+A1:2014 E
+Contents
+Foreword
+This document (EN 71-3:2013+A1:2014) has been prepared by Technical Committee CEN/TC 52 “Safety of toys”, the secretariat of which is held by DS.
+This European Standard shall be given the status of a national standard, either by publication of an identical text or by endorsement, at the latest by April 2015, and conflicting national standards shall be withdrawn at the latest by April 2015.
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. CEN [and/or CENELEC] shall not be held responsible for identifying any or all such patent rights.
+This document supersedes A1⇒ EN 71-3:2013 ⇐A1.
+This document includes Amendment 1 approved by CEN on 2014-08-18.
+The start and finish of text introduced or altered by amendment is indicated in the text by tags A1⇒ ⇐A1.
+This document has been prepared under a mandate given to CEN by the European Commission and the European Free Trade Association, and supports essential requirements of EU Directive 2009/48/EC.
+For relationship with EU Directive 2009/48/EC, see informative Annex ZA, which is an integral part of this document.
+The significant changes from the previous edition of this standard are detailed in Annex A.
+EN 71, Safety of toys, consists of the following parts:
+According to the CEN-CENELEC Internal Regulations, the national standards organisations of the following countries are bound to implement this European Standard: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, Former Yugoslav Republic of Macedonia, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey and the United Kingdom.
+Introduction
+The Toy Safety Directive (2009/48/EC) [1] specifies maximum migration limits for three categories of toy materials. The limits for the migration of certain elements are expressed in milligram per kilogram toy material and are detailed in Table 2. The purpose of the limits is to minimise children’s exposure to certain potentially toxic elements.
+1 Scope
+This European Standard specifies requirements and test methods for the migration of aluminium, antimony, arsenic, barium, boron, cadmium, chromium (III), chromium (VI), cobalt, copper, lead, manganese, mercury, nickel, selenium, strontium, tin, organic tin and zinc from toy materials and from parts of toys.
+Packaging materials are not considered to be part of the toy unless they have intended play value.
+The standard contains requirements for the migration of certain elements from the following categories of toy materials:
+The requirements of this standard do not apply to toys or parts of toys which, due to their accessibility, function, volume or mass, clearly exclude any hazard due to sucking, licking or swallowing or prolonged skin contact when the toy or part of toy is used as intended or in a foreseeable way, bearing in mind the behaviour of children.
+2 Normative references
+The following documents, in whole or in part, are referenced in this document and are necessary for its application. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.
+EN ISO 3696, Water for analytical laboratory use — Specification and test methods (ISO 3696)
+3 Terms and definitions
+For the purposes of this document, the following terms and definitions apply.
+3.1 base material
+material upon which coatings may be formed or deposited
+3.2 coating
+layer of material formed or deposited on a base material which can be removed by scraping
+3.3 limit of detection
+minimum single result which, with a stated probability, can be distinguished from a suitable blank value; the result, cL, is given by the formula:
+where
+sbl is the standard deviation of the blank values and ⇐A1
+k is a numerical factor chosen according to the confidence level desired
+3.4 limit of quantification
+lowest amount of analyte in a sample that can be quantitatively determined with a suitable precision and accuracy
+3.5 other material, whether mass coloured or not
+material such as wood, leather or other porous substances which may absorb colouring matter without forming a coating
+3.6 paper
+sheet formed by irregularly intervened fibres with a mass per unit area of 400 g/m2 or less
+3.7 paper board
+sheet formed by irregularly intervened fibres with a mass per unit area over 400 g/m2
+3.8 scraping
+mechanical removal of coatings down to but not including the base material
+3.9 toy material
+material present in toys and accessible as determined in accordance with EN 71-1:2011, 8.10
+4 Requirements
+4.1 Toy material categories (see H.4)
+4.2 Specific requirements
+The migration of elements from toy materials categorised in accordance with 4.1 shall not exceed the migration limits given in Table 2 when tested in accordance with Clauses 7 and 8.
+5 Principle
+Soluble elements are extracted from toy materials using conditions which simulate the material remaining in contact with gastric juices for a period of time after swallowing. The concentrations of the soluble elements are determined quantitatively by three different methods:
+6 Reagents and apparatus
+6.1 Reagents
+All reagents used for analysis shall be of analytical grade or, if unavailable, technical grade reagents which have been determined to have acceptably low levels of impurity to allow the analysis to be performed.
+6.1.1 Hydrochloric acid solution,
+c(HCl) = (0,07 ± 0,005) mol/l.
+6.1.2 Hydrochloric acid solution,
+c(HCl) = (0,14 ± 0,010) mol/l.
+6.1.3 Hydrochloric acid solution,
+c(HCl) = approximately 1 mol/l.
+6.1.4 Hydrochloric acid solution,
+c(HCl) = approximately 2 mol/l.
+6.1.5 Hydrochloric acid solution,
+c(HCl) = approximately 6 mol/l.
+6.1.6 n-Heptane,
+(C7H16), 99 %.
+6.1.7 Water,
+of at least grade 3 purity in accordance with EN ISO 3696.
+6.2 Apparatus
+Standard laboratory equipment and the following shall be used.
+6.2.1 Plain weave wire cloth stainless steel sieve,
+of nominal aperture size 0,5 mm and tolerances as indicated in Table C.1.
+6.2.2 Equipment for measuring pH,
+calibrated and sufficiently accurate for the purposes of this European Standard. ⇐A1
+6.2.3 Centrifuge,
+capable of centrifuging at high speed to separate the solids.
+6.2.4 A means to agitate the mixture,
+at a temperature of (37 ± 2) °C.
+An orbital or linear shaker, wrist action shaker, shaking water bath or magnetic stirrer can be used. It is important that the migration solution is in constant motion relative to the sample.
+6.2.5 A selection of containers of gross volume,
+between 1,6 times and 5,0 times that of the volume of hydrochloric acid extract.
+6.2.6 High retention filter-paper,
+ashless filter paper, particle retention in liquids 2,5 µm.
+6.2.7 Membrane filters
+with pore sizes of 0.45, 0.22 and 0.02 µm.
+7 Sampling and sample preparation
+7.1 Selection of test portions
+A laboratory sample for testing shall consist of one toy in the form in which it will be marketed. Test portions shall be taken from toy materials of the single toy sample. Identical materials in the toy may be combined and treated as a single test portion but additional toy samples shall not be used to prepare larger test portions. Test portions are taken from each colour of each toy material. Test portions may be composed of more than one toy material or colour only when discrete specimens cannot be separated physically, e.g. dot printing, patterned textiles, etc.
+If the total weight of available toy material is less than 10 mg test portions are disregarded (see H.5).
+The above does not preclude the possibility of testing toy materials before they are used to manufacture a toy in order to prove compliance of the final toy. In this case, it shall be assessed that the manufacturing process does not influence the migration of elements from the toy materials.
+7.2 Standards preparation
+Prepare standard solutions covering a suitable working range appropriate to the required limits for each element for the three categories. Examples for ICP-MS and ICP-OES are included in Annex E.
+7.3 Sample preparation
+7.3.1 General
+A blank solution shall be determined for any bias. The analytical results shall be corrected for any bias due, for example, to contaminants present in the filter paper (6.2.6) or the gastric simulant. When there is a significant bias the method should be checked.
+7.3.2 Category I: Dry, brittle, powder like or pliable and Category II: Liquid or sticky
+If possible obtain a test portion of not less than 100 mg of the material from the laboratory sample.
+If a test portion of 100 mg or more cannot be obtained, a test portion shall be obtained from each toy material present in the laboratory sample in a mass greater than 10 mg. If the weight of the test portion obtained is between 10 mg and 100 mg, that weight shall be reported (see Clause 10 h)). In this case the analytical results shall be calculated as though 100 mg of the test portion had been used (see H.5).
+If the toy material contains any grease, oil, wax or similar material, material shall be de-waxed. De-waxing shall not be carried out on test portions being analysed for organic tin. Dry a high retention filter paper (see 6.2.6) for 4 h at 37 °C ± 4°C. Weigh the filter paper to the nearest 0,1 mg (Wfp1). The filter paper used should be as small as possible without risking loss of the test portion during the de-waxing procedure. Weigh the test portion, to the nearest 0,1 mg, onto the pre-dried and weighed filter paper. Calculate the mass of the test portion. Use this mass for the calculation of the results of the test. Fold the filter paper carefully to enclose the test portion without loss. Extract the test portion within the filter paper with boiling n-heptane (6.2.5) using suitable laboratory apparatus. The use of a de-waxing step shall be reported (see Clause 10 h)).
+It has been shown that Soxhlet extraction with n-heptane for 6 h is usually sufficient to completely remove non-polar ingredients from waxy toy materials. Alternative methods should be validated to show that they are capable of completely removing the non-polar ingredients from relevant toy materials.
+After removal of non-polar ingredients, dry the folded filter paper containing the dewaxed test portion in an oven at (37 ± 2) °C for 4 h to ensure the removal of residual solvent. Weigh the dried filter paper parcel, to the nearest 0,1 mg (Wfp2). Use Wfp2 for the calculation under 7.4.2.1 on the volume of 0,07 M HCl.
+7.3.3 Category III: Scraped-off
+7.3.3.1 Coatings of paint, varnish, lacquer, printing ink, polymer and similar coatings
+Remove the coating from the laboratory sample by mechanical means (usually scraping) at room temperature. If possible obtain a test portion of not less than 100 mg passing through a metal sieve of aperture 0,5 mm (see 6.2.1).
+If the weight of the test portion obtained is between 10 mg and 100 mg, that weight shall be reported (see Clause 10 h)). In this case the analytical results shall be calculated as though 100 mg of the test portion had been used (see H.5). When possible, coatings on textiles are to be scraped off as a powder (and report this under Clause 10 h)). In case of a thick layer or one which is difficult to remove (e.g. pliable or plasticised layers), the coating can be cut off and tested as polymeric material (7.3.3.2).
+7.3.3.2 Polymeric and similar materials including laminates and reinforced textiles, but excluding other textiles
+If possible obtain a test portion of not less than 100 mg of the polymeric or similar material, according to the following directions.
+Cut out test portions from the areas having the thinnest material cross section. Each test piece shall have at least one dimension of approximately 6 mm when possible (see H.6). The use of pre-prepared reference materials for visual size comparison is recommended.
+If a test portion of 100 mg or more cannot be obtained, a test portion shall be obtained from each toy material present in the laboratory sample in a mass greater than 10 mg. If the weight of the test portion obtained is between 10 mg and 100 mg, that weight shall be reported (see Clause 10 h)). In this case the analytical results shall be calculated as though 100 mg of the test portion had been used (see H.5).
+7.3.3.3 Paper and paper board
+If possible obtain a test portion of not less than 100 mg of the paper or paper board.
+Each test piece shall have at least one dimension of approximately 6 mm when possible (see H.6). The use of pre-prepared reference materials for visual size comparison is recommended.
+If a test portion of 100 mg or more cannot be obtained, a test portion shall be obtained from each toy material present in the laboratory sample in a mass greater than 10 mg. If the weight of the test portion obtained is between 10 mg and 100 mg, that weight shall be reported (see Clause 10 h)). In this case the analytical results shall be calculated as though 100 mg of the test portion had been used (see H.5).
+If the paper or paper board to be tested has paint, varnish, lacquer, printing ink, adhesive or similar material applied to its surface, test portions of the coating shall not be taken separately. In such cases test portions shall be taken from the toy material so that they also include representative parts of the coated area.
+7.3.3.4 Textiles, whether natural or synthetic (see H.7)
+If possible obtain a test portion of not less than 100 mg of the textile material by cutting into test pieces. Each test piece shall have at least one dimension of approximately 6 mm when possible (see H.6). The use of pre-prepared reference materials for visual size comparison is recommended.
+If a sample is not uniform in its material or colour, a test portion shall be obtained from each different material present in a mass greater than 100 mg. A test portion present in a mass between 10 mg and 100 mg shall not be tested separately but shall be tested together with the material to which it is attached. Test portions taken from patterned textiles shall be representative of the whole material.
+7.3.3.5 Glass, ceramic and metallic materials
+If the toy or any of its removable components fits entirely within the small parts cylinder (see EN 71-1) and contains accessible glass, ceramic or metallic materials then the toy or component shall be tested in accordance with 7.4.3.5 after removal of all accessible coatings in accordance with 7.3.3.1.
+7.3.3.6 Other materials, whether mass coloured or not
+If possible obtain a test portion of not less than 100 mg of the toy material according to 7.3.3.2, 7.3.3.3, 7.3.3.4 or 7.3.3.5 whichever is appropriate.
+If a test portion of 100 mg or more cannot be obtained, a test portion shall be obtained from each toy material present in the laboratory sample in a mass greater than 10 mg. If the weight of the test portion obtained is between 10 mg and 100 mg, that weight shall be reported (see Clause 10 h)). In this case the analytical results shall be calculated as though 100 mg of the test portion had been used. If the toy material to be tested is coated with a coating of paint, varnish, lacquer, printing ink or similar coating follow the procedure in 7.3.3.1.
+7.4 Migration procedure
+7.4.1 General
+The migration solution shall be used for the determination of elements. For the determinations of Chromium species (see H.8) and organic tin the migration solutions shall be stabilised and/or otherwise treated immediately after their preparation (see relevant analytical methods in Annex F and G).
+For other elements, if the migration solutions are to be retained for more than 24 h prior to analysis, they shall be stabilised by addition of hydrochloric acid so that the concentration HCl of the stored solution is approximately 1 mol/l. The stabilisation by hydrochloric acid shall be reported (see Clause 10 h).
+7.4.2 Category I: Dry, brittle, powder like or pliable and Category II: Liquid or sticky
+7.4.2.1 Samples containing grease, oil, wax or similar material
+Weigh, to the nearest 0,05 g, Wfp 2 x 25 g of water at approximately 20 °C into the extraction container containing the filter paper parcel. Macerate carefully without loss so that the filter paper is thoroughly soaked. Then add the same mass of 0,14 mol/l hydrochloric acid solution (6.1.2) at approximately 20 °C and mix. For the purposes of these measured additions the density of the water and hydrochloric acid solution can be assumed to be 1,0 g/ml and the solutions may be added volumetrically using suitable dispensers accurate to the nearest 0,05 ml. Record the weights or volumes of water and hydrochloric acid used (VH2O and VHCl).
+Without delay separate the solid matter from the solution by filtration through a membrane filter to remove visible solid material. Use filters with a pore size of 0,45 µm or 0,22 µm as necessary. In addition, if necessary, centrifuge at high speed (6.2.3) to remove remaining visible solid materials. Separation shall be completed as soon as possible after completion of the standing time; centrifuging shall take no longer than 10 min and shall be reported under Clause 10 h).
+There is the possibility of small pigment particles passing through a 0,45 µm or 0,22 µm membrane filter (indicated by e.g. a cloudy solution, a Tyndall beam or a coloured filtrate) (see H.9). This could lead – in certain cases – to an incorrect determination of the migration value as the result measured will include not just the migrated element but also element chemically bound to the suspended particles. Where this occurs either refilter the solution immediately using a membrane filter of pore size 0,02 µm. Or where the refiltration cannot be performed, repeat the migration and separation steps finally using a membrane filter of pore size 0,02 µm.
+7.4.2.2 Samples not containing grease, oil, wax or similar material
+If the test portion is likely to contain large quantities of alkaline materials, generally in the form of calcium carbonate, adjust the pH to 1,2 ± 0,1 with approximately 6 mol/l HCl (see 6.1.5) in order to avoid over-dilution.
+The amount of hydrochloric acid used in relation to the amount of solution shall be reported under Clause 10 h). If only small quantities of alkaline material are present and the pH of the mixture is greater than 1,3 add drop-wise, while shaking the mixture, an aqueous solution of approximately 2 mol/l HCl (see 6.1.4) until the pH is 1,2 ± 0,1. Protect the mixture from light. Agitate the mixture at (37 ± 2) °C (see 6.2.4) for 1 h continuously and then allow to stand for 1 h at (37 ± 2) °C. ⇐A1
+Without delay separate the solid matter from the solution by filtration through a membrane filter to remove visible solid material. Use filters with a pore size of 0,45 µm or 0,22 µm as necessary. In addition, if necessary, centrifuge at high speed (6.2.3) to remove remaining visible solid materials. Separation shall be completed as soon as possible after completion of the standing time; centrifuging shall take no longer than 10 min and shall be reported under Clause 10 h).
+There is the possibility of small pigment particles passing through a 0,45 µm or 0,22 µm membrane filter (indicated by e.g. a cloudy solution, a Tyndall beam or a coloured filtrate) (see H.9). This could lead – in certain cases – to an incorrect determination of the migration value as the result measured will include not just the migrated element but also element chemically bound to the suspended particles. Where this occurs either refilter the solution immediately using a membrane filter of pore size 0,02 µm. Or where the refiltration cannot be performed, repeat the migration and separation steps finally using a membrane filter of pore size 0,02 µm.
+7.4.3 Category III: Scraped-off
+7.4.3.1 Coatings of paint, varnish, lacquer, printing ink, polymer and similar coatings
+Separate the solid matter from the solution by filtration through a membrane filter to remove visible solid material. Use filters with a pore size of 0,45 µm or 0,22 µm as necessary. In addition, if necessary, centrifuge at high speed (6.2.3) to remove remaining visible solid materials. Separation shall be completed as soon as possible after completion of the standing time; centrifuging shall take no longer than 10 min and shall be reported under Clause 10 h).
+There is the possibility of small pigment particles passing through a 0,45 µm or 0,22 µm membrane filter (indicated by e.g. a cloudy solution, a Tyndall beam or a coloured filtrate) (see H.9). This could lead – in certain cases – to an incorrect determination of the migration value as the result measured will include not just the migrated element but also element chemically bound to the suspended particles. Where this occurs either refilter the solution immediately using a membrane filter of pore size 0,02 µm. Or where the refiltration cannot be performed, repeat the migration and separation steps finally using a membrane filter of pore size 0,02 µm.
+7.4.3.2 Polymeric and similar materials including laminates and reinforced textile, but excluding other textiles
+Follow the procedure in 7.4.3.1.
+7.4.3.3 Paper and paper board
+Macerate the test portion so prepared with 25 times its mass of water (see 6.1.7) so that the resulting mixture is homogeneous. Quantitatively transfer the mixture to the appropriate sized container (see 6.2.5). Add to the mixture an aqueous solution of 0,14 mol/l HCl (see 6.1.2) at approximately 20 °C at 25 times the mass of the test portion.
+Without delay separate the solid matter from the solution by filtration through a membrane filter to remove visible solid material. Use filters with a pore size of 0,45 µm or 0,22 µm as necessary. In addition, if necessary, centrifuge at high speed (6.2.3) to remove remaining visible solid materials. Separation shall be completed as soon as possible after completion of the standing time; centrifuging shall take no longer than 10 min and shall be reported under Clause 10 h).
+There is the possibility of small pigment particles passing through a 0,45 µm or 0,22 µm membrane filter (indicated by e.g. a cloudy solution, a Tyndall beam or a coloured filtrate) (see H.9). This could lead – in certain cases – to an incorrect determination of the migration value as the result measured will include not just the migrated element but also element chemically bound to the suspended particles. Where this occurs either refilter the solution immediately using a membrane filter of pore size 0,02 µm. Or where the refiltration cannot be performed, repeat the migration and separation steps finally using a membrane filter of pore size 0,02 µm.
+7.4.3.4 Textiles, whether natural or synthetic
+Follow the procedure in 7.4.3.1.
+7.4.3.5 Glass, ceramic and metallic materials
+Without delay separate the solid matter from the solution by filtration through a membrane filter to remove visible solid material. Use filters with a pore size of 0,45 µm or 0,22 µm as necessary. In addition, if necessary, centrifuge at high speed (6.2.3) to remove remaining visible solid materials. Separation shall be completed as soon as possible after completion of the standing time; centrifuging shall take no longer than 10 min and shall be reported under Clause 10 h).
+There is the possibility of small pigment particles passing through a 0,45 µm or 0,22 µm membrane filter (indicated by e.g. a cloudy solution, a Tyndall beam or a coloured filtrate) (see H.9). This could lead – in certain cases – to an incorrect determination of the migration value as the result measured will include not just the migrated element but also element chemically bound to the suspended particles. Where this occurs either refilter the solution immediately using a membrane filter of pore size 0,02 µm. Or where the refiltration cannot be performed, repeat the migration and separation steps finally using a membrane filter of pore size 0,02 µm.
+7.4.3.6 Other materials, whether mass coloured or not
+The materials shall be tested by the most appropriate method of 7.4.3.2, 7.4.3.3, 7.4.3.4 or 7.4.3.5. The method used shall be reported under Clause 10 h).
+8 Methods of analysis
+For all types of sample preparation, the final extract is analysed for presence of elements by ICP-MS, ICPOES, CVAAS, GC-MS or other suitable techniques. Examples of possible techniques are given in Annexes E, F and G.
+A validated method shall be used. The limits of quantification shall be below the limits given in Table 2.
+The obtained migration solution (7.4) is analysed by three different methods (one for general elements, one for Chromium (III) and Chromium (VI) and one for organic tin). Each method requires an amount of the migration solution. For general elements 4 ml of migration solution is required, for Chromium (III) and (VI) 1 ml; for organic tin 5 ml. In order to determine all of the required elements, it may be necessary to perform an additional dilution of the migration solution. In this case, the limits of detection and the limits of quantification of the relevant analyses shall be reported under Clause 10 h).
+9 Calculation of results
+9.1 General elements
+9.1.1 Calibration curve
+Prepare calibration curves of each element of interest by plotting the concentration of the standards of the element of interest (see 7.2) against the measuring signal. For quantification the calibration curve shall have a correlation coefficient better or equal to 0,990.
+9.1.2 Calculation of migration
+Calculate the amount of an element in the sample by:
+where
+Migration : release of an element from the sample (mg/kg)
+C : concentration of the element in the migration solution (mg/l)
+V : volume of simulant added (ml)
+A : amount of test portion (mg)
+f : dilution factor
+Report the results to the number of significant figures justified by the precision of the measurement.
+9.1.3 Interpretation of results
+The measurement uncertainty, ut,r, shall be used to interpret an analytical result in relation to compliance assessment. Laboratories are required to determine their own performance data, including measurement uncertainty (see Annex B).
+9.2 Chromium (III) and Chromium (VI)
+9.2.1 Calibration curve
+Prepare calibration curves of each element of interest by plotting the concentration of the standards of the element of interest (see 7.2.) against the measuring signal. For quantification, the calibration curve shall have a correlation coefficient better or equal to 0,990.
+9.2.2 Calculation of migration
+Calculate the amount of an element in the sample by:
+where
+Migration : release of an element from the sample (mg/kg)
+C : concentration of the element in the migration solution (mg/l)
+V : volume of simulant added (ml)
+A : amount of test portion (mg)
+f : dilution factor
+Report the results to the number of significant figures justified by the precision of the measurement.
+9.2.3 Interpretation of results
+See 9.1.3.
+9.3 Organic tin
+9.3.1 Calibration curves
+The procedure shall be calibrated using internal standards that are comparable to the organic tin compound of interest. In Annex G examples are given. For quantification the calibration curve shall have a correlation coefficient better or equal to 0,990.
+9.3.2 Calculation of migration of single organic tin compound
+For each detected organic tin cation the migration shall be calculated according to the following formula:
+where
+Migration : release of an organic tin compound from the sample (mg/kg)
+C : concentration of the substance in the migration solution (mg/l)
+V : volume of simulant added (ml)
+A : amount of test portion (mg)
+R : relative molecular weight (see Table 3)
+f : dilution factor
+Organic tin compounds other than specified in Table 3 may also be present in toys. Table 3 contains a selection and is not a complete list of organic tin compounds.
+9.3.3 Calculation of migration of organic tin
+The migration of organic tin shall be calculated by adding the migration values for all the single organic tin compounds that have been detected and quantified. The migration of organic tin is expressed as tributyltin (see H.10).
+9.3.4 Interpretation of results
+See 9.1.3.
+10 Test report
+The test report shall at least contain:
+Annex A (informative)Significant technical changes between this European Standard and the previous version
+Annex B (informative)Method performance
+B.1 Method performance
+A standardised method is defined as a by a group of users accepted and validated method. In case a laboratory introduces the standardised method without any changes, the laboratory shall demonstrate the results of their laboratory for important performance characteristics are in compliance with the validation results of the standardised method.
+Validation includes specification of the requirements, determination of the characteristics of the method, a check that the requirements can be fulfilled by using the method, and a statement of validity.
+This standardised method, migration process and analytical process, should be validated by using certified reference materials with known migration results for each element for a specific category. Since these certified reference materials are not available yet, the method is validated by using blank material and spiking the simulant after migration and filtration. To assess compliance the reproducibility and bias shall be determined. For reproducibility routine samples can be used and for determination of the bias representative certified reference material or reference material from a Round Robin with a consensus value can be used. Additionally the limit of detection and repeatability could be determined using routine samples. The CITAC / Eurachem Guide [5] can be used to determine these validation parameters.
+B.2 Use of measurement uncertainty in compliance assessment
+The assessment is based on the concept of ‘Decision rules’. These rules give a prescription for the acceptance or rejection of a product based on the measurement result, its uncertainty and the migration limit, taking into account the acceptable level of the probability of making a wrong decision. The application of a decision rule depends on the role of the laboratory, i.e. enforcement laboratory or (industrial) test laboratory.
+A decision rule is that a result implies non compliance with the migration limit if the measured value exceeds the limit by the expanded uncertainty. This decision rule is usually applied by enforcement laboratories.
+Another decision rule is that a result equal to or above the migration limit value implies non-compliance. A result below the limit, deduced by the uncertainty, implies compliance. This decision rule is usually applied by (industrial) test laboratories.
+In this guide [6] several useful examples are given.
+B.3 Information on round robin test
+During the development of the revision of this European Standard a round robin test had been performed in spring 2012. 24 laboratories applied the test method of the draft European Standard prEN 71-3:2012 on references materials provided by the lead laboratory responsible for the development of the test method. The reference materials covered the three material categories and all elements specified in Directive 2009/48/EC.
+The results on the different method part and on the 3 toy categories showed wide spread. Depending on the element/toy material category the statistical evaluation of this data lead to satisfying and unsatisfying estimations of the measurement uncertainty depending of the use of different statistical methods. These 24 findings had been assessed by the CEN/TC 52/WG 5 “Safety of toys – Chemical properties” as not sufficient for taking the repeatability and reproducibility data on board of this standard. The evaluation of the causes for this is still ongoing.
+Furthermore the following potentials for improvement had been identified:
+During the final conclusion for this version of the standard some modifications were introduced to improve the method where there were obvious reasons. For more improvement there is the intention to take the results during this revision into consideration, adapting the method and repeating the round robin test.
+For the practical work of laboratories, there is the need of (certified) reference materials. Information on the availability of such reference materials will be given at http://www.toystandards.ds.dk under the section “Documents”.
+Annex C (normative)Sieve requirements
+Annex D (informative)Preparation and analysis of test portion
+The diagram given below is an indication of which procedure to be used for the various toy materials.
+Figure D.1 — Flowchart of the procedure to be used for the various toy materials
+Annex E (informative)Method of analysis for general elements
+E.1 Principle
+This method quantifies Aluminium, Antimony, Arsenic, Barium, Boron, Cadmium, Chromium, Cobalt, Copper, Lead, Manganese, Mercury, Nickel, Selenium, Strontium, Tin and Zinc in the migration solution (7.4). The migration solution and its dilutions are analysed directly by ICP for identification and quantification.
+E.2 Working solutions
+E.2.1 Working solutions ICP-MS
+E.2.1.1 Stock solution (M1)
+Prepare a stock solution (M1) diluting the commercial available stock solutions of the individual elements (concentration = 1 000 mg/l) in hydrochloric acid solution (see 6.1.1) to a volume of 50 ml, according to the scheme in Table E.1.
+E.2.1.2 Diluted stock solution (M2)
+Dilute 0,5 ml of stock solution M1 in hydrochloric acid (see 6.1.1) to 50 ml.
+E.2.1.3 Working solutions
+Sequentially dilute diluted stock solutions (M1) and (M2) with hydrochloric acid solution (see 6.1.1), in order to obtain standards to be used for calibration according to the scheme in Table E.2.
+E.2.1.4 Internal Standard stock solution
+Prepare an Internal Standard stock solution diluting 250 µl of a commercial available stock solution containing Bismuth, Indium, Lithium and Yttrium (100 µg/ml in 7 % HNO3 (volume fraction)) to a volume of 500 ml. This solution can either be used to prepare the standard and sample solutions, or by mixing with these solutions using continuous flow before entering the spray chamber.
+E.2.2 Working solutions ICP-OES
+E.2.2.1 Stock solution (M1)
+Commercial available stock solutions of the individual elements (see Table E.1) at the concentration of 1 000 mg/l.
+E.2.2.2 Working solutions (calibration standards)
+The working solutions are multi-elements solutions. Sequentially dilute stock solution of the individual elements with hydrochloric acid solution (see 6.1.1) to a final volume of 250 ml, in order to obtain standards to be used for calibration according to the scheme in Table E.3.
+E.3 Procedure
+Use the migration solution (7.4). The elements shall be within the range of the calibration curve and therefore dilutions of the migration solutions may be necessary. For example a dilution range of 2, 20, 200 and 2 000 can be used.
+E.4 Analysis
+E.4.1 General
+The migration solution can be analysed directly by ICP (Inductively Coupled Plasma) to determine the content of general elements (Aluminium, Antimony, Arsenic, Barium, Boron, Cadmium, Cobalt, Chromium, Copper, Lead, Manganese, Mercury, Nickel, Selenium, Strontium, Tin and Zinc). In Table E.4 ICP parameters are given that can be used.
+E.4.2 Limit of detection and quantification
+In Table E.5 typical limits of detection (LOD) and quantification (LOQ) for general elements are given when using ICP-MS.
+Annex F (informative)Methods of analysis for speciation of Chromium (III) and (VI)
+F.1 Principle
+This method quantifies Chromium (III) and Chromium (VI) in the migration solution (7.4). This method is capable to determine compliance with the migration limit for category III toy materials. The limit of quantification is higher than the migration limits for category I and II toy materials. In I.2 guidance is given how compliance can be demonstrated for category I and II toy materials.
+To prevent interconversion of Chromium (III) and Chromium (VI), the migration solution is neutralised directly after the migration step. Experiments have shown that at a pH of 7,1 both species are stable. Mobile phase is added, containing EDTA. EDTA reacts to form a complex with Chromium (III). Chromium (III) and Chromium (VI) are then separated by liquid chromatography using an LC-ICP-MS technique.
+When analysing Chromium (III) and (VI) in one run, a high peak of Chromium (III) may influence the peak of Chromium (VI). This can be solved by skipping the complexation step with EDTA, thereby only showing the Chromium (VI) peak in the chromatogram. Chromium (III) can then be determined by either analysing the migration solution as well after the complexation step, or by determining the migration of total Chromium: Chromium (III) = total Chromium – Chromium (VI).
+F.2 Reagents
+Use reagents of highest purity.
+F.2.1 Water,
+Milli Q 18,2 MΏ.cm.
+F.2.2 Hydrochloric acid,
+HCl (30 % d = 1,15 g/ml or equal).
+F.2.3 Tetrabutylammonium hydroxide (TBAH),
+40 wt % in water, [CH3(CH2)3]4NOH, CAS# 2052-49-5.
+F.2.4 Potassium Ethylenediamine tetraacetic acid,
+C10H14K2N2O8 * 2H2O, CAS# 7379-27-3.
+F.2.5 Ammonia,
+NH3 (25 % in water).
+F.2.5.1 Ammonia solution,
+c(NH3 (aq)= (0,07 ± 0,005) mol/l.
+Add 5,3 ml ammonia solution (F.2.5) into a 1 000 ml volumetric flask. Make up to the mark with water (F.2.1) and mix carefully.
+F.2.6 Acetic acid (glacial),
+100 %.
+F.2.7 Methanol,
+CH3OH.
+F.2.8 Hydrochloric acid solution,
+c(HCl) = (0,07 ± 0,005) mol/l. ⇐A1
+F.2.9 Chromium (III) 1 000 mg/l in water (F.2.1).
+F.2.10 Chromium (VI) 1 000 mg/l in water (F.2.1).
+F.2.11 Stock solution Chromium (M1).
+Prepare a stock solution (M1) diluting 0,5 ml of the commercial available stock solutions of the individual elements (concentration = 1 000 mg/l) in mobile phase (F.2.14) to a volume of 50 ml. Allow the final solution to stand for 1 h at 50 °C.
+F.2.12 Diluted stock solution (M2).
+Dilute 0,5 ml of stock solution M1 in mobile phase (F.2.14) to 50 ml.
+F.2.13 Working solutions (Calibrating Standards).
+Sequentially dilute diluted stock solution (M2) with mobile phase (F.2.14), after addition of 2,5 ml ammonia (F.2.5.1) and 2,5 ml hydrochloric acid (F.2.8), in order to obtain standards to be used for calibration according to the scheme in Table F.1. Allow the working solutions to stand for 1 h at 50 °C.
+F.2.14 Mobile phase.
+Weigh, to the nearest 1 mg into a 1 000 ml volumetric flask approximately 647 mg TBAH (F.2.3) and 243 mg EDTA (F.2.4) and dissolve in water (F.2.1). Adjust the pH with acetic acid to 7,1.
+F.3 Apparatus
+F.3.1 Volumetric flasks, glass.
+F.3.2 Variable pipettes with disposable tips, variable range.
+F.3.3 ICP-MS, equipped with HPLC module.
+F.3.4 pH-meter.
+F.4 Procedure
+Use 1 ml of migration solution (7.4). Add 1 ml ammonia (F.2.5.1) to 1 ml migration solution. Additionally 8 ml mobile phase solution (F.2.14) is added. Allow the final solution to stand for 1 h at 50 °C.
+F.5 Analysis
+F.5.1 General
+Inject samples and calibration solutions into the LC-ICP-MS system.
+The following chromatographic and ICP-MS (F.5.1) settings can be used for the quantification of Chromium (III) and Chromium (VI).
+F.5.2 LC-ICP-MS conditions
+F.5.3 Limit of detection and quantification
+F.5.3.1 General
+In Table F.4 typical limits of detection (LOD) and quantification (LOQ) are given.
+F.5.3.2 Example of chromatogram
+Figure F.1 — Example of chromatogram of 0,6 ppb Chromium (III) and (VI)
+Annex G (informative)Method of analysis for organic tin (see H.10)
+G.1 Principle
+This method quantifies organic tin compounds and/or cations as mentioned in Table G.1 in the migration solution (7.4). The list of compounds in Table G.1 is a selection and not complete. Other organic tin compounds may also be present in toys (see Annex J). The anionic part bound to the organic tin cation is mainly dependent on the chemical environment and is not determined using this method.
+Organic tin compounds are substances which contain an organic moiety in their structure. Organic tin compounds can only be determined in accordance with the standard after derivatisation.
+Most organic tin compounds are too polar to be analysed directly by gas-chromatography and shall be derivatised to form non-polar alkyltin compounds prior to analysis.
+The per-alkylated organic tin compounds behave in a completely different way from their parent compounds. Tetra-alkylated organic tin compounds which are already per-alkylated, such as tetrabutyltin, are determined directly without derivatisation.
+This standard method utilises in situ derivatisation using tetraethylborate to produce ethyl organic tin derivatives. The ethylated derivatives are extracted with hexane and analysed by GC/MS in full scan mode. For quantification single ion mode is preferred.
+The concentration is determined by calibration for the total procedure using an internal standard mixture. The internal standards shall be comparable to the organic tin compound of interest. Tributyl tin (d27) is the internal standard for the determination of Methyl tin, Butyltin, Di-n-propyl tin, Dibutyl tin, Tributyl tin, n-Octyl tin and Din-octyl tin. Tetrabutyl tin (d36) is the internal standard for the determination of Tetrabutyl tin. Triphenyl tin (d15) is the internal standard for the determination of Diphenyl tin and Triphenyl tin.
+G.2 Terms and definitions
+For the purposes of this method, the following terms and definitions apply.
+G.2.1 Organic Tin Compound
+OTC
+substance with at least one Sn-C bond
+G.2.2 Organic Tin Cation
+OC
+part of the organic tin compound that contains all Sn-C bonds (and which is formally loaded)
+G.3 Reagents
+Use reagents of highest purity.
+G.3.1 Water,
+free of substances causing interference with this method.
+G.3.2 Hydrochloric acid,
+HCl (37 %).
+G.3.3 Acetic acid,
+CH3COOH, glacial.
+G.3.4 Sodium acetate,
+3 aq, CH3COONa.3H2O.
+G.3.5 Sodium sulfate,
+Na2SO4, anhydrous.
+G.3.6 Methanol,
+CH3OH.
+G.3.7 Hexane,
+C6H14.
+G.3.8 Sodium tetraethylborate,
+NaB(C2H5)4, CAS# 15523-24-7.
+G.3.9 Methyltin trichloride, MeTCl,
+CH3SnCl3, CAS# 993-16-8.
+G.3.10 Butyltin trichloride,
+BuTCl, C4H9SnCl3, CAS# 1118-46-3.
+G.3.11 Dibutyltin dichloride,
+DBTCl, (C4H9)2SnCl2, CAS# 683-18-1.
+G.3.12 Tributyltin chloride,
+TBTCl, (C4H9)3SnCl, CAS# 1461-22-9.
+G.3.13 Tetrabutyltin,
+TeBT, (C4H9)4Sn,CAS# 1461-25-2.
+G.3.14 Monooctyltin trichloride,
+MOTCl, C8H17SnCl3, CAS# 3091-25-6.
+G.3.15 Dioctyltin dichloride,
+DOTCl, (C8H17)2SnCl2, CAS# 3542-36-7.
+G.3.16 Dipropyltin dichloride,
+DProTCl, (C3H6)2SnCl2, CAS# 867-36-7.
+G.3.17 Diphenyltin dichloride,
+DPhTCl, (C6H5)2SnCl2, CAS# 1135-99-5.
+G.3.18 Triphenyltin chloride,
+TPhTCl, (C6H5)2SnCl, CAS# 639-58-7.
+G.3.19 Tributyl-d27-tin chloride,
+TBTTCL (d27), (C4D9)3SnCl, CAS# 1257647-76-9.
+G.3.20 Tetrabutyl-d36-tin,
+TeBT (d36), (C4D9)2Sn, CAS# 358731-92-7.
+G.3.21 Triphenyl-d15-tin chloride,
+TPhTCl (d15), (C6D5)2SnCl, CAS# 358731-94-9.
+G.3.22 Multi-component solutions and prepared reagents.
+G.3.22.1 General.
+Since stability of multi-component standard solutions is a matter of concern, it is recommended to prepare several solutions containing solely organic tin compounds with the same degree of alkylation/arylation (e.g. four solutions respectively for mono-, di-, tri-, and tetra-substituted compounds). Stability can be assessed by the absence of degradation products.
+G.3.22.2 Multi-component-standard solution in methanol, Stock solution A.
+For the preparation of 1 000 mg/l of organic tin cation stock solution, weigh, to the nearest 0,1 mg, the amounts of organic tin compounds specified in Table G.2 into a 100 ml volumetric flask. Dissolve these compounds in a small amount of methanol (G.3.6). Then make up to the mark with methanol and mix carefully.
+If stored at 4 °C in the dark, the solution is stable for up to one year.
+G.3.22.3 Calibration solution of OC, working solution B.
+Dilute from the stock solution A (G.3.22.2) to a concentration of 10 mg of each OC (expressed as TBT cation) per litre in methanol (dilution factor 100).
+G.3.22.4 Mix solution of the internal standards in methanol, internal standard stock solution C.
+Weigh, to the nearest 0,1 mg, into a 100 ml volumetric flask, approximately 100 mg of Tributyl-d27-tin chloride (G.3.19), 100 mg of Tetrabutyl-d36-tin (G.3.20) and 100 mg of Triphenyl-d15-tin chloride (G.3.21) and dissolve in a small amount of methanol (G.3.6). Make up to the mark with methanol and mix carefully.
+The solution is stable for up to one year when stored in the dark at 4 °C.
+G.3.22.5 Working solution of the internal standards in methanol, internal standard working solution
+D (2 mg deuterated OCT per litre in methanol).
+Pipette 0,2 ml of the internal standard stock solution C into a 100 ml volumetric flask. Make up to the mark with methanol and mix carefully.
+G.3.23 Hydrochloric acid solution,
+c(HCl) = (0,07 ± 0,005) mol/l. ⇐A1
+G.3.24 Acetate buffer solution.
+Dissolve about 16,6 g sodium acetate.3aq (G.3.4) in 250 ml of water (G.3.1) into a 500 ml volumetric flask. Add 1,2 ml glacial acetic acid (G.3.3) to reach a pH of 5,4. Make up to the mark with water (G.3.1) and mix carefully.
+G.3.25 Derivatisation agent (2 % mass concentration in water).
+Weigh about 200 mg of sodium tetraethylborate (G.3.8) into a 10 ml volumetric flask and make up to volume with water (G.3.1). This solution is not stable, and shall be prepared daily fresh.
+G.4 Apparatus
+G.4.1 Volumetric flasks, of 10 ml, 50 ml, 100 ml and 1 000 ml.
+G.4.2 Variable pipettes for organic fluids with disposable tips, with a volume range from 10 to 100 µl, 100 to 1000 µl and 1 to 5 ml.
+G.4.3 Disposable 50 ml, propylene conical tube with screw cap.
+G.4.4 Multi tube vortex.
+G.4.5 Gas chromatograph, equipped with split/splitless injector.
+G.4.6 Autosampler device.
+G.4.7 Mass spectrometer for electron impact (EI) mode.
+G.5 Procedure
+G.5.1 Sample derivatisation
+Use 5 ml of migration solution (7.4). Add 0,1 ml internal standard solution D (G.3.22.5), 5 ml of acetate buffer (G.3.24) is added to the migration solution to adjust the pH to 4,7. Then 0,5 ml of 2 % sodium tetra ethyl borate (G.3.25) and 2 ml of hexane (G.3.7) are added. The mixture is shaken for 30 min with a vortex (G.4.4) and left to stand until the phase separation is complete. The hexane fraction is then analysed by GC-MS.
+G.5.2 Calibration standards
+Take 7 disposable 50 ml tubes, add to each tube 5 ml gastric simulant (G.3.23) and add to each tube with a pipette (G.4.2) respectively 0, 20 µl, 50 µl, 100 µl, 0,20 ml, 0,50 ml and 1,5 ml working solution B (G.3.22.3). Add 0,1 ml internal standard solution D (G.3.22.5), 5 ml of acetate buffer (G.3.24) is added to the resulting migration solution to adjust the pH to 4,7. Then 0,5 ml of 2 % sodium tetra ethyl borate (G.3.25) and 2 ml of hexane (G.3.7) are added. The mixture is shaken for 30 min with a vortex (G.4.4) and left to stand until the phase separation is complete. The hexane fraction is then analysed by GC-MS.
+G.6 Analysis
+G.6.1 General
+Optimise the instrument (G.4.5) according to the manufacturer’s instructions.
+Analyse the analytes in the Selective Ion Monitoring (SIM) mode (Table G.3).
+Quantify the gas chromatographic signals. The evaluation using peak areas is recommended.
+The injection sequence is as follows:
+Examples of GC and MS conditions are given in G.6.1 and G.6.2 respectively.
+G.6.2 Example of GC conditions
+Injection conditions: Pulsed splitless, pulse pressure = 30 kPa, pulse time = 0,5 min
+Purge flow = 50 ml/min, purge time = 2,00 min
+Injection temperature: 275 ºC
+Carrier: Helium; Constant flow: 1,7 ml/min
+Column: 5 %-diphenyl-95 %-dimethyl polysiloxane copolymer, 30 m x 0,32 mm ID x 0,25 µm film thickness
+Oven temperature program: 50 ºC (1 min) - 20 ºC/min - 280 ºC (2,5 min)
+Injection volume: 2 µl
+G.6.3 Example of MS conditions
+Transfer line: 280 ºC
+Electron impact: 70 eV
+Electron multiplier: source dependent
+Selected mode: ion monitoring choose at least three of the most intensive non-interfered fragment ions
+G.6.4 Limit of detection and quantification
+In Table G.4 typical limits of detection (LOD) and quantification (LOQ) for organic tin compounds are given.
+G.6.5 Example of a GC/MS chromatogram
+Figure G.1 — Example of a GC/MS chromatogram of ethylated organic tin compounds
+Annex H (informative)Rationale
+H.1 General
+Migration limits for certain elements in toy materials or parts of toys are set in Annex II, III.13 of the Toy Safety Directive 2009/48/EC [1]. The limits in the Toy Safety Directive have been influenced by an RIVM report according to the criteria of the relevant Scientific Committee, in order to ensure that these elements should be present at safe levels for children and compatible with good manufacturing practice. This assessment includes a differentiation of toys into three toy categories, based on different assumed consumption. The migration limits do not apply to toys or components of toys which, due to their accessibility, function, volume or mass, clearly exclude any hazard due to sucking, licking, swallowing or prolonged contact with skin, bearing in mind the normal and foreseeable behaviour of children.
+This standard specifies the sampling, sample preparation and migration procedure. The migration procedure simulates contact of the toy material with gastric juices for a period of time after swallowing.
+The sample preparation and migration procedure are given in the normative part of this standard (Clause 7). In Clause 8 performance criteria are given for the analytical techniques to determine the amount of a certain element in the resulting migration solution. In the informative Annexes E, F and G the standard preparation and analytical methods are given. These methods have been developed and validated by the lead laboratory, and were confirmed by the peer review laboratory. Other standards preparation and analytical techniques may also be used, as long as they meet the requirements specified in Clause 8.
+In the informative Annex B requirements are given for laboratories how to establish their method performance, including measurement uncertainty. The measurement uncertainty shall be applied in order to interpret the result in relation to compliance assessment. In Annex I further guidance is given how to assess conformity with respect to certain elements.
+H.2 Mouthing behaviour of children (Scope)
+Most studies on mouthing behaviour look at children under three years old. Only 3 studies are known that observe children over three years of age [8,9,10], of which only one presents mouthing duration data [8]. The mean mouthing time on toys for 4 and 5 year old children was very low (3 and 1 min per day respectively) with a maximum observed mouthing time on toys of 20 and 11 min per day.
+By the age of 6 years, children do not mouth their toys to any significant degree.
+H.3 Skin contact (Scope)
+The RIVM has conducted a study on the assessment methodology of chemical safety of toys with a focus on elements and identified the oral exposure to elements as the relevant route [7]. Most if not all toys or accessible parts of toys will come in contact with the skin, which may result in dermal exposure and via hand to mouth contact in additional oral exposure. For systemic exposure to elements, the dermal exposure route is less relevant than the oral exposure route, as the dermal absorption of elements is distinctly lower as their oral absorption. Therefore as a worst case simulant hydrochloric acid was chosen as gastric simulant for migration, also covering other exposure routes.
+H.4 Toy categories (4.1)
+Directive 2009/48/EC [1] sets migration limits for certain elements in three different toy categories, based on the assumed ingestion of the materials. Further explanation of the categories is given in the Explanatory Guidance Document [3].
+Category I includes solid toy material from which powder-like material is released during play. The material can be ingested. Contamination of the hands with powder contributes to enhanced oral exposure. The assumed ingestion is 100 mg per day.
+Category II includes fluid or viscous toy material which can be ingested and/or to which dermal exposure occurs during playing. The assumed ingestion is 400 mg per day.
+Category III includes solid toy material with or without a coating which can be ingested as a result of biting, tooth scraping, sucking or licking. This category includes those materials which are not covered by category I and II. The assumed ingestion is 8 mg per day.
+H.5 Test portions (7.1, 7.3.3.2, 7.3.3.3, 7.3.3.6)
+For category III toys (Scraped off) it is not always possible to obtain 100 mg of toy material.
+If less than 10 mg of toy material can be obtained, it is not required to analyse. From such a small amount of toy material the exposure to certain elements is considered to be negligible.
+If 10 mg to 100 mg of toy material is available, than the test shall be performed as if it were 100 mg of material. The migration is calculated as though 100 mg of the test portion had been used. This compensates for the low exposure to certain elements by migration from such low amounts of toy material.
+H.6 Size of test pieces (7.3.3.2, 7.3.3.3, 7.3.3.4)
+The test pieces should have at least one dimension of approximately 6 mm, but preferable two dimensions. As an example, a paper sheet shall be cut in pieces of approximately 6 by 6 mm. A fish line shall be cut in pieces of approximately 6 mm in length. It shall be practical for the laboratory to prepare these pieces. The aim is to achieve comparable surface areas between laboratories.
+H.7 Textile threads
+H.8 Chromium (VI) migration (7.4)
+The migration of Chromium (VI) was tested in different migration simulants: Milli Q water; tap water; gastric simulant. In MiliQ water there is hardly any migration of Chromium (VI). A little migration occurs in tap water. The highest migration was observed in the gastric stimulant. It was therefore decided to keep the gastric simulant also for the migration procedure for Chromium (III) and (VI).
+Interconversion of Chromium (III) and Chromium (VI) may occur. This equilibrium is influenced by the pH. Therefore immediately after the migration procedure the migration solution shall be stabilised by performing a 46 neutralisation step. Experiments have shown that at a pH of 7,1 both Chromium species are stable for at least 4 h (normal analysis time).
+The method in Annex F is not sufficiently sensitive for category I and II toy materials. This is due to the Chromium VI chemistry and the matrix effect. In I.2 guidance is given how to assess compliance for category I and II toy materials.
+H.9 Filtration of migration solutions (7.4.2.1, 7.4.2.2, 7.4.3.1, 7.4.3.3, 7.4.3.5)
+Certain pigments may pass through filters with pore size 0,45 µm and 0,22 µm and thus lead to overestimation of the element migration analysis. Pigments in the filtrate will be indicated by a colored filtrate.
+If the filtrate is colored after passing through the 0,22 µm filter either it should be immediately passed through a 0,02 µm membrane filter before the analytical measurement or the migration step should be repeated because of alterations in the filtrate.
+H.10 Organic tin (9.3)
+EFSA has published an opinion on oral exposure of consumers to organotins [11]. The group TDI for organotins is expressed either as Sn content or as TBT chloride. For this European Standard it was chosen to express the migration of individual organotins as TBT, as the chloride is removed during the derivatisation step.
+The test method has been validated for material category III. When testing materials of categories I and II (although it is not expected for organotin to be found in category I or II materials) the test methods need to be validated for these rare cases. For alternative options see I.1. ⇐A1
+H.11 pH value
+Experience has shown that deviations in the pH value during the migration procedure can have a significant impact on the results of the analysis. Therefore, it is important to exactly follow the specified procedure and the subclauses on specific materials.
+After adding the hydrochloric acid it can take several minutes until a stable pH value is reached. In most cases the pH value will be stable. In some special cases the pH value may change throughout the migration and the effects of this are being investigated in the framework of the revision of this European Standard.
+It is important that the equipment specified in 6.2.2 is capable of measuring pH with accuracy required by this standard. In practice a pH meter with an accuracy of ± 0,02 is sufficient when calibrated in acidic conditions (pH 1,68 [12]). ⇐A1
+H.12 De-waxing (see 7.3.2)
+Every sample needs to be assessed if a de-waxing procedure given under 7.3.2 is required. In case of a doubt, a comparison of the results of the untreated material with the de-waxed material needs to be assessed. Examples for such an evaluation are leads for colour pencils. ⇐A1
+Annex I (informative)Conformity assessment
+I.1 General
+This standard contains requirements and test methods for the migration of certain elements in a wide range of toys and toy materials. The compliance of toys with the element migration requirements of Directive 2009/48/EC [1] can be demonstrated by compliance with this standard. It should be noted however that final product testing and certification may not be the most appropriate and effective means to achieve this. Other means are available to economic operators;
+I.2 Chromium VI
+As a first action method, the migration of total Chromium can be determined (see E on general elements). If the migration of total Chromium (i.e. Chromium (III) + Chromium (VI)) is below the maximum limit for Chromium (VI), it can be inferred that the material complies with the requirements for both Chromium (III) and Chromium (VI).
+For Chromium VI the method in Annex F the limit of quantification is higher than the migration limit for category I and II toy materials. Compliance with the limits cannot be demonstrated by a migration test, however other options are available:
+Annex J (informative)List of other organic tin compounds
+In Table J.1 an overview is given of other organic tin compounds that may be present in toy materials. This is based on their occurrence in food contact materials or their (expected) registration. The method in Annex G has not been tested or validated for these compounds.
+Annex ZA (informative)Relationship between this European Standard and the Essential Requirements of EU Directive 2009/48/EC
+This European Standard has been prepared under a mandate given to CEN by the European Commission and the European Free Trade Association to provide a means of conforming to Essential Requirements of the New Approach Directive 2009/48/EC.
+Once this standard is cited in the Official Journal of the European Union under that Directive and has been implemented as a national standard in at least one Member State, compliance with the clauses of this standard given in Table ZA.1 confers, within the limits of the scope of this standard, a presumption of conformity with the corresponding Essential Requirements of that Directive and associated EFTA regulations.
+Bibliography

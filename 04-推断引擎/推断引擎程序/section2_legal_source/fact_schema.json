@@ -1,0 +1,110 @@
+{
+  "schema_id": "section2_fact_schema",
+  "schema_version": "1.0.0",
+  "language": "zh-CN",
+  "value_status": [
+    "confirmed",
+    "range",
+    "unknown",
+    "not_applicable",
+    "confidential",
+    "conflicting",
+    "derived_candidate"
+  ],
+  "common_fact_fields": {
+    "model": {
+      "section": "S1",
+      "canonical_name": "型号",
+      "kind": "identity",
+      "required": true,
+      "normalization": "型号唯一键；不得用型号名称直接推断危险分类"
+    },
+    "product_name": {
+      "section": "S1",
+      "canonical_name": "产品名称",
+      "kind": "identity",
+      "required": true,
+      "normalization": "保留原文和标准化值"
+    },
+    "target_market": {
+      "section": "S1",
+      "canonical_name": "目标市场",
+      "kind": "applicability",
+      "required": true,
+      "default": "CN"
+    },
+    "component.cas": {
+      "section": "S3",
+      "canonical_name": "CAS号",
+      "kind": "substance_identity",
+      "required_for_mixture_inference": true,
+      "normalization": "CAS 格式校验；保留原始表述"
+    },
+    "component.name": {
+      "section": "S3",
+      "canonical_name": "组分名称",
+      "kind": "substance_identity",
+      "required_for_mixture_inference": true
+    },
+    "component.concentration": {
+      "section": "S3",
+      "canonical_name": "浓度",
+      "kind": "mixture_input",
+      "required_for_mixture_inference": true,
+      "normalization": "必须保留下限、上限、单位和原始表述"
+    },
+    "component.ghs_classification": {
+      "section": "S3/CAS",
+      "canonical_name": "组分 GHS 危害分类",
+      "kind": "substance_hazard_evidence",
+      "required_for_mixture_inference": true,
+      "normalization": "每个 H 代码必须绑定物质、来源和版本"
+    },
+    "flash_point": {
+      "section": "S9",
+      "canonical_name": "闪点",
+      "kind": "direct_physical_fact",
+      "unit": "℃",
+      "required_for": ["flammable_liquid"],
+      "normalization": "解析数值、比较符、范围；禁止把 >94 当作 94"
+    },
+    "initial_boiling_point": {
+      "section": "S9",
+      "canonical_name": "初沸点",
+      "kind": "direct_physical_fact",
+      "unit": "℃",
+      "required_for": ["flammable_liquid_category_1", "flammable_liquid_category_2"]
+    },
+    "pH": {
+      "section": "S9",
+      "canonical_name": "pH值",
+      "kind": "direct_physical_fact",
+      "unit": "无量纲",
+      "normalization": "不得自动补入 1% 水溶液，除非原始事实明确如此"
+    },
+    "physical_form": {
+      "section": "S9",
+      "canonical_name": "外观与物理状态",
+      "kind": "applicability",
+      "required_for": ["flammable_liquid"]
+    }
+  },
+  "section2_output_fields": [
+    {"canonical_name": "GHS危险性类别", "kind": "classification"},
+    {"canonical_name": "象形图", "kind": "label_element"},
+    {"canonical_name": "信号词", "kind": "label_element"},
+    {"canonical_name": "危险性说明", "kind": "label_element"},
+    {"canonical_name": "防范说明", "kind": "label_element"},
+    {"canonical_name": "物理和化学危险", "kind": "hazard_summary"},
+    {"canonical_name": "健康危害", "kind": "hazard_summary"},
+    {"canonical_name": "环境危害", "kind": "hazard_summary"},
+    {"canonical_name": "其他危害", "kind": "hazard_summary"}
+  ],
+  "fact_policy": {
+    "unknown_is_not_no_hazard": true,
+    "confidential_is_not_zero": true,
+    "raw_value_must_be_preserved": true,
+    "source_and_as_of_must_be_preserved": true,
+    "conflict_requires_manual_review": true
+  }
+}

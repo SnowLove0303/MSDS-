@@ -1,0 +1,4 @@
+interface:
+  display_name: "MSDS Standard Skeleton Inference"
+  short_description: "Map S1/S3/S9 facts to a traceable 17-section skeleton"
+  default_prompt: "Use $msds-inference-skeleton to build a traceable 17-section MSDS facts skeleton from S1, S3, and S9 inputs."

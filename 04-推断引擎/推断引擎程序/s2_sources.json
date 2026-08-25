@@ -1,0 +1,260 @@
+{
+  "engine": "section2",
+  "manifest_version": "0.1.0",
+  "purpose": "Section 2 危险性概述事实源登记。该清单只描述来源、用途和状态，不把候选事实直接当作最终分类。",
+  "read_policy": {
+    "formal_databases": "read_only",
+    "source_documents": "read_only",
+    "write_formal_model_db": false,
+    "initial_result_status": "manual_review"
+  },
+  "input_databases": [
+    {
+      "id": "formal_model_db",
+      "type": "sqlite",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\03-数据库\\正式库\\Data Base\\msds_standard.db",
+      "tables": ["msds_model", "msds_field", "schema_field", "field_mapping"],
+      "role": "型号唯一性、S1/S3/S9 原始事实、标准骨架和已有字段映射",
+      "authority": "formal_chinese_model_database"
+    },
+    {
+      "id": "cas_library",
+      "type": "sqlite",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\03-数据库\\正式库\\Data Base\\cas_library.db",
+      "tables": ["cas_substance", "cas_model_usage", "cas_alias", "cas_note"],
+      "role": "CAS 物质标准名、别名、型号组分关系、浓度和监管状态",
+      "authority": "formal_cas_database"
+    },
+    {
+      "id": "cas_field_mapping",
+      "type": "sqlite",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\03-数据库\\正式库\\Data Base\\cas_field_mapping.db",
+      "tables": ["cas_identity", "cas_field_mapping", "cas_mapping_observation", "cas_mapping_conflict"],
+      "role": "CAS/无 CAS 成分规范名、原始名称、别名和歧义映射；不存储法规事实",
+      "authority": "formal_cas_field_mapping"
+    }
+  ],
+  "structured_sources": [
+    {
+      "id": "hazards_lib",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\判断skill\\rules\\hazards_lib.md",
+      "scope": ["S2"],
+      "role": "已归档的成分危害、理化、毒理和名录线索",
+      "status": "reference_only",
+      "requires": "按法规版本、条款和具体物质证据复核"
+    },
+    {
+      "id": "mixture_threshold_rules",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\判断skill\\rules\\limits.md",
+      "scope": ["S2"],
+      "role": "混合物分类浓度阈值和区间处理候选规则",
+      "status": "candidate_rule",
+      "requires": "每条规则绑定 GB/T 17519 或对应分类标准条款"
+    },
+    {
+      "id": "hazardous_chemicals_json",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\推断引擎数据\\weixianhuaxuepin_mulu.json",
+      "scope": ["S2"],
+      "role": "危险化学品目录物质监管关系",
+      "status": "structured_reference"
+    },
+    {
+      "id": "oel_json",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\推断引擎数据\\gbz21_oel.json",
+      "scope": ["S2"],
+      "role": "职业接触限值辅助健康危害证据",
+      "status": "structured_reference",
+      "requires": "不得单独用于完成 GHS 分类"
+    },
+    {
+      "id": "existing_products_json",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\推断引擎数据\\msds_products.json",
+      "scope": ["S2"],
+      "role": "既有产品资料的辅助交叉核对",
+      "status": "auxiliary_only"
+    },
+    {
+      "id": "s2_result_library",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\推断引擎程序\\s2_result_library.json",
+      "scope": ["S2"],
+      "role": "A→B 规则输出的规范化结果值、H/P 说明、信号词和象形图代码",
+      "status": "engine_reference",
+      "requires": "只允许由已匹配且可审计的条件引用；未知事实不得猜测补值"
+    },
+    {
+      "id": "s2_pictogram_registry",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\推断引擎程序\\pictogram_registry.py",
+      "scope": ["S2"],
+      "role": "GHS01~GHS09 代码、简洁中文名称和统一图片资产的唯一注册表",
+      "status": "engine_reference",
+      "requires": "GUI 检索、表单和 Word 覆写必须共用该注册表"
+    }
+  ],
+  "legal_sources": [
+    {
+      "id": "sds_content_order",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\08_未分类_待核验\\GB-T16483-2008.pdf",
+      "scope": ["S2"],
+      "role": "SDS 16 节内容和顺序、Section 2 章节边界",
+      "status": "local_source_to_verify"
+    },
+    {
+      "id": "sds_compile_guide",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\08_未分类_待核验\\GB-T17519-2013.pdf",
+      "scope": ["S2"],
+      "role": "SDS 编写指南、混合物信息组织和浓度阈值依据",
+      "status": "local_source_to_verify"
+    },
+    {
+      "id": "ghs_general_cn",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\08_未分类_待核验\\GB30000.1-2024.pdf",
+      "scope": ["S2"],
+      "role": "中国 GHS 分类与标签通则候选主依据",
+      "status": "current_candidate",
+      "requires": "发布前核对标准状态、实施日期和适用危害类别"
+    },
+    {
+      "id": "ghs_classification_series",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\03_技术标准_分类与框架\\01_GHS分类_GB30000系列",
+      "scope": ["S2"],
+      "role": "物理危险、健康危害和环境危害的分类判定来源",
+      "status": "local_collection",
+      "requires": "按具体危害类别选择对应 GB 30000 分册；不得把目录名作为结论"
+    },
+    {
+      "id": "ghs_desensitized_explosives",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\08_未分类_待核验\\GB30000.30-2025.pdf",
+      "scope": ["S2"],
+      "role": "退敏爆炸物分类补充依据",
+      "status": "local_source_to_verify"
+    },
+    {
+      "id": "safety_label_rule",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\01_法律法规_国内\\03_部门规章\\GB 15258-2009 化学品安全标签编写规定.txt",
+      "scope": ["S2"],
+      "role": "标签要素、危险性说明和防范说明的中国标签编排参考",
+      "status": "local_source_to_verify",
+      "requires": "不得覆盖已确认的现行 GHS 通则要求"
+    },
+    {
+      "id": "hazardous_chemicals_catalogue",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\01_法律法规_国内\\04_目录与名录\\危险化学品目录（2015版2026调整版）.pdf",
+      "scope": ["S2"],
+      "role": "危险化学品名录身份和监管关系辅助事实",
+      "status": "local_source_to_verify",
+      "requires": "型号/CAS 命中后仍需区分目录身份与 GHS 分类"
+    },
+    {
+      "id": "key_supervised_catalogues",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\01_法律法规_国内\\04_目录与名录\\重点监管危险化学品名录（第一批和第二批完整版）.txt",
+      "scope": ["S2"],
+      "role": "重点监管危险化学品关系和应急语境辅助事实",
+      "status": "local_source_to_verify"
+    },
+    {
+      "id": "precursor_chemicals_regulation",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\01_法律法规_国内\\02_行政法规\\易制毒化学品管理条例.txt",
+      "scope": ["S2"],
+      "role": "易制毒化学品监管关系辅助事实",
+      "status": "local_source_to_verify"
+    },
+    {
+      "id": "explosive_precursor_catalogue",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\01_法律法规_国内\\04_目录与名录\\易制爆危险化学品名录（2017年版）.txt",
+      "scope": ["S2"],
+      "role": "易制爆危险化学品监管关系辅助事实",
+      "status": "local_source_to_verify"
+    },
+    {
+      "id": "national_hazardous_waste_catalogue",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\01_法律法规_国内\\04_目录与名录\\国家危险废物名录（2025年版）.docx",
+      "scope": ["S2"],
+      "role": "环境危害和废弃处置的辅助监管事实",
+      "status": "auxiliary_only",
+      "requires": "不得由命中危废名录直接推导 GHS 环境危害分类"
+    },
+    {
+      "id": "gbz21_oel_standard",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\04_技术标准_防护与应急\\02_职业卫生与个体防护\\GBZ 2.1-2019 工作场所有害因素职业接触限值 第1部分：化学有害因素(含修改单).pdf",
+      "scope": ["S2"],
+      "role": "健康危害和职业暴露控制的辅助证据",
+      "status": "auxiliary_only"
+    },
+    {
+      "id": "un_ghs_rev10",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\02_法律法规_国际\\01_联合国规范\\UN GHS 紫皮书 Rev.10.pdf",
+      "scope": ["S2"],
+      "role": "国际 GHS 结构、标签和象形图补充参考",
+      "status": "supplementary",
+      "requires": "中国版输出不得以国际补充源替代中国适用标准"
+    },
+    {
+      "id": "work_safety_law",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\01_法律法规_国内\\01_国家法律\\中华人民共和国安全生产法.txt",
+      "scope": ["S2"],
+      "role": "危险性概述中的安全风险语境和应急管理辅助依据",
+      "status": "auxiliary_only",
+      "requires": "不用于替代 GHS 分类条款"
+    },
+    {
+      "id": "occupational_disease_prevention_law",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\01_法律法规_国内\\01_国家法律\\中华人民共和国职业病防治法.txt",
+      "scope": ["S2"],
+      "role": "健康危害和职业暴露风险的法律语境辅助依据",
+      "status": "auxiliary_only",
+      "requires": "职业暴露义务不等同于 GHS 健康危害分类"
+    },
+    {
+      "id": "fire_protection_law",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\01_法律法规_国内\\01_国家法律\\中华人民共和国消防法.txt",
+      "scope": ["S2"],
+      "role": "物理和化学危险、火灾应急语境辅助依据",
+      "status": "auxiliary_only"
+    },
+    {
+      "id": "hazardous_chemical_registration_rules",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\01_法律法规_国内\\03_部门规章\\危险化学品登记管理办法（安监总局令第53号）.pdf",
+      "scope": ["S2"],
+      "role": "危险化学品登记身份和产品级监管信息辅助依据",
+      "status": "auxiliary_only",
+      "requires": "登记关系与 GHS 分类结论分开保存"
+    },
+    {
+      "id": "solid_waste_pollution_law",
+      "path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\01_法律法规_国内\\01_国家法律\\中华人民共和国固体废物污染环境防治法.txt",
+      "scope": ["S2"],
+      "role": "环境危害和废弃处置语境辅助依据",
+      "status": "auxiliary_only",
+      "requires": "不由废弃物监管身份直接推导环境 GHS 分类"
+    }
+  ],
+  "source_gaps": [
+    {
+      "expected_title": "危险化学品安全管理条例",
+      "scope": ["S2"],
+      "reason": "本地法规匹配库当前未发现该法规的可用正文文件；已保留监管目录和登记办法，但不能替代该条例。",
+      "status": "needs_source_acquisition"
+    }
+  ],
+  "s2_schema": [
+    {"name": "紧急情况概述", "kind": "group", "editable": false},
+    {"name": "GHS危险性类别", "kind": "field", "editable": true},
+    {"name": "标签要素", "kind": "group", "editable": false},
+    {"name": "象形图", "kind": "field", "editable": true},
+    {"name": "信号词", "kind": "field", "editable": true},
+    {"name": "危险性说明", "kind": "field", "editable": true},
+    {"name": "防范说明", "kind": "field", "editable": true},
+    {"name": "物理和化学危险", "kind": "field", "editable": true},
+    {"name": "健康危害", "kind": "field", "editable": true},
+    {"name": "环境危害", "kind": "field", "editable": true},
+    {"name": "其他危害", "kind": "field", "editable": true}
+  ],
+  "fact_policy": {
+    "missing_value": "无数据",
+    "preserve_raw_value": true,
+    "preserve_unit": true,
+    "preserve_concentration_interval": true,
+    "never_infer_from_model_name_only": true,
+    "never_treat_catalogue_hit_as_ghs_classification": true
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "MSDS Evidence + Template Overwrite"
+  short_description: "Retrieve evidence and render audited 17-section MSDS drafts"
+  default_prompt: "Use the Guanzhi retrieval system to classify labeled S1/S3/S9 facts, build the database-standard 17-section payload, validate evidence and placeholders, then render the requested brand/language/format through the approved template overwrite path."

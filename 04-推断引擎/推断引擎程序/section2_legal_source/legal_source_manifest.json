@@ -1,0 +1,105 @@
+{
+  "library_id": "section2_legal_source",
+  "schema_version": "1.0.0",
+  "language": "zh-CN",
+  "scope": "Section 2 危险性概述",
+  "purpose": "将现行中国 SDS/GHS 相关标准登记为可追溯、可执行、可测试的 Section 2 法规源。法规原文是证据源，规则条目是执行源，结果库是规范化输出源。",
+  "default_market": "CN",
+  "default_status_when_evidence_is_incomplete": "manual_review",
+  "formal_database_write": false,
+  "source_priority": [
+    "current_official_standard",
+    "direct_product_test_or_supplier_confirmed_fact",
+    "traceable_substance_classification",
+    "historical_original_sds",
+    "internal_reference_only"
+  ],
+  "legal_sources": [
+    {
+      "id": "GB30000.1-2024",
+      "title": "化学品分类和标签规范 第1部分：通则",
+      "source_type": "mandatory_national_standard",
+      "status": "current",
+      "effective_date": "2025-08-01",
+      "official_url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=C008AEDBFD9A16F3C5BEB671C20618DD",
+      "local_file": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\08_未分类_待核验\\GB30000.1-2024.pdf",
+      "role": ["ghs_general", "classification_scope", "label_scope"],
+      "verification": "official_registry_verified_local_pdf_available"
+    },
+    {
+      "id": "GB30000.7-2013",
+      "title": "化学品分类和标签规范 第7部分：易燃液体",
+      "source_type": "mandatory_national_standard",
+      "status": "current",
+      "effective_date": "2014-11-01",
+      "official_url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=3FCEB3CB81076CDB311D0D3F2783B2F7",
+      "local_file": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\03_技术标准_分类与框架\\01_GHS分类_GB30000系列\\GB 30000.7-2013.pdf",
+      "role": ["flammable_liquid_classification", "flammable_liquid_label"],
+      "verification": "official_registry_verified_local_pdf_clause_reviewed"
+    },
+    {
+      "id": "GB-T17519-2013",
+      "title": "化学品安全技术说明书编写指南",
+      "source_type": "recommended_national_standard",
+      "status": "current",
+      "official_url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=0DF24B277B29E2F0B39D13D0F2B7BA07",
+      "local_file": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\08_未分类_待核验\\GB-T17519-2013.pdf",
+      "role": ["sds_compilation", "mixture_evidence_gate", "threshold_screening"],
+      "verification": "official_registry_verified_local_pdf_clause_reviewed"
+    },
+    {
+      "id": "GB-T16483-2008",
+      "title": "化学品安全技术说明书 内容和项目顺序",
+      "source_type": "recommended_national_standard",
+      "status": "current",
+      "official_url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=67992CA972A4CF9222095CA06064724A&refer=outter",
+      "local_file": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\08_未分类_待核验\\GB-T16483-2008.pdf",
+      "role": ["sds_section_order", "section2_boundary"],
+      "verification": "official_registry_verified_local_pdf_available"
+    },
+    {
+      "id": "GB15258-2009",
+      "title": "化学品安全标签编写规定",
+      "source_type": "mandatory_national_standard",
+      "status": "current",
+      "official_url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=4D487D68BF0BD87E68CE0EA68183DAD6",
+      "local_file": "F:\\正式项目与模块化内容\\冠志\\MSDS\\04-推断引擎\\法规匹配库\\01_法律法规_国内\\03_部门规章\\GB 15258-2009 化学品安全标签编写规定.txt",
+      "role": ["label_elements", "signal_word", "hazard_statement_format", "precautionary_statement_format"],
+      "verification": "official_registry_verified_local_source_registered"
+    }
+  ],
+  "non_classification_sources": [
+    {
+      "id": "dangerous_chemicals_catalogue",
+      "title": "危险化学品目录",
+      "role": "identity_and_regulatory_status_only",
+      "prohibition": "命中目录不能单独推导 GHS 分类、H 代码或象形图。"
+    },
+    {
+      "id": "GBZ2.1-2019",
+      "title": "工作场所有害因素职业接触限值 第1部分：化学有害因素",
+      "role": "occupational_exposure_support_only",
+      "prohibition": "职业接触限值不能单独替代 GHS 成品分类。"
+    },
+    {
+      "id": "historical_original_sds",
+      "title": "历史原始 MSDS/SDS",
+      "role": "comparison_evidence_only",
+      "prohibition": "历史原文不能覆盖当前适用标准，也不能代替法规规则计算。"
+    }
+  ],
+  "known_gaps": [
+    {
+      "id": "full_ghs_series_clause_registry",
+      "description": "GB 30000.2 至 GB 30000.29 各危害类别尚需逐分册完成条款、阈值和标签要素的逐条核验。当前先建规则骨架和已核验的易燃液体规则。",
+      "status": "open",
+      "effect": "健康危害和环境危害在缺少完整组分/浓度/分类证据时只能进入人工复核。"
+    },
+    {
+      "id": "hazardous_chemical_regulation_text",
+      "description": "本地法规匹配库尚未发现《危险化学品安全管理条例》的可用正文文件。",
+      "status": "open",
+      "effect": "不将目录、登记和辅助监管资料冒充该条例正文。"
+    }
+  ]
+}

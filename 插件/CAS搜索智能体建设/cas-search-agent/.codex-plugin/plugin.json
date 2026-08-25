@@ -1,0 +1,18 @@
+{
+  "name": "cas-search-agent",
+  "version": "0.1.0",
+  "description": "Fast multi-source chemical identity search for CAS/EC with parallel official-source verification and evidence merging.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CAS/EC 官方来源搜索",
+    "shortDescription": "根据中文名称查找 CAS/EC 并追溯官方来源。",
+    "longDescription": "由 Agent 并行检索 ECHA、EPA、OECD、各国监管数据库、ChEBI、NLM、PubChem、SDS 和法规页面，再统一合并 CAS/EC 候选、来源证据、冲突和核验地址；PubChem 不再是唯一主路径。",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "根据这个中文物质名称查找 CAS 号、EC 号，并优先给出官方来源和逐项核验链接："
+  }
+}

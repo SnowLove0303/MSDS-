@@ -1,0 +1,1202 @@
+{
+ "template": "PEA-4139 MSDS_CN 冠志 模板.docx",
+ "template_path": "F:\\正式项目与模块化内容\\冠志\\MSDS\\03-数据库\\数据清理模块\\标准模板\\标准模板\\定稿模板\\PEA-4139 MSDS_CN 冠志 模板.docx",
+ "generated": "2026-08-14",
+ "用途": "覆写引擎标准字段清单与覆写通路配置。type 分类：title=节标题(不可覆写)/subtitle=子标题(单格通栏,结构行)/field=两列标准字段(值可覆写,标签格保留模板原文)/note=单格通栏内容行(整格可覆写)/guide=引导行(残留,prep删)/table_head=多列表头(不可覆写)/comp_row=成分数据行/bio_row=生物限值数据行/cont=延续行",
+ "可覆写规则": {
+  "节标题": "不可覆写（结构标识）",
+  "子标题": "标签+序号保留（结构骨架），值格可覆写",
+  "两列字段行": "标签格保留模板原文（序号+标签+空格双run格式），值格可覆写",
+  "单格note行": "整格可覆写（标签\n值），保留原位",
+  "引导行guide": "prep 阶段删除（产品残留）",
+  "占位符'此处填写…'": "覆写时被真实值替换",
+  "多列表头": "不可覆写（列结构标准）",
+  "成分/生物限值数据行": "数据可覆写，行数按需求增删"
+ },
+ "sections": {
+  "0": {
+   "title": "页眉页脚",
+   "kind": "header_footer",
+   "fields": [
+    {
+     "key": "页眉_版本",
+     "pos": "页眉Version",
+     "writable": true,
+     "current": "Version：V1.0"
+    },
+    {
+     "key": "页眉_产品名称",
+     "pos": "页眉表格",
+     "writable": true,
+     "current": "PEA-4139"
+    },
+    {
+     "key": "页脚_产品名称",
+     "pos": "页脚表格首格",
+     "writable": true,
+     "current": "广州冠志新材料科技有限公司 PEA-4139-MSDS"
+    },
+    {
+     "key": "页脚_修订日期",
+     "pos": "页脚修订日期",
+     "writable": true,
+     "current": "P修订日期：2026年08月05日"
+    }
+   ]
+  },
+  "1": {
+   "title": "物料及供应商标识",
+   "kind": "table",
+   "cols": 2,
+   "note": "R2/R3/R4 值格为'此处填写…'占位提示，覆写时应被真实值替换",
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "1.物料及供应商标识"
+    },
+    {
+     "ri": 1,
+     "type": "field",
+     "seq": "1.1",
+     "label": "产品名称",
+     "parent": null,
+     "writable": true,
+     "current": ""
+    },
+    {
+     "ri": 2,
+     "type": "field",
+     "seq": "",
+     "label": "中文名称",
+     "parent": "1.1",
+     "writable": true,
+     "current": "此处填写产品中文名称+型号",
+     "placeholder": true
+    },
+    {
+     "ri": 3,
+     "type": "field",
+     "seq": "",
+     "label": "化学品分类",
+     "parent": "1.1",
+     "writable": true,
+     "current": "此处填写化学品分类名称",
+     "placeholder": true
+    },
+    {
+     "ri": 4,
+     "type": "field",
+     "seq": "1.2",
+     "label": "产品使用建议和使用限制",
+     "parent": null,
+     "writable": true,
+     "current": "此处填写使用建议和使用限制",
+     "placeholder": true
+    },
+    {
+     "ri": 5,
+     "type": "field",
+     "seq": "1.3",
+     "label": "供应商信息",
+     "parent": null,
+     "writable": true,
+     "current": ""
+    },
+    {
+     "ri": 6,
+     "type": "field",
+     "seq": "",
+     "label": "供应商名称",
+     "parent": "1.3",
+     "writable": true,
+     "current": "广州冠志新材料科技有限公司"
+    },
+    {
+     "ri": 7,
+     "type": "field",
+     "seq": "",
+     "label": "供应商地址",
+     "parent": "1.3",
+     "writable": true,
+     "current": "地址：广州市萝岗区科学城掬泉路3号广州国际企业孵化器A区1106室"
+    },
+    {
+     "ri": 8,
+     "type": "field",
+     "seq": "",
+     "label": "电话",
+     "parent": "1.3",
+     "writable": true,
+     "current": "86-20-82567990"
+    },
+    {
+     "ri": 9,
+     "type": "field",
+     "seq": "",
+     "label": "传真",
+     "parent": "1.3",
+     "writable": true,
+     "current": "86-20-32214789"
+    }
+   ]
+  },
+  "2": {
+   "title": "危险性概述",
+   "kind": "table",
+   "cols": 2,
+   "note": "模板编号缺陷：R6 危险性说明 与 R7 防范说明 均为'2.5'，通路按标签识别不受影响",
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "2.危险性概述"
+    },
+    {
+     "ri": 1,
+     "type": "field",
+     "seq": "2.1",
+     "label": "紧急情况概述",
+     "parent": null,
+     "writable": true,
+     "current": ""
+    },
+    {
+     "ri": 2,
+     "type": "field",
+     "seq": "2.2",
+     "label": "GHS危险性类别",
+     "parent": null,
+     "writable": true,
+     "current": "易燃液体，类别4（H227）"
+    },
+    {
+     "ri": 3,
+     "type": "field",
+     "seq": "2.3",
+     "label": "GHS标签要素",
+     "parent": null,
+     "writable": true,
+     "current": "无"
+    },
+    {
+     "ri": 4,
+     "type": "field",
+     "seq": "",
+     "label": "GHS象形图",
+     "parent": "2.3",
+     "writable": true,
+     "current": "无"
+    },
+    {
+     "ri": 5,
+     "type": "field",
+     "seq": "2.4",
+     "label": "信号词",
+     "parent": null,
+     "writable": true,
+     "current": "警告"
+    },
+    {
+     "ri": 6,
+     "type": "field",
+     "seq": "2.5",
+     "label": "危险性说明",
+     "parent": null,
+     "writable": true,
+     "current": "H316造成轻微皮肤刺激。",
+     "seq_dup": true
+    },
+    {
+     "ri": 7,
+     "type": "field",
+     "seq": "2.5",
+     "label": "防范说明",
+     "parent": null,
+     "writable": true,
+     "current": "预防措施：P210 远离热源…禁止吸烟。",
+     "seq_dup": true
+    },
+    {
+     "ri": 8,
+     "type": "field",
+     "seq": "2.6",
+     "label": "物理和化学危险",
+     "parent": null,
+     "writable": true,
+     "current": "喷涂使用时可能形成雾滴或气溶胶，应避免吸入。"
+    },
+    {
+     "ri": 9,
+     "type": "field",
+     "seq": "2.7",
+     "label": "健康危害",
+     "parent": null,
+     "writable": true,
+     "current": "吸入：食入：皮肤：眼睛：症状和体征："
+    },
+    {
+     "ri": 10,
+     "type": "field",
+     "seq": "2.8",
+     "label": "环境危害",
+     "parent": null,
+     "writable": true,
+     "current": "如：对水生生物有毒。可能对水生环境造成长期有害影响"
+    },
+    {
+     "ri": 11,
+     "type": "field",
+     "seq": "2.9",
+     "label": "其他危害",
+     "parent": null,
+     "writable": true,
+     "current": "无"
+    }
+   ]
+  },
+  "3": {
+   "title": "成分/组成资料",
+   "kind": "table",
+   "cols": 3,
+   "note": "成分表：R2 成分子标题 + R3 表头(不可覆写) + R4/R5 成分数据行(名称/CAS/含量可覆写，行数按成分数增删)",
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "3. 成分/组成资料",
+     "cols_span": 3
+    },
+    {
+     "ri": 1,
+     "type": "field",
+     "seq": "",
+     "label": "产品类型",
+     "parent": null,
+     "writable": true,
+     "current": "混合物",
+     "value_span": 2
+    },
+    {
+     "ri": 2,
+     "type": "subtitle",
+     "text": "成分",
+     "parent": null,
+     "cols": 3
+    },
+    {
+     "ri": 3,
+     "type": "table_head",
+     "headers": [
+      "化学品名称",
+      "CAS编号",
+      "含量%（w/w）"
+     ],
+     "parent": "成分",
+     "writable": false
+    },
+    {
+     "ri": 4,
+     "type": "comp_row",
+     "parent": "成分",
+     "writable": true,
+     "cells": {
+      "name": "成分1",
+      "cas": "商业机密",
+      "conc": "> n"
+     }
+    },
+    {
+     "ri": 5,
+     "type": "comp_row",
+     "parent": "成分",
+     "writable": true,
+     "cells": {
+      "name": "成分2",
+      "cas": "7732-18-5",
+      "conc": "> 45"
+     }
+    }
+   ]
+  },
+  "4": {
+   "title": "急救措施",
+   "kind": "table",
+   "cols": 2,
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "4.急救措施"
+    },
+    {
+     "ri": 1,
+     "type": "field",
+     "seq": "4.1",
+     "label": "一般措施",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 2,
+     "type": "field",
+     "seq": "4.2",
+     "label": "误服",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 3,
+     "type": "field",
+     "seq": "4.3",
+     "label": "接触眼睛",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 4,
+     "type": "field",
+     "seq": "4.4",
+     "label": "接触皮肤",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 5,
+     "type": "field",
+     "seq": "4.5",
+     "label": "吸入",
+     "parent": null,
+     "writable": true
+    }
+   ]
+  },
+  "5": {
+   "title": "消防措施",
+   "kind": "table",
+   "cols": 2,
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "5.消防措施"
+    },
+    {
+     "ri": 1,
+     "type": "field",
+     "seq": "5.1",
+     "label": "合适的灭火剂",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 2,
+     "type": "field",
+     "seq": "5.2",
+     "label": "不合适的灭火剂",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 3,
+     "type": "field",
+     "seq": "5.3",
+     "label": "物质或混合物的特殊危害",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 4,
+     "type": "field",
+     "seq": "5.4",
+     "label": "消防预防措施和保护设备",
+     "parent": null,
+     "writable": true
+    }
+   ]
+  },
+  "6": {
+   "title": "意外泄漏措施",
+   "kind": "table",
+   "cols": 2,
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "6.意外泄漏措施"
+    },
+    {
+     "ri": 1,
+     "type": "field",
+     "seq": "6.1",
+     "label": "个人预防措施、应急程序",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 2,
+     "type": "field",
+     "seq": "6.2",
+     "label": "环境保护措施",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 3,
+     "type": "field",
+     "seq": "6.3",
+     "label": "污染物收集和清除的方法",
+     "parent": null,
+     "writable": true
+    }
+   ]
+  },
+  "7": {
+   "title": "操作和储存",
+   "kind": "table",
+   "cols": 2,
+   "note": "无序号字段行（标签即标准形式）",
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "7.操作和储存"
+    },
+    {
+     "ri": 1,
+     "type": "field",
+     "seq": "",
+     "label": "安全操作防范",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 2,
+     "type": "field",
+     "seq": "",
+     "label": "安全储存条件",
+     "parent": null,
+     "writable": true
+    }
+   ]
+  },
+  "8": {
+   "title": "接触控制/个人防护",
+   "kind": "table",
+   "note": "最复杂节：8.1暴露控制/8.2生物限值/8.3工程控制三个子标题；8.1下挂字段+手套note行；8.2下挂5列生物限值子表；R3手部防护标签格混入上一行值(模板缺陷,prep清理)",
+   "cols_info": "标签格gs=2/值格gs=4；单格通栏gs=6",
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "8.接触控制/个人防护"
+    },
+    {
+     "ri": 1,
+     "type": "subtitle",
+     "seq": "8.1",
+     "text": "暴露控制：",
+     "parent": null,
+     "cols_span": 6
+    },
+    {
+     "ri": 2,
+     "type": "field",
+     "seq": "",
+     "label": "呼吸系统防护",
+     "parent": "8.1",
+     "writable": true
+    },
+    {
+     "ri": 3,
+     "type": "field",
+     "seq": "",
+     "label": "手部防护",
+     "parent": "8.1",
+     "writable": true,
+     "defect": "标签格混入'喷涂过程中要求有呼吸防护设备。'（上一行值），prep 应清理为纯'手部防护：'"
+    },
+    {
+     "ri": 4,
+     "type": "field",
+     "seq": "",
+     "label": "防护手套的合适材料",
+     "parent": "8.1",
+     "writable": true
+    },
+    {
+     "ri": 5,
+     "type": "note",
+     "text": "氟化橡胶 –FKM:厚度≧0.4mm；穿透时间≧480min.",
+     "parent": "8.1",
+     "writable": true,
+     "key": "手套材质_氟化橡胶FKM"
+    },
+    {
+     "ri": 6,
+     "type": "note",
+     "text": "丁基橡胶 –IIR：厚度≧0.5mm；穿透时间≧480min.",
+     "parent": "8.1",
+     "writable": true,
+     "key": "手套材质_丁基橡胶IIR"
+    },
+    {
+     "ri": 7,
+     "type": "note",
+     "text": "丁腈橡胶 – NBR：厚度≧0.35mm；穿透时间≧480min.",
+     "parent": "8.1",
+     "writable": true,
+     "key": "手套材质_丁腈橡胶NBR"
+    },
+    {
+     "ri": 8,
+     "type": "field",
+     "seq": "",
+     "label": "建议",
+     "parent": "8.1",
+     "writable": true
+    },
+    {
+     "ri": 9,
+     "type": "field",
+     "seq": "",
+     "label": "眼睛防护",
+     "parent": "8.1",
+     "writable": true
+    },
+    {
+     "ri": 10,
+     "type": "field",
+     "seq": "",
+     "label": "身体防护",
+     "parent": "8.1",
+     "writable": true
+    },
+    {
+     "ri": 11,
+     "type": "subtitle",
+     "seq": "8.2",
+     "text": "生物限值：",
+     "parent": null,
+     "cols_span": 6
+    },
+    {
+     "ri": 12,
+     "type": "table_head",
+     "parent": "8.2",
+     "writable": false,
+     "headers": [
+      "组分名称",
+      "标准来源",
+      "生物监测指标",
+      "生物限值",
+      "采样时间"
+     ],
+     "spans": [
+      1,
+      2,
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "ri": 13,
+     "type": "bio_row",
+     "parent": "8.2",
+     "writable": true,
+     "cells": {
+      "组分名称": "二甲苯",
+      "标准来源": "ACGIH(2009）",
+      "生物监测指标": "尿中甲基马尿酸",
+      "生物限值": "1.5g/g肌酐",
+      "采样时间": "班末"
+     }
+    },
+    {
+     "ri": 14,
+     "type": "field",
+     "seq": "8.3",
+     "label": "工程控制",
+     "parent": null,
+     "writable": true,
+     "current": ""
+    }
+   ]
+  },
+  "9": {
+   "title": "物理和化学特性",
+   "kind": "table",
+   "cols": 2,
+   "note": "模板编号跳缺 9.23（R23 为 9.24 其他信息），属模板固有，通路按标签识别",
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "9. 物理和化学特性"
+    },
+    {
+     "ri": 1,
+     "type": "field",
+     "seq": "9.1",
+     "label": "外观",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 2,
+     "type": "field",
+     "seq": "9.2",
+     "label": "嗅觉阈值",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 3,
+     "type": "field",
+     "seq": "9.3",
+     "label": "pH值（1%水溶液）",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 4,
+     "type": "field",
+     "seq": "9.4",
+     "label": "离子性",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 5,
+     "type": "field",
+     "seq": "9.5",
+     "label": "初沸点",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 6,
+     "type": "field",
+     "seq": "9.6",
+     "label": "闪点",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 7,
+     "type": "field",
+     "seq": "9.7",
+     "label": "蒸发速率",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 8,
+     "type": "field",
+     "seq": "9.8",
+     "label": "可燃性（固态、气态）",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 9,
+     "type": "field",
+     "seq": "9.9",
+     "label": "燃烧值",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 10,
+     "type": "field",
+     "seq": "9.10",
+     "label": "饱和蒸气压",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 11,
+     "type": "field",
+     "seq": "9.11",
+     "label": "相对蒸气密度",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 12,
+     "type": "field",
+     "seq": "9.12",
+     "label": "密度",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 13,
+     "type": "field",
+     "seq": "9.13",
+     "label": "水溶性",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 14,
+     "type": "field",
+     "seq": "9.14",
+     "label": "表面张力",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 15,
+     "type": "field",
+     "seq": "9.15",
+     "label": "辛醇/水分配系数对数值",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 16,
+     "type": "field",
+     "seq": "9.16",
+     "label": "自燃温度",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 17,
+     "type": "field",
+     "seq": "9.17",
+     "label": "引燃温度",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 18,
+     "type": "field",
+     "seq": "9.18",
+     "label": "分解温度",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 19,
+     "type": "field",
+     "seq": "9.19",
+     "label": "动力粘度",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 20,
+     "type": "field",
+     "seq": "9.20",
+     "label": "爆炸特性",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 21,
+     "type": "field",
+     "seq": "9.21",
+     "label": "粉尘爆炸级别",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 22,
+     "type": "field",
+     "seq": "9.22",
+     "label": "固体含量",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 23,
+     "type": "field",
+     "seq": "9.24",
+     "label": "其他信息",
+     "parent": null,
+     "writable": true,
+     "seq_gap": "缺9.23"
+    }
+   ]
+  },
+  "10": {
+   "title": "稳定性和反应性",
+   "kind": "table",
+   "cols": 2,
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "10.稳定性和反应性"
+    },
+    {
+     "ri": 1,
+     "type": "field",
+     "seq": "10.1",
+     "label": "化学稳定性",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 2,
+     "type": "field",
+     "seq": "10.2",
+     "label": "危险分解产物",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 3,
+     "type": "field",
+     "seq": "10.3",
+     "label": "可能的危害反应",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 4,
+     "type": "field",
+     "seq": "10.4",
+     "label": "应避免的条件",
+     "parent": null,
+     "writable": true,
+     "current": ""
+    },
+    {
+     "ri": 5,
+     "type": "field",
+     "seq": "10.5",
+     "label": "禁配物",
+     "parent": null,
+     "writable": true,
+     "current": ""
+    }
+   ]
+  },
+  "11": {
+   "title": "毒性资料",
+   "kind": "table",
+   "cols": 2,
+   "note": "R1/R2 为旧产品残留引导行（'该产品无可用的毒理学研究…'/'以下为二乙二醇单丁醚…参考数据'），prep 应删除；非标准字段",
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "11.毒性资料"
+    },
+    {
+     "ri": 1,
+     "type": "guide",
+     "text": "该产品无可用的毒理学研究。",
+     "prep_delete": true
+    },
+    {
+     "ri": 2,
+     "type": "guide",
+     "text": "以下为二乙二醇单丁醚 （CAS号：112-34-5）的毒理学参考数据：",
+     "prep_delete": true
+    },
+    {
+     "ri": 3,
+     "type": "field",
+     "seq": "11.1",
+     "label": "急性毒性",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 4,
+     "type": "field",
+     "seq": "11.2",
+     "label": "主要皮肤刺激性",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 5,
+     "type": "field",
+     "seq": "11.3",
+     "label": "主要眼睛刺激性",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 6,
+     "type": "field",
+     "seq": "11.4",
+     "label": "致敏性",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 7,
+     "type": "field",
+     "seq": "11.5",
+     "label": "致突变性",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 8,
+     "type": "field",
+     "seq": "11.6",
+     "label": "致癌性",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 9,
+     "type": "field",
+     "seq": "11.7",
+     "label": "生殖毒性",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 10,
+     "type": "field",
+     "seq": "11.8",
+     "label": "特异性靶器官系统毒性（一次接触/反复接触）",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 11,
+     "type": "field",
+     "seq": "11.9",
+     "label": "吸入危险",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 12,
+     "type": "field",
+     "seq": "11.10",
+     "label": "附加信息",
+     "parent": null,
+     "writable": true
+    }
+   ]
+  },
+  "12": {
+   "title": "生态信息",
+   "kind": "table",
+   "cols": 2,
+   "note": "R1/R2 引导行残留(prep删)；R4 标签格为空、值格含'其他：…'，为 12.1 生态毒性 的延续行(cont)",
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "12.生态信息"
+    },
+    {
+     "ri": 1,
+     "type": "guide",
+     "text": "该产品无可用的生态毒理学研究。",
+     "prep_delete": true
+    },
+    {
+     "ri": 2,
+     "type": "guide",
+     "text": "以下为二乙二醇单丁醚 （CAS号：112-34-5）的生态毒理学参考数据：",
+     "prep_delete": true
+    },
+    {
+     "ri": 3,
+     "type": "field",
+     "seq": "12.1",
+     "label": "生态毒性",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 4,
+     "type": "cont",
+     "seq": "",
+     "label": "",
+     "parent": "12.1",
+     "writable": true,
+     "defect": "标签格为空；值格'其他：生物量半数有效浓度…'为 12.1 的延续内容",
+     "key": "生态毒性_延续"
+    },
+    {
+     "ri": 5,
+     "type": "field",
+     "seq": "12.2",
+     "label": "持久性和降解性",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 6,
+     "type": "field",
+     "seq": "12.3",
+     "label": "其他不利的影响",
+     "parent": null,
+     "writable": true
+    }
+   ]
+  },
+  "13": {
+   "title": "处理注意事项",
+   "kind": "table",
+   "cols": 2,
+   "note": "R1 引导行残留（'必须遵守适用的国标…EWC…'），prep 删除",
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "13. 处理注意事项"
+    },
+    {
+     "ri": 1,
+     "type": "guide",
+     "text": "必须遵守适用的国标、国家或当地法规进行废弃。在欧盟领域内废弃，应根据欧洲废弃物分类（EWC）的适当法规。",
+     "prep_delete": true
+    },
+    {
+     "ri": 2,
+     "type": "field",
+     "seq": "",
+     "label": "处理方法",
+     "parent": null,
+     "writable": true
+    }
+   ]
+  },
+  "14": {
+   "title": "运输信息",
+   "kind": "table",
+   "cols": 2,
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "14. 运输信息"
+    },
+    {
+     "ri": 1,
+     "type": "field",
+     "seq": "14.1",
+     "label": "公路和铁路运输",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 2,
+     "type": "field",
+     "seq": "14.2",
+     "label": "海上运输",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 3,
+     "type": "field",
+     "seq": "14.3",
+     "label": "空运",
+     "parent": null,
+     "writable": true
+    },
+    {
+     "ri": 4,
+     "type": "field",
+     "seq": "14.4",
+     "label": "用户特殊注意事项",
+     "parent": null,
+     "writable": true
+    }
+   ]
+  },
+  "15": {
+   "title": "法规信息",
+   "kind": "table",
+   "note": "全单格通栏(无表格边框)：R3'符合下列法规要求：'为可覆写入口，覆写时删除其后法规条目行(R4-R8)重建",
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "15. 法规信息"
+    },
+    {
+     "ri": 1,
+     "type": "note",
+     "text": "物质或混合物的相关安全、健康和环保法律法规",
+     "writable": false
+    },
+    {
+     "ri": 2,
+     "type": "note",
+     "text": "其它的规定：",
+     "writable": true,
+     "key": "其它的规定"
+    },
+    {
+     "ri": 3,
+     "type": "note",
+     "text": "符合下列法规要求：",
+     "writable": true,
+     "value_zone": true,
+     "key": "法规入口"
+    },
+    {
+     "ri": 4,
+     "type": "note",
+     "text": "危险化学品安全管理条例，国务院令591号",
+     "writable": true,
+     "value_of": "符合下列法规要求"
+    },
+    {
+     "ri": 5,
+     "type": "note",
+     "text": "GB/T 16483 化学品安全技术说明书内容和项目顺序",
+     "writable": true,
+     "value_of": "符合下列法规要求"
+    },
+    {
+     "ri": 6,
+     "type": "note",
+     "text": "GB 13690 化学品分类和危险性公示通则",
+     "writable": true,
+     "value_of": "符合下列法规要求"
+    },
+    {
+     "ri": 7,
+     "type": "note",
+     "text": "GB 30000.2-29 化学品分类和标签规范",
+     "writable": true,
+     "value_of": "符合下列法规要求"
+    },
+    {
+     "ri": 8,
+     "type": "note",
+     "text": "GB 15258 化学品安全标签编写规定",
+     "writable": true,
+     "value_of": "符合下列法规要求"
+    }
+   ]
+  },
+  "16": {
+   "title": "其他信息",
+   "kind": "table",
+   "note": "R1 为免责声明 note 行（单格通栏），整格可覆写或保留",
+   "rows": [
+    {
+     "ri": 0,
+     "type": "title",
+     "text": "16. 其他信息"
+    },
+    {
+     "ri": 1,
+     "type": "note",
+     "text": "就我们所掌握的知识信息，截止本安全技术说明书发布之日，它提供的资料是正确的。…",
+     "writable": true,
+     "key": "免责声明"
+    }
+   ]
+  }
+ }
+}

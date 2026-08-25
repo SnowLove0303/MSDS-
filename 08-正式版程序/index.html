@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GZ</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body class="desktop-body">
+  <main class="desktop-shell" aria-label="GZ">
+    <section class="desktop-surface">
+      <div class="desktop-icons" aria-label="桌面应用"></div>
+    </section>
+    <footer class="desktop-taskbar">
+      <button class="start-orb" aria-label="开始">GZ</button>
+      <div class="taskbar-divider"></div>
+      <div class="taskbar-space"></div>
+      <div class="system-tray"><span>GZ 工作区</span><span class="tray-dot"></span><span id="desktopClock"></span></div>
+    </footer>
+  </main>
+  <script>
+    (() => {
+      const clock = document.getElementById('desktopClock');
+      const tick = () => { clock.textContent = new Date().toLocaleTimeString('zh-CN', {hour:'2-digit', minute:'2-digit'}); };
+      tick();
+      setInterval(tick, 30000);
+    })();
+  </script>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "msds-inference-agent",
+  "version": "0.2.0",
+  "description": "Evidence-traceable MSDS inference and template-driven overwrite workflows that preserve S1/S3/S9 source facts, map them to the database-canonical 17-section skeleton, and gate formal Word/PDF output with retrieval and placeholder audits.",
+  "author": {
+    "name": "Guanzhi MSDS local project"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "MSDS Inference Agent",
+    "shortDescription": "Trace facts and produce audited template-based MSDS drafts",
+    "longDescription": "Builds a source-preserving facts package from Section 1, 3, and 9 inputs, records official-standard evidence, then uses the approved Word template overwrite path for controlled brand/language/format output. Formal output suppresses empty S9 rows, uses controlled S11/S12 evidence fallbacks, and requires readback audit.",
+    "developerName": "Guanzhi MSDS local project",
+    "category": "Productivity",
+    "capabilities": ["Analysis", "Write"],
+    "defaultPrompt": [
+      "Build a traceable database-canonical 17-section facts skeleton from this MSDS Excel form.",
+      "Preserve the original S1/S3/S9 values, search authoritative evidence, and flag conflicts or review-required fields.",
+      "Use the approved template overwrite workflow to produce an audited Word/PDF draft only after the input contract and evidence ledger pass validation."
+    ]
+  }
+}

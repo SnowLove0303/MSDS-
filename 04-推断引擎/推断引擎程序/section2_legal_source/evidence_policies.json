@@ -1,0 +1,63 @@
+{
+  "policy_id": "section2_evidence_policies",
+  "version": "1.0.0",
+  "statuses": {
+    "auto_pass": "事实完整、适用规则唯一、没有冲突，且输出可追溯到现行规则。",
+    "manual_review": "存在缺失、范围跨阈值、来源冲突、版本不明或规则仅为筛查门槛。",
+    "insufficient_evidence": "没有足以支持该危害端点的最小事实集合。",
+    "conflict": "不同可信来源对同一事实或分类结论不一致。",
+    "not_applicable": "适用性判断已证明该危害端点不适用。"
+  },
+  "minimum_evidence": {
+    "flammable_liquid": ["product_form_or_applicability", "flash_point"],
+    "flammable_liquid_category_1_or_2": ["product_form_or_applicability", "flash_point", "initial_boiling_point"],
+    "mixture_health_or_environment": ["component.cas", "component.concentration", "component.ghs_classification", "classification_source"],
+    "formal_label": ["final_classification", "final_h_codes", "final_signal_word", "final_pictograms"]
+  },
+  "source_rules": [
+    {
+      "id": "SRC-001",
+      "rule": "现行官方标准优先于旧版标准、历史 SDS 和内部参考资料。"
+    },
+    {
+      "id": "SRC-002",
+      "rule": "成品直接检测事实优先用于成品物理危害判断；不得被单一组分提示覆盖。"
+    },
+    {
+      "id": "SRC-003",
+      "rule": "历史原始 Section 2 只作为三方对照项，不等于法律法规唯一真实源。"
+    },
+    {
+      "id": "SRC-004",
+      "rule": "危险化学品目录、重点监管目录、易制毒/易制爆名录只能提供监管身份事实，不能单独生成 GHS 分类。"
+    }
+  ],
+  "unknown_and_conflict": [
+    {
+      "id": "DATA-001",
+      "condition": "字段为空、无数据、未知、保密或无法解析",
+      "action": "保留为 unknown/confidential，不能转成无危害或 0%。"
+    },
+    {
+      "id": "DATA-002",
+      "condition": "数值范围跨越分类边界",
+      "action": "进入 manual_review，不能选择有利一侧自动输出。"
+    },
+    {
+      "id": "DATA-003",
+      "condition": "直接事实与历史 Section 2 分类冲突",
+      "action": "保留两者，按法规规则重新判断，输出 conflict 或 manual_review。"
+    },
+    {
+      "id": "DATA-004",
+      "condition": "同一型号同一标准化字段出现多个未解决取值",
+      "action": "标记 conflicting，禁止生成正式 Section 2。"
+    }
+  ],
+  "release_gate": [
+    "每个正式输出字段都有 rule_id、source_id、input_fact_ids 和 calculation_timestamp",
+    "象形图必须由最终分类/H代码映射得到，不得从原始图片反推",
+    "健康/环境危害不能仅凭组分 H 代码直接继承",
+    "所有 manual_review、insufficient_evidence、conflict 结果不得自动进入正式 MSDS 覆写"
+  ]
+}

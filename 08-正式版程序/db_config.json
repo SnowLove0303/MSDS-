@@ -1,0 +1,21 @@
+{
+  "scan_dirs": [
+    "03-数据库/正式库/Data Base"
+  ],
+  "exclude_patterns": [
+    "Thumbs.db",
+    "*.bak*",
+    "*.tmp",
+    "msds_standard_*"
+  ],
+  "display_names": {
+    "msds_standard.db": "总型号库",
+    "cas_library.db": "CAS 库",
+    "cas_field_mapping.db": "CAS 字段映射库"
+  },
+  "business_trees": {
+    "msds_standard.db": "models",
+    "cas_library.db": "cas",
+    "cas_field_mapping.db": "cas_mapping"
+  }
+}

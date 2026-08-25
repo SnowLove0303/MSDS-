@@ -1,0 +1,53 @@
+{
+  "schema_version": "msds-17-skeleton-db-v0.2",
+  "description": "Database-canonical S0+S1-S16 skeleton sourced from msds_standard.db schema_field. Section 9 has 37 fields and Section 11 has 10 fields.",
+  "database_source": {
+    "path": "F:/正式项目与模块化内容/冠志/MSDS/03-数据库/正式库/Data Base/msds_standard.db",
+    "table": "schema_field",
+    "section_field_counts": {
+      "0": 6,
+      "1": 8,
+      "2": 11,
+      "3": 1,
+      "4": 5,
+      "5": 4,
+      "6": 3,
+      "7": 2,
+      "8": 12,
+      "9": 37,
+      "10": 5,
+      "11": 10,
+      "12": 3,
+      "13": 1,
+      "14": 4,
+      "15": 3,
+      "16": 1
+    }
+  },
+  "sections": {
+    "0": {"title": "页眉/页脚", "fields": ["Version", "产品名称", "公司名称", "产品型号", "修订日期", "页码"]},
+    "1": {"title": "物料及供应商标识", "fields": ["产品名称", "中文名称", "化学品分类", "产品使用建议和使用限制", "供应商名称", "供应商地址", "电话", "传真"]},
+    "2": {"title": "危险性概述", "fields": ["紧急情况概述", "GHS危险性类别", "标签要素", "象形图", "信号词", "危险性说明", "防范说明", "物理和化学危险", "健康危害", "环境危害", "其他危害"]},
+    "3": {"title": "成分/组成资料", "fields": ["产品类型"], "tables": ["components"]},
+    "4": {"title": "急救措施", "fields": ["一般措施", "误服", "接触眼睛", "接触皮肤", "吸入"]},
+    "5": {"title": "消防措施", "fields": ["合适的灭火剂", "不合适的灭火剂", "物质或混合物的特殊危害", "消防预防措施和保护设备"]},
+    "6": {"title": "意外泄漏措施", "fields": ["个人预防措施、应急程序", "环境保护措施", "污染物收集和清除的方法"]},
+    "7": {"title": "操作和储存", "fields": ["安全操作防范", "安全储存条件"]},
+    "8": {"title": "接触控制/个人防护", "fields": ["暴露控制", "生物限值", "工程控制", "呼吸系统防护", "手部防护", "防护手套的合适材料", "氟化橡胶 –FKM", "丁基橡胶 –IIR", "丁腈橡胶 – NBR", "眼睛防护", "身体防护", "建议"], "tables": ["bio"]},
+    "9": {"title": "物理和化学特性", "fields": ["外观", "嗅觉阈值", "pH值", "离子性", "初沸点", "闪点", "蒸发速率", "可燃性（固态、气态）", "燃烧值", "饱和蒸气压", "相对蒸气密度", "密度", "水溶性", "表面张力", "辛醇/水分配系数对数值", "自燃温度", "引燃温度", "分解温度", "动力粘度", "爆炸特性", "粉尘爆炸级别", "固体含量", "有效成分", "玻璃化温度", "最低成膜温度", "NCO含量", "羟基含量", "熔点/凝固点", "酸值", "碘值", "倾点", "浊点", "分子量", "含量", "APHA值", "HLB值", "其他信息"]},
+    "10": {"title": "稳定性和反应性", "fields": ["化学稳定性", "危险分解产物", "可能的危害反应", "应避免的条件", "禁配物"]},
+    "11": {"title": "毒性资料", "fields": ["急性毒性", "主要皮肤刺激性", "主要眼睛刺激性", "致敏性", "致突变性", "致癌性", "生殖毒性", "特异性靶器官系统毒性（一次接触/反复接触）", "吸入危险", "附加信息"], "notes": ["产品说明", "组分参考数据"]},
+    "12": {"title": "生态信息", "fields": ["生态毒性", "持久性和降解性", "其他不利的影响"]},
+    "13": {"title": "处理注意事项", "fields": ["处理方法"]},
+    "14": {"title": "运输信息", "fields": ["公路和铁路运输", "海上运输", "空运", "用户特殊注意事项"]},
+    "15": {"title": "法规信息", "fields": ["其它的规定", "符合下列法规要求", "法规条目"]},
+    "16": {"title": "其他信息", "fields": ["免责声明"]}
+  },
+  "known_baseline_conflicts": [
+    "Database canonical schema_field defines Section 9 as 37 fields (9.1-9.37) and Section 11 as 10 fields.",
+    "The active PEA-4139 Word template has only 24 Section 9 rows and uses 9.24 for 其他信息; it is not used as the canonical skeleton in this facts package.",
+    "The Feishu matching note describes 9.37 其他信息; this now aligns with the database canonical Section 9.",
+    "The source workbook contains duplicate raw sequence 9.20 and places 固体含量 at raw 9.21; source labels and values are preserved and the mapping anomaly is recorded."
+  ]
+}
+

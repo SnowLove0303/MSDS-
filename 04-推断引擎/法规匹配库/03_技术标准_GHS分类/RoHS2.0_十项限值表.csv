@@ -1,0 +1,11 @@
+﻿物质,限值（均质材料质量分数%）,备注
+Lead 铅 Pb,0.1,
+Mercury 汞 Hg,0.1,
+Cadmium 镉 Cd,0.01,
+Hexavalent chromium 六价铬 Cr(VI),0.1,
+Polybrominated biphenyls 多溴联苯 PBB,0.1,
+Polybrominated diphenyl ethers 多溴联苯醚 PBDE,0.1,
+Bis(2-ethylhexyl) phthalate 邻苯二甲酸二(2-乙基己基)酯 DEHP,0.1,"邻苯二甲酸酯2019-07-22起适用(玩具除外,受REACH条目51约束)"
+Butyl benzyl phthalate 邻苯二甲酸丁苄酯 BBP,0.1,"邻苯二甲酸酯2019-07-22起适用(玩具除外,受REACH条目51约束)"
+Dibutyl phthalate 邻苯二甲酸二丁酯 DBP,0.1,"邻苯二甲酸酯2019-07-22起适用(玩具除外,受REACH条目51约束)"
+Diisobutyl phthalate 邻苯二甲酸二异丁酯 DIBP,0.1,"邻苯二甲酸酯2019-07-22起适用(玩具除外,受REACH条目51约束)"
