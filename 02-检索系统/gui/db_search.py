@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import tkinter as tk
 from tkinter import ttk, filedialog
+import os
 from pathlib import Path
 import sys
 
@@ -24,8 +25,10 @@ from .section_tree import SectionView
 from .theme import (COLOR_BORDER, COLOR_GRAY, COLOR_GREEN, COLOR_NAV,
                     COLOR_NAV_SEL, COLOR_PANEL, COLOR_ROW_ALT, COLOR_TEXT)
 
-DEFAULT_DB = Path(r"F:\正式项目与模块化内容\冠志\MSDS\03-数据库\正式库\Data Base\msds_standard.db")
-ENGINE_PROGRAM_DIR = Path(r"F:\正式项目与模块化内容\冠志\MSDS\04-推断引擎\推断引擎程序")
+_PROJECT_ROOT = Path(os.environ.get(
+    "MSDS_ROOT", str(Path(__file__).resolve().parents[2])))
+DEFAULT_DB = _PROJECT_ROOT / "03-数据库" / "正式库" / "Data Base" / "msds_standard.db"
+ENGINE_PROGRAM_DIR = _PROJECT_ROOT / "04-推断引擎" / "推断引擎程序"
 if str(ENGINE_PROGRAM_DIR) not in sys.path:
     sys.path.insert(0, str(ENGINE_PROGRAM_DIR))
 from pictogram_registry import display_value, extract_codes  # noqa: E402

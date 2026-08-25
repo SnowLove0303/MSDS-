@@ -13,6 +13,7 @@
 from __future__ import annotations
 
 import hashlib
+import os
 import re
 from pathlib import Path
 
@@ -1149,8 +1150,10 @@ def _post_check(result: ParseResult) -> None:
 # ============================================================
 # 唯一中文覆写模板。运行时不得回退到旧定稿模板、测试库模板或内化副本。
 # ============================================================
-_TEMPLATE_DINGGAO = Path(
-    r"F:\正式项目与模块化内容\冠志\MSDS\03-数据库\正式库\推导方案\PEA-4139 MSDS_CN 冠志 模板.docx")
+_SYSTEM_ROOT = Path(os.environ.get(
+    "MSDS_ROOT", str(Path(__file__).resolve().parents[2])))
+_TEMPLATE_DINGGAO = _SYSTEM_ROOT / "03-数据库" / "正式库" / "推导方案" / (
+    "PEA-4139 MSDS_CN 冠志 模板.docx")
 
 
 def _resolve_template() -> Path:

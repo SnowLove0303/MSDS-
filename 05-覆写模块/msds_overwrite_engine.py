@@ -52,13 +52,15 @@ from docx.oxml.table import CT_Tbl
 from docx.oxml.text.paragraph import CT_P
 from docx.shared import Cm, Pt
 
-PICTOGRAM_PROGRAM_DIR = Path(r"F:\正式项目与模块化内容\冠志\MSDS\04-推断引擎\推断引擎程序")
+_PROJECT_ROOT = Path(os.environ.get(
+    "MSDS_ROOT", str(Path(__file__).resolve().parents[1])))
+PICTOGRAM_PROGRAM_DIR = _PROJECT_ROOT / "04-推断引擎" / "推断引擎程序"
 if str(PICTOGRAM_PROGRAM_DIR) not in sys.path:
     sys.path.insert(0, str(PICTOGRAM_PROGRAM_DIR))
 from pictogram_registry import asset_bytes, display_value, extract_codes, ordered_codes  # noqa: E402
 
 # ---- 依赖：结构读取（MSDS 检索工具），用于“查”、“Schema 标准名映射”和“校验” ----
-STRUCTURE_READ_DIR = Path(r"F:\正式项目与模块化内容\冠志\MSDS\02-检索系统")
+STRUCTURE_READ_DIR = _PROJECT_ROOT / "02-检索系统"
 if str(STRUCTURE_READ_DIR) not in sys.path:
     sys.path.insert(0, str(STRUCTURE_READ_DIR))
 try:
@@ -2246,8 +2248,12 @@ def scan_formal_placeholder_values(docx_path):
 # CLI --keep-structure 覆盖。旧行为（写入项驱动：模板多出行默认删除）仅当
 # 显式传入 keep_structure 为受限集合并配合 keep_structure=False 时生效。
 DEFAULT_KEEP_STRUCTURE_SECTIONS = None   # None = 全部节默认模板驱动
-CANONICAL_CN_TEMPLATE = r"F:\正式项目与模块化内容\冠志\MSDS\03-数据库\正式库\推导方案\PEA-4139 MSDS_CN 冠志 模板.docx"
-CANONICAL_EN_TEMPLATE = r"F:\正式项目与模块化内容\冠志\MSDS\03-数据库\正式库\推导方案\PEA-4139 模板 EN.docx"
+CANONICAL_CN_TEMPLATE = str(
+    _PROJECT_ROOT / "03-数据库" / "正式库" / "推导方案" /
+    "PEA-4139 MSDS_CN 冠志 模板.docx")
+CANONICAL_EN_TEMPLATE = str(
+    _PROJECT_ROOT / "03-数据库" / "正式库" / "推导方案" /
+    "PEA-4139 模板 EN.docx")
 
 
 def _require_approved_template(template_path):

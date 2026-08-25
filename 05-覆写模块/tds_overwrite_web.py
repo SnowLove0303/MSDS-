@@ -6,6 +6,7 @@
 from __future__ import annotations
 
 import hashlib
+import os
 import re
 import shutil
 import tempfile
@@ -19,7 +20,8 @@ from typing import Any
 from docx import Document
 
 
-ROOT = Path(r"F:\正式项目与模块化内容\冠志\MSDS")
+ROOT = Path(os.environ.get(
+    "MSDS_ROOT", str(Path(__file__).resolve().parents[1])))
 WEB_ROOT = ROOT / "08-正式版程序"
 SOURCE_ROOT = Path(r"F:\冠志工作空间\产品\TDS MSDS\TDS MSDS\产品 TDS MSDS -- WORD版本")
 TEMPLATE_ROOT = WEB_ROOT / "tds_templates"

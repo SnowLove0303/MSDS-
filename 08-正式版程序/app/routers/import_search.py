@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import shutil
 import sys
 import tempfile
@@ -11,7 +12,8 @@ from typing import Any
 
 from fastapi import APIRouter, File, HTTPException, UploadFile
 
-ROOT = Path(r"F:\正式项目与模块化内容\冠志\MSDS")
+ROOT = Path(os.environ.get(
+    "MSDS_ROOT", str(Path(__file__).resolve().parents[3])))
 sys.path.insert(0, str(ROOT / "02-检索系统"))
 
 router = APIRouter(prefix="/api/import", tags=["import"])

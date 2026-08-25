@@ -5,6 +5,7 @@ from __future__ import annotations
 import base64
 import json
 import mimetypes
+import os
 import re
 import shutil
 import sys
@@ -17,7 +18,8 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, quote, urlparse
 
-ROOT = Path(r"F:\正式项目与模块化内容\冠志\MSDS")
+ROOT = Path(os.environ.get(
+    "MSDS_ROOT", str(Path(__file__).resolve().parents[1])))
 WEB_ROOT = ROOT / "08-正式版程序"
 DB_PATH = ROOT / "03-数据库" / "正式库" / "Data Base" / "msds_standard.db"
 CAS_DB_PATH = ROOT / "03-数据库" / "正式库" / "Data Base" / "cas_library.db"

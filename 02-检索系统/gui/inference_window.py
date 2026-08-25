@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import sys
+import os
 import tkinter as tk
 from pathlib import Path
 from tkinter import messagebox
@@ -26,7 +27,9 @@ from .form_window import S139FormPanel
 from .section_tree import SectionView
 
 
-ENGINE_PROGRAM_DIR = Path(r"F:\正式项目与模块化内容\冠志\MSDS\04-推断引擎\推断引擎程序")
+ENGINE_PROGRAM_DIR = Path(os.environ.get(
+    "MSDS_ROOT", str(Path(__file__).resolve().parents[2]))) / \
+    "04-推断引擎" / "推断引擎程序"
 if str(ENGINE_PROGRAM_DIR) not in sys.path:
     sys.path.insert(0, str(ENGINE_PROGRAM_DIR))
 

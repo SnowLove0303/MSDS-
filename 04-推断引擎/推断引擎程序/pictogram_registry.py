@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 from pathlib import Path
 from typing import Iterable
@@ -10,7 +11,9 @@ from typing import Iterable
 
 ENGINE_DIR = Path(__file__).resolve().parent
 LIBRARY_PATH = ENGINE_DIR / "s2_result_library.json"
-ASSET_DIR = Path(r"F:\正式项目与模块化内容\冠志\MSDS\04-推断引擎\判断skill\templates\pictograms")
+_PROJECT_ROOT = Path(os.environ.get(
+    "MSDS_ROOT", str(Path(__file__).resolve().parents[2])))
+ASSET_DIR = _PROJECT_ROOT / "04-推断引擎" / "判断skill" / "templates" / "pictograms"
 _CODE_RE = re.compile(r"GHS0[1-9]", re.IGNORECASE)
 
 

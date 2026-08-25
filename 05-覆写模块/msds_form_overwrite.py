@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 from dataclasses import dataclass, field
@@ -24,7 +25,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-BASE_DIR = Path(r"F:\正式项目与模块化内容\冠志\MSDS")
+BASE_DIR = Path(os.environ.get(
+    "MSDS_ROOT", str(Path(__file__).resolve().parents[1])))
 READ_DIR = BASE_DIR / "02-检索系统"
 ENGINE_DIR = BASE_DIR / "05-覆写模块"
 DEFAULT_TEMPLATE = BASE_DIR / "03-数据库" / "正式库" / "推导方案" / "PEA-4139 MSDS_CN 冠志 模板.docx"

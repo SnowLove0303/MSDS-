@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sqlite3
 import sys
 from datetime import datetime, timezone
@@ -22,8 +23,10 @@ if str(ENGINE_DIR) not in sys.path:
 from s2_inference import infer_s2  # noqa: E402
 
 
-MODEL_DB = Path(r"F:\正式项目与模块化内容\冠志\MSDS\03-数据库\正式库\Data Base\msds_standard.db")
-CAS_DB = Path(r"F:\正式项目与模块化内容\冠志\MSDS\03-数据库\正式库\Data Base\cas_library.db")
+_PROJECT_ROOT = Path(os.environ.get(
+    "MSDS_ROOT", str(Path(__file__).resolve().parents[2])))
+MODEL_DB = _PROJECT_ROOT / "03-数据库" / "正式库" / "Data Base" / "msds_standard.db"
+CAS_DB = _PROJECT_ROOT / "03-数据库" / "正式库" / "Data Base" / "cas_library.db"
 SOURCE_MANIFEST = ENGINE_DIR / "s2_sources.json"
 
 

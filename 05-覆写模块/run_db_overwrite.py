@@ -19,7 +19,8 @@ import argparse
 from pathlib import Path
 
 # 添加结构读取与覆写引擎到 sys.path
-BASE_DIR = Path(r"F:\正式项目与模块化内容\冠志\MSDS")
+BASE_DIR = Path(os.environ.get(
+    "MSDS_ROOT", str(Path(__file__).resolve().parents[1])))
 READ_DIR = BASE_DIR / "02-检索系统"
 ENGINE_DIR = BASE_DIR / "05-覆写模块"
 
@@ -34,7 +35,8 @@ import msds_overwrite_engine as moe
 DB_PATH = Path(os.environ.get(
     "MSDS_DB_PATH",
     str(BASE_DIR / "03-数据库" / "正式库" / "Data Base" / "msds_standard.db")))
-DEFAULT_TEMPLATE = Path(r"F:\正式项目与模块化内容\冠志\MSDS\03-数据库\正式库\推导方案\PEA-4139 MSDS_CN 冠志 模板.docx")
+DEFAULT_TEMPLATE = BASE_DIR / "03-数据库" / "正式库" / "推导方案" / (
+    "PEA-4139 MSDS_CN 冠志 模板.docx")
 DEFAULT_FIELD_MAP = ENGINE_DIR / "field_maps_pea4139_cn.json"
 
 
