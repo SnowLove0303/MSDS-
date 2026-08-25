@@ -68,6 +68,7 @@
 04-推断引擎/正式法律法规库/**/*.docx
 04-推断引擎/正式法律法规库/**/*.zip
 04-推断引擎/正式法律法规库/**/*.rar
+04-推断引擎/法规匹配库/openstd_preview_capture.png
 
 # Full product-document corpora are local source material, not system assets.
 # Keep the small deterministic reader fixture under 02-检索系统/tests/fixtures.
@@ -78,6 +79,7 @@
 03-数据库/正式库/中文总型号数据库_*.xlsx
 03-数据库/正式库/*.inspect.ndjson
 03-数据库/正式库Data Basecas_library.db
+03-数据库/正式库/Data
 
 # Broken historical upload probe; not a runtime or deployment entry point.
 _scripts/_test_upload.py
